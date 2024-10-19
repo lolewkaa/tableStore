@@ -1,0 +1,9 @@
+.catalog__price-input {
+    width: 173px;
+    height: 44px;
+    border: 1.5px solid rgb(223, 229, 235);
+    border-radius: 12px;
+    padding-left: 12px;
+    font-size: 20px;
+    font-weight: normal;
+}

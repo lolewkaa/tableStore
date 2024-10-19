@@ -1,0 +1,5 @@
+.footer__feedback {
+    width: 457px;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,15 @@
+.product__select {
+    width: 193px;
+    background-color: rgb(247, 247, 247);
+    border: none;
+    border-radius: 10px;
+    height: 44px;
+    font-weight: normal;
+    font-size: 20px;
+    appearance: none;
+    padding-left: 14px;
+    background-image: url(../../../images/arrowDown.svg);
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    margin-bottom: 24px;
+}

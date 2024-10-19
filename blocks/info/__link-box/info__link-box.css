@@ -1,0 +1,18 @@
+.info__link-box {
+    width: 800px;
+    height: 278px;
+    background-image: url('../../../images/tableImg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 4px 6px rgba(18, 21, 105, 0.08);
+    border-radius: 20px;
+}
+.info__link-box-chair {
+    width: 800px;
+    height: 278px;
+    background-image: url('../../../images/chairImg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 4px 6px rgba(18, 21, 105, 0.08);
+    border-radius: 20px;
+}

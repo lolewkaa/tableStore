@@ -1,0 +1,10 @@
+.footer__button_active {
+    background-color: rgb(33, 33, 33);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding-bottom: 8px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 28px;
+    border-bottom: 1.5px solid rgb(235, 40, 25);
+}

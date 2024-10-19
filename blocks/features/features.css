@@ -1,0 +1,6 @@
+.features {
+    width: 1640px;
+    margin: 0 auto 160px auto;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,10 @@
+.product__link {
+    text-decoration: none;
+    color: rgb(148, 156, 162);
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}

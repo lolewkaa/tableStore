@@ -1,0 +1,6 @@
+.product__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}

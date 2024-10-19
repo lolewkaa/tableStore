@@ -1,0 +1,7 @@
+.product__images {
+    min-height: 1210px;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}

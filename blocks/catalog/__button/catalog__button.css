@@ -1,0 +1,16 @@
+.catalog__button {
+    width: 119px;
+    background-color: rgb(245, 245, 245);
+    color: rgb(148, 156, 162);
+    border: none;
+    height: 53px;
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 36px;
+    padding: 0;
+}
+.catalog__button:last-of-type {
+    margin-right: 0;
+}

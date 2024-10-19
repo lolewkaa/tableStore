@@ -1,0 +1,8 @@
+.search__buttons-container {
+    width: 104px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 24px;
+}

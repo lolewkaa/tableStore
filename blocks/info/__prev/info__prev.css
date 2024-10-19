@@ -1,0 +1,13 @@
+.info__prev {
+   background-image: url('../../../images/arrowButton.svg');
+   background-repeat: no-repeat;
+   width: 32px;
+   height: 32px;
+   border: none;
+   padding: 0;
+   background-color: rgb(255, 255, 255);
+   border-radius: 20px;
+   background-position: center;
+   transform: scaleX(-1);
+   cursor: pointer;
+}

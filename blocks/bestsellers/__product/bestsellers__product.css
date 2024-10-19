@@ -1,0 +1,7 @@
+.bestsellers__product {
+    width: 340px;
+    height: 490px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}

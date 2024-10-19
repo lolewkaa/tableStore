@@ -1,0 +1,6 @@
+.bestsellers__container {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}

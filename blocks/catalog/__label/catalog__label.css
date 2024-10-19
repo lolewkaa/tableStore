@@ -1,0 +1,11 @@
+.catalog__label {
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(33, 33, 33);
+    margin: 0 0 12px 0;
+    padding: 0;
+}
+
+.catalog__label:last-of-type {
+    margin: 0;
+}

@@ -1,0 +1,9 @@
+.company {
+    margin: 0 auto 160px auto;
+    width: 1640px;
+    height: 505px;
+    background-image: url('../../images/companyImg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 52px;
+}

@@ -1,0 +1,7 @@
+.catalog__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 53px;
+    align-items: center;
+}

@@ -1,0 +1,12 @@
+.catalog__button_active {
+    width: 119px;
+    background-color: rgb(235, 40, 25);
+    color: rgb(255, 255, 255);
+    border: none;
+    height: 53px;
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0;
+}
