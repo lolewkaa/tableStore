@@ -1,0 +1,109 @@
+.bestsellers {
+    margin: 0 auto 0 auto;
+    width: 1640px;
+    padding-top: 100px;
+    border-top: 2px solid rgba(33, 33, 33, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bestsellers__box {
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+    height: 34px;
+}
+.bestsellers__button-buy {
+    color: rgb(235, 40, 25);
+    border: none;
+    background-color: rgb(255, 255, 255);
+    height: 29px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+    cursor: pointer;
+}
+.bestsellers__button-more {
+    width: 211px;
+    height: 56px;
+    background-color: rgb(235, 40, 25);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 16px 28px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+.bestsellers__button {
+    height: 29px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(148, 156, 162);
+    font-weight: normal;
+    font-size: 24px;
+    cursor: pointer;
+}
+.bestsellers__button_active {
+    height: 100%;
+    border: none;
+    border-bottom: 1.5px solid rgb(235, 40, 25);
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 33, 33);
+    font-weight: normal;
+    font-size: 24px;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+.bestsellers__buttons-box {
+    width: 556px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-top: 24px;
+}
+.bestsellers__container {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.bestsellers__product-name {
+    color: rgb(33, 33, 33);
+    font-weight: 500;
+    font-size: 24px;
+    margin: 10px 0 16px 0;
+    padding: 0;
+}
+.bestsellers__product-price {
+    color: rgb(141, 137, 137);
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 0 2px 0;
+    padding: 0;
+}
+.bestsellers__product-rub {
+    color: rgb(33, 33, 33);
+    font-weight: 600;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+}
+.bestsellers__product {
+    width: 340px;
+    height: 490px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.bestsellers__title {
+    color: rgb(33, 33, 33);
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}

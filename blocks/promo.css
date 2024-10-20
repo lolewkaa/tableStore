@@ -1,0 +1,72 @@
+.promo {
+    background-color: rgb(255, 255, 255);
+    background-image: url('../images/promoImage.png');
+    background-repeat: no-repeat;
+    width: 1360px;
+    height: 457px;
+    background-position: center;
+    box-shadow: 0 4px 6px rgba(18, 21, 105, 0.08);
+    margin: 160px auto 180px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+}
+.promo__button-submit {
+    width: 260px;
+    height: 56px;
+    background-color: rgba(235, 40, 25, 0.6);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+.promo__form-box {
+    width: 1108px;
+    height: 56px;
+    margin: 60px 0 76px 0;
+}
+.promo__input {
+    width: 232px;
+    height: 56px;
+    border: 1.5px solid rgb(223, 229, 235);
+    margin-right: 10px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 0 0 0 28px;
+}
+.promo__mark {
+    font-weight: normal;
+    font-size: 24px;
+    color: rgb(235, 40, 25);
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+.promo__subtitle {
+    font-weight: normal;
+    font-size: 24px;
+    color: rgb(33, 33, 33);
+    margin: 0 0 28px 0;
+    padding: 0;
+    text-align: center;
+    width: 556px;
+    height: 62px;
+}
+.promo__text {
+    color: rgb(148, 156, 162);
+    font-weight: normal;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+.promo__title {
+    font-weight: 500;
+    font-size: 60px;
+    color: rgb(33, 33, 33);
+    padding: 0;
+    margin: 64px 0 16px 0;
+}

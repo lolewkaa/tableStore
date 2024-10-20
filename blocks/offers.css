@@ -1,0 +1,30 @@
+.offers {
+    margin: 100px auto 100px auto;
+    width: 1640px;
+    height: 286px;
+    display: flex;
+    gap: 40px;
+}
+.offers__offer {
+    height: 100%;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+.offers__subtitle {
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(33, 33, 33);
+    margin: 0;
+    padding: 0;
+}
+.offers__title {
+    color: rgb(33, 33, 33);
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+}

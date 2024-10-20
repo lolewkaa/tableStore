@@ -1,0 +1,17 @@
+.popular {
+    width: 1640px;
+    margin: 0 auto;
+}
+.popular__container {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 120px;
+}
+.popular__title {
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(33, 33, 33);
+    margin: 0 0 40px 0;
+    padding: 0;
+}

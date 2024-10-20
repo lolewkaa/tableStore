@@ -1,0 +1,12 @@
+.features {
+    width: 1640px;
+    margin: 0 auto 160px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.features__container {
+    width: 800px;
+}
+.features__img {
+    margin-bottom: 20px;
+}

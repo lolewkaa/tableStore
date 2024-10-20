@@ -1,0 +1,197 @@
+.catalog {
+    margin: 40px auto 60px auto;
+    width: 1640px;
+}
+.catalog__box {
+    width: 1640px;
+    display: flex;
+    gap: 24px;
+}
+.catalog__button-filter {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 0;
+}
+.catalog__button-more-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.catalog__button {
+    width: 119px;
+    background-color: rgb(245, 245, 245);
+    color: rgb(148, 156, 162);
+    border: none;
+    height: 53px;
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 36px;
+    padding: 0;
+}
+.catalog__button:last-of-type {
+    margin-right: 0;
+}
+.catalog__button_active {
+    width: 119px;
+    background-color: rgb(235, 40, 25);
+    color: rgb(255, 255, 255);
+    border: none;
+    height: 53px;
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0;
+}
+.catalog__buttons-box {
+    display: flex;
+    align-items: center;
+}
+.catalog__checkbox-box {
+    margin-bottom: 24px;
+}
+.catalog__checkbox-box:last-of-type {
+    margin-bottom: 0;
+}
+.catalog__checkbox-button {
+    height: 29px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgb(33, 33, 33);
+    font-weight: 500;
+    font-size: 24px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin-bottom: 14px;
+ }
+ .catalog__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.catalog__checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .catalog__checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1.5px solid rgb(33, 33, 33);
+    border-radius: 7px;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  .catalog__checkbox:checked+label::before {
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(235, 40, 25);
+    background-image: url("../images/checkbox.svg");
+  }
+  .catalog__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 53px;
+    align-items: center;
+}
+.catalog__filter {
+    width: 396px;
+    height: 809px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.catalog__filter::-webkit-scrollbar {
+    width: 6px;
+}
+
+.catalog__filter::-webkit-scrollbar-track {
+    background-color: rgb(245, 245, 245);
+}
+
+.catalog__filter::-webkit-scrollbar-thumb {
+    background-color: rgba(235, 40, 25, 0.2);
+}
+.catalog__inputs-box {
+    width: 380px;
+    margin-top: 14px;
+    display: flex;
+    gap: 10px;
+}
+.catalog__label {
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(33, 33, 33);
+    margin: 0 0 12px 0;
+    padding: 0;
+}
+
+.catalog__label:last-of-type {
+    margin: 0;
+}
+.catalog__link {
+    cursor: pointer;
+    text-decoration: none;
+}
+.catalog__price-box {
+    width: 100%;
+    margin: 40px 0 24px 0;
+}
+.catalog__price-button {
+    width: 158px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgb(33, 33, 33);
+    font-weight: 500;
+    font-size: 24px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+ }
+ .catalog__price-input {
+    width: 173px;
+    height: 44px;
+    border: 1.5px solid rgb(223, 229, 235);
+    border-radius: 12px;
+    padding-left: 12px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.catalog__products {
+    width: 1220px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.catalog__select {
+    border: none;
+    color: rgb(33, 33, 33);
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0 24px 0 8px;
+    padding-right: 6px;
+}
+.catalog__title {
+    font-size: 52px;
+    font-weight: 500;
+    margin: 0 0 32px 0;
+    padding: 0;
+    color: rgb(33, 33, 33);
+}

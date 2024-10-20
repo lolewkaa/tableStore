@@ -1,0 +1,111 @@
+.product {
+    width: 1640px;
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto 80px auto;
+}
+.product__button-basket {
+    width: 56px;
+    height: 56px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+.product__button-delivery {
+    width: 203px;
+    height: 56px;
+    border: none;
+    background-color: rgb(235, 40, 25);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 12px;
+}
+.product__buttons-box {
+    width: 302px;
+    display: flex;
+    justify-content: space-between;
+}
+.product__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.product__images {
+    min-height: 1210px;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product__info-box {
+    width: 800px;
+    min-height: 1210px;
+}
+.product__link {
+    text-decoration: none;
+    color: rgb(148, 156, 162);
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.product__mark {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    color: rgb(33, 33, 33);
+    background-color: rgb(255, 255, 255);
+}
+.product__name-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.product__name {
+    color: rgb(33, 33, 33);
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+.product__price-box {
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.product__select {
+    width: 193px;
+    background-color: rgb(247, 247, 247);
+    border: none;
+    border-radius: 10px;
+    height: 44px;
+    font-weight: normal;
+    font-size: 20px;
+    appearance: none;
+    padding-left: 14px;
+    background-image: url(../images/arrowDown.svg);
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    margin-bottom: 24px;
+}
+.product__subtitle {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0 0 12px 0;
+}
+.product__title {
+    margin: 0 0 12px 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 24px;
+}

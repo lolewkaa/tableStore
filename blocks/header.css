@@ -1,0 +1,42 @@
+.header {
+    width: 1592px;
+    height: 44px;
+    margin: 28px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__feedback-container {
+    display: flex;
+    width: 305px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__icon-link {
+    text-decoration: none;
+}
+.header__icons-container {
+    display: flex;
+    gap: 12px;
+    width: 120px;
+}
+.header__link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-weight: normal;
+    color: rgb(33, 33, 33);
+    font-size: 18px;
+}
+.header__links-container {
+    width: 289px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.header__tel-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: rgba(33, 33, 33, 0.8);
+}
