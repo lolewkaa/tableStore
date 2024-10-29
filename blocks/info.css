@@ -1,6 +1,6 @@
 .info {
     margin: 40px auto 0 auto;
-    width: 1640px;
+    max-width: 1180px;
 }
 .info__buttons-box {
     width: 308px;
@@ -16,23 +16,27 @@
     padding: 0 6px;
 }
 .info__link-box {
-    width: 800px;
+    width: 580px;
     height: 278px;
-    background-image: url('../images/tableImg.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    position: relative;
     box-shadow: 0 4px 6px rgba(18, 21, 105, 0.08);
     border-radius: 20px;
+    overflow: hidden;
 }
-.info__link-box-chair {
-    width: 800px;
-    height: 278px;
-    background-image: url('../images/chairImg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 0 4px 6px rgba(18, 21, 105, 0.08);
-    border-radius: 20px;
+.info__img {
+  position: absolute;
+  right: -25%;
+  top: 28%;
 }
+.info__img-chair {
+  position: absolute;
+  right: 42px;
+  top: 35%;
+}
+.info__links-box {
+  max-width: 1180px;
+}
+
 .info__link-subtitle {
     color: rgb(33, 33, 33);
     font-weight: normal;

@@ -1,6 +1,6 @@
 .bestsellers {
-    margin: 0 auto 0 auto;
-    width: 1640px;
+    margin: 0 auto 120px auto;
+    max-width: 1180px;
     padding-top: 100px;
     border-top: 2px solid rgba(33, 33, 33, 0.1);
     display: flex;
@@ -68,8 +68,9 @@
 .bestsellers__container {
     width: 100%;
     display: flex;
-    gap: 40px;
+    gap: 20px;
     flex-wrap: wrap;
+    max-width: 1180px;
 }
 .bestsellers__product-name {
     color: rgb(33, 33, 33);
@@ -94,11 +95,15 @@
 }
 .bestsellers__product {
     width: 340px;
-    height: 490px;
+    height: 479px;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(18, 21, 105, 0.08);
+    transition: transform 0.5s ease-in-out;
 }
+ 
 .bestsellers__title {
     color: rgb(33, 33, 33);
     font-weight: 500;
@@ -106,4 +111,42 @@
     line-height: 1.2;
     margin: 0;
     padding: 0;
+}
+.bestsellers__product-img {
+    border-radius: 10px;
+}
+.bestsellers__color {
+    color: rgb(66, 66, 68);
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0 0 35px 0;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.bestsellers__product-like {
+    position: absolute;
+    left: 14px;
+    top: 15px;
+}
+.bestsellers__text-box {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+    
+}
+.bestsellers__product-color {
+    margin: 0;
+    padding: 0;
+    color: rgb(33, 33, 33);
+    font-size: 16px;
+    font-weight: normal;
+}
+.bestsellers__color-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 24px;
 }

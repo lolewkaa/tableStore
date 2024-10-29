@@ -1,13 +1,14 @@
 .offers {
     margin: 100px auto 100px auto;
-    width: 1640px;
-    height: 286px;
+    max-width: 1180px;
     display: flex;
-    gap: 40px;
+    flex-wrap: wrap;
+    column-gap: 120px;
+    row-gap: 40px;
 }
 .offers__offer {
     height: 100%;
-    width: 380px;
+    width: 530px;
     display: flex;
     flex-direction: column;
     gap: 12px;

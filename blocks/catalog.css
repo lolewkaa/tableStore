@@ -1,9 +1,9 @@
 .catalog {
     margin: 40px auto 60px auto;
-    width: 1640px;
+    max-width: 1180px;
 }
 .catalog__box {
-    width: 1640px;
+    width: 100%;
     display: flex;
     gap: 24px;
 }
@@ -15,15 +15,46 @@
     border: none;
     padding: 0;
 }
-.catalog__button-more-box {
-    width: 100%;
+.catalog__products-wrap {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+}
+.catalog__pagination {
+    width: 336px;
+    display: flex;
+    gap: 16px;
+}
+.catalog__pagination-box {
+    display: flex;
+    gap: 8px;
+}
+.catalog__pagination-page {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    display: flex;
+    align-items: center;
+    color: rgb(148, 156, 162);
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    width: 28px;
+    cursor: pointer;
+}
+.catalog__pagination-arrow {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
 }
 .catalog__button {
     width: 119px;
-    background-color: rgb(245, 245, 245);
-    color: rgb(148, 156, 162);
+    background-color: rgb(242, 243, 245);
+    color: rgb(33, 33, 33);
     border: none;
     height: 53px;
     font-weight: 500;
@@ -38,7 +69,7 @@
 }
 .catalog__button_active {
     width: 119px;
-    background-color: rgb(235, 40, 25);
+    background-color: rgb(33, 33, 33);
     color: rgb(255, 255, 255);
     border: none;
     height: 53px;
@@ -110,7 +141,7 @@
     align-items: center;
 }
 .catalog__filter {
-    width: 396px;
+    width: 384px;
     height: 809px;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -147,6 +178,7 @@
 .catalog__link {
     cursor: pointer;
     text-decoration: none;
+    position: relative;
 }
 .catalog__price-box {
     width: 100%;
@@ -166,7 +198,7 @@
     padding: 0;
  }
  .catalog__price-input {
-    width: 173px;
+    width: 161px;
     height: 44px;
     border: 1.5px solid rgb(223, 229, 235);
     border-radius: 12px;
@@ -175,9 +207,9 @@
     font-weight: normal;
 }
 .catalog__products {
-    width: 1220px;
+    width: 780px;
     display: flex;
-    gap: 40px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 .catalog__select {

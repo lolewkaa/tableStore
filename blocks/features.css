@@ -1,11 +1,17 @@
 .features {
-    width: 1640px;
+    max-width: 1180px;
     margin: 0 auto 160px auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 .features__container {
-    width: 800px;
+    
+}
+.features__box {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 40px;
 }
 .features__img {
     margin-bottom: 20px;
