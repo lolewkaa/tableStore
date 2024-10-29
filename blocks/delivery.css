@@ -1,0 +1,106 @@
+.delivery {
+    max-width: 1180px;
+    margin: 40px auto 20px auto;
+}
+.delivery__container {
+    width: 100%;
+    border-radius: 20px;
+    padding: 28px 0;
+    box-shadow: 2px 2px 2px 2px rgba(18, 21, 105, 0.08);
+    border-radius: 20px;
+}
+.delivery__text {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0 0 0 28px;
+    padding: 0;
+}
+.delivery__button {
+    min-width: 85px;
+    height: 39px;
+    padding: 8px 16px;
+    color: rgb(33, 33, 33);
+    background-color: rgb(242, 243, 245);
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.delivery__button-active {
+    min-width: 85px;
+    height: 39px;
+    padding: 8px 16px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 33, 33);
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.delivery__btn-box {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    margin-left: 28px;
+}
+.delivery__box {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 28px;
+}
+.delivery__info-box {
+
+}
+.delivery__city {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 12px 0;
+    padding: 0;
+}
+.delivery__address {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+    padding: 0;
+}
+.delivery__tel {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0 0 24px 0;
+    display: flex;
+    gap: 8px;
+}
+.delivery__info-text {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 4px 0;
+    padding: 0;
+    color: rgb(148, 156, 162);
+}
+.delivery__date {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 37px 0;
+    padding: 0;
+}
+.delivery__button-change {
+    width: 274px;
+    height: 51px;
+    background-color: rgb(242, 243, 245);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(33, 33, 33);
+    font-size: 18px;
+    font-weight: normal;
+    border: none;
+    cursor: pointer;
+}
+.delivery__map-img {
+    border-radius: 20px;
+}

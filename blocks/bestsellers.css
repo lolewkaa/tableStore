@@ -127,8 +127,11 @@
 }
 .bestsellers__product-like {
     position: absolute;
-    left: 14px;
+    right: 14px;
     top: 15px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 .bestsellers__text-box {
     display: flex;

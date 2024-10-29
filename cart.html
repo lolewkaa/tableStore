@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Столы тут</title>
 
-    <link rel="stylesheet" href="pages/catalog.css">
+    <link rel="stylesheet" href="pages/cart.css">
 </head>
 
 <body class="page">
@@ -52,158 +52,113 @@
             </div>
         </section>
 
-        <section class="catalog">
-            <h2 class="catalog__title">Все стулья</h2>
-
-            <div class="catalog__container">
-                <div class="catalog__buttons-box">
-                    <button class="catalog__button">Столы</button>
-                    <button class="catalog__button_active">Стулья</button>
-                </div>
-                <div class="catalog__buttons-box">
-                    <button class="catalog__button-filter">
-                        <img src="images/arrowsFilter.svg" />
+        <section class="order">
+            <h2 class="order__title">Оформление заказа</h2>
+            <div class="order__buttons-box">
+                <a href="cart.html">
+                    <button class="order__button-active">
+                        Корзина
                     </button>
-                    <select class="catalog__select">
-                        <option class="catalog__option" value="popularity">По популярности</option>
-                        <option class="catalog__option" value="cost">По стоимости</option>
-                    </select>
-                    <button class="catalog__button-filter">
-                        <img src="images/search-normal.svg" />
+                </a>
+                <a href="personal.html">
+                    <button class="order__button">
+                        Личные данные
                     </button>
-                </div>
+                </a>
+                <a href="payment.html">
+                    <button class="order__button">
+                        Доставка и оплата
+                    </button>
+                </a>
             </div>
 
-            <div class="catalog__box">
+            <div class="order__container">
+                <div class="order__cards-box">
 
-                <div class="catalog__filter">
-
-                    <div class="catalog__price-box">
-                        <button class="catalog__price-button">
-                            Стоимость
-                            <img src="images/arrowUp.svg" />
-                        </button>
-                        <div class="catalog__inputs-box">
-                            <input placeholder="От 0" class="catalog__price-input" />
-                            <input placeholder="До 33 990" class="catalog__price-input" />
+                    <div class="order__card">
+                        <img src="images/orderImg.png" />
+                        <div class="order__card-info">
+                            <p class="order__name">Стул RAFAEL</p>
+                            <p class="order__price">Цена:</p>
+                            <p class="order__rub">7 730 ₽</p>
+                            <div class="order__color-box">
+                                <img src="images/colorImg.svg" />
+                                <p class="order__color">Зелёный/Белый</p>
+                            </div>
+                            <div class="order__quantity">
+                                <button class="order__quantity-btn">-</button>
+                                <p class="order__quantity-text">1</p>
+                                <button class="order__quantity-btn">+</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="catalog__checkbox-box">
-                        <button class="catalog__checkbox-button color">
-                            Материал столешницы
-                            <img src="images/arrowUp.svg" />
+                        <button class="order__btn-like">
+                            <img src="images/iconLikeOrder.svg" />
                         </button>
-                        <input class="catalog__checkbox color__checkbox" type="checkbox" id="option1" name="option1"
-                            value="Велюр">
-                        <label class="catalog__label color__checkbox" for="option1">Велюр</label><br>
+                        <button class="order__btn-del">
+                            <img src="images/iconDelOrder.svg" />
+                        </button>
+                    </div>
 
-                        <input class="catalog__checkbox color__checkbox" type="checkbox" id="option2" name="option2"
-                            value="Замша">
-                        <label class="catalog__label color__checkbox" for="option2">Замша</label><br>
+                    <div class="order__card">
+                        <img src="images/orderImg.png" />
+                        <div class="order__card-info">
+                            <p class="order__name">Стул RAFAEL</p>
+                            <p class="order__price">Цена:</p>
+                            <p class="order__rub">7 730 ₽</p>
+                            <div class="order__color-box">
+                                <img src="images/colorImg.svg" />
+                                <p class="order__color">Зелёный/Белый</p>
+                            </div>
+                            <div class="order__quantity">
+                                <button class="order__quantity-btn">-</button>
+                                <p class="order__quantity-text">1</p>
+                                <button class="order__quantity-btn">+</button>
+                            </div>
+                        </div>
+                        <button class="order__btn-like">
+                            <img src="images/iconLikeOrder.svg" />
+                        </button>
+                        <button class="order__btn-del">
+                            <img src="images/iconDelOrder.svg" />
+                        </button>
+                    </div>
 
-                        <input class="catalog__checkbox color__checkbox" type="checkbox" id="option3" name="option3"
-                            value="Экокожа">
-                        <label class="catalog__label color__checkbox" for="option3">Экокожа</label><br>
+                    <div class="order__card">
+                        <img src="images/orderImg.png" />
+                        <div class="order__card-info">
+                            <p class="order__name">Стул RAFAEL</p>
+                            <p class="order__price">Цена:</p>
+                            <p class="order__rub">7 730 ₽</p>
+                            <div class="order__color-box">
+                                <img src="images/colorImg.svg" />
+                                <p class="order__color">Зелёный/Белый</p>
+                            </div>
+                            <div class="order__quantity">
+                                <button class="order__quantity-btn">-</button>
+                                <p class="order__quantity-text">1</p>
+                                <button class="order__quantity-btn">+</button>
+                            </div>
+                        </div>
+                        <button class="order__btn-like">
+                            <img src="images/iconLikeOrder.svg" />
+                        </button>
+                        <button class="order__btn-del">
+                            <img src="images/iconDelOrder.svg" />
+                        </button>
                     </div>
 
                 </div>
 
-                <div class="catalog__products-wrap">
-                    <div class="catalog__products">
-                        <div class="bestsellers__product" >
-                            <a class="catalog__link" href="product.html">
-                                <button class="bestsellers__product-like">
-                                    <img src="images/productLike.svg" />
-                                </button>
-                                <img class="bestsellers__product-img" src="images/product.png" />
-                                <p class="bestsellers__product-name">Стул ROMEO-замша</p>
-                            </a>
-                            <p class="bestsellers__color">
-                                <img src="images/colorImg.svg" />
-                                Серый/Белый
-                            </p>
-                            <div class="bestsellers__box">
-                                <p class="bestsellers__product-rub">11 150 ₽</p>
-                                <button class="bestsellers__button-buy">Купить
-                                </button>
-                            </div>
-                        </div>
-                        <div class="bestsellers__product" >
-                            <a class="catalog__link" href="product.html">
-                                <button class="bestsellers__product-like">
-                                    <img src="images/productLike.svg" />
-                                </button>
-                                <img class="bestsellers__product-img" src="images/product.png" />
-                                <p class="bestsellers__product-name">Стул ROMEO-замша</p>
-                            </a>
-                            <p class="bestsellers__color">
-                                <img src="images/colorImg.svg" />
-                                Серый/Белый
-                            </p>
-                            <div class="bestsellers__box">
-                                <p class="bestsellers__product-rub">11 150 ₽</p>
-                                <button class="bestsellers__button-buy">Купить
-                                </button>
-                            </div>
-                        </div>
-                        <div class="bestsellers__product" >
-                            <a class="catalog__link" href="product.html">
-                                <button class="bestsellers__product-like">
-                                    <img src="images/productLike.svg" />
-                                </button>
-                                <img class="bestsellers__product-img" src="images/product.png" />
-                                <p class="bestsellers__product-name">Стул ROMEO-замша</p>
-                            </a>
-                            <p class="bestsellers__color">
-                                <img src="images/colorImg.svg" />
-                                Серый/Белый
-                            </p>
-                            <div class="bestsellers__box">
-                                <p class="bestsellers__product-rub">11 150 ₽</p>
-                                <button class="bestsellers__button-buy">Купить
-                                </button>
-                            </div>
-                        </div>
+                <div class="order__box">
+                    <p class="order__text">Оформление заказа</p>
+                    <p class="order__price">Итого:</p>
+                    <div class="order__text-box">
+                        <p class="order__rub">3 товара</p>
+                        <p class="order__rub">22 030 ₽</p>
                     </div>
-                    <div class="catalog__pagination">
-                        <div class="catalog__pagination-box">
-                            <button class="catalog__pagination-arrow">
-                                <img src="images/doubleArrowLeft.svg">
-                            </button>
-                            <button class="catalog__pagination-arrow">
-                                <img src="images/paginationArrowLeft.svg">
-                            </button>
-                        </div>
-                        <div class="catalog__pagination-box">
-                            <button class="catalog__pagination-page">
-                                1
-                            </button>
-                            <button class="catalog__pagination-page">
-                                2
-                            </button>
-                            <button class="catalog__pagination-page">
-                                3
-                            </button>
-                            <button class="catalog__pagination-page">
-                                4
-                            </button>
-                            <button class="catalog__pagination-page">
-                                5
-                            </button>
-                            <button class="catalog__pagination-page">
-                                6
-                            </button>
-                        </div>
-                        <div class="catalog__pagination-box">
-                            <button class="catalog__pagination-arrow">
-                                <img src="images/paginationArrowRight.svg">
-                            </button>
-                            <button class="catalog__pagination-arrow">
-                                <img src="images/doubleArrowRight.svg">
-                            </button>
-                        </div>
-                    </div>
+                    <button class="order__button-make">Оформить заказ</button>
                 </div>
+
             </div>
 
         </section>
@@ -213,25 +168,7 @@
             <div class="popular__container">
 
                 <div id="popular__slider">
-                    <div class="slides">
-                        <div class="bestsellers__product" >
-                            <a class="catalog__link" href="product.html">
-                                <button class="bestsellers__product-like">
-                                    <img src="images/productLike.svg" />
-                                </button>
-                                <img class="bestsellers__product-img" src="images/product.png" />
-                                <p class="bestsellers__product-name">Стул ROMEO-замша</p>
-                            </a>
-                            <p class="bestsellers__color">
-                                <img src="images/colorImg.svg" />
-                                Серый/Белый
-                            </p>
-                            <div class="bestsellers__box">
-                                <p class="bestsellers__product-rub">11 150 ₽</p>
-                                <button class="bestsellers__button-buy">Купить
-                                </button>
-                            </div>
-                        </div>
+                    <div class="popular__slides">
                         <div class="bestsellers__product" >
                             <a class="catalog__link" href="product.html">
                                 <button class="bestsellers__product-like">
@@ -426,7 +363,7 @@
       
             </div>
           </footer>
-        <script src="catalog.js"></script>
+        <script src="cart.js"></script>
 </body>
 
 </html>

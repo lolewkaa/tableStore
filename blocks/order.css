@@ -1,0 +1,192 @@
+.order {
+    max-width: 1180px;
+    margin: 40px auto 80px auto;
+}
+
+.order__title {
+    font-weight: 500;
+    font-size: 52px;
+    margin: 0;
+    padding: 0;
+    color: rgb(33, 33, 33);
+}
+
+.order__buttons-box {
+    min-width: 603px;
+    display: flex;
+    gap: 16px;
+    margin: 24px 0 40px 0;
+}
+
+.order__button-active {
+    min-width: 131px;
+    height: 46px;
+    padding: 10px 20px;
+    background-color: rgb(33, 33, 33);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.order__button {
+    min-width: 208px;
+    height: 46px;
+    padding: 10px 20px;
+    color: rgb(33, 33, 33);
+    background-color: rgb(242, 243, 245);
+    font-weight: normal;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.order__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order__cards-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.order__card {
+    width: 720px;
+    padding: 20.5px 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    height: 169px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(18, 21, 105, 0.08);
+    border-radius: 20px;
+    position: relative;
+}
+
+.order__name {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+    padding: 0;
+    color: rgb(33, 33, 33);
+}
+
+.order__price {
+    color: rgb(148, 156, 162);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.order__rub {
+    color: rgb(33, 33, 33);
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 0 16px 0;
+    padding: 0;
+}
+
+.order__color-box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.order__color {
+    color: rgb(66, 66, 68);
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.order__quantity {
+    width: 72px;
+    height: 21px;
+    background-color: rgb(242, 243, 245);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+}
+
+.order__quantity-btn {
+    border: none;
+    background-color: rgb(242, 243, 245);
+    width: 16px;
+    height: 16px;
+    color: rgb(33, 33, 33);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.order__quantity-text {
+    margin: 0;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    color: rgb(33, 33, 33);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.order__btn-like {
+    width: 24px;
+    height: 24px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    position: absolute;
+    top: 24px;
+    right: 56px;
+    cursor: pointer;
+}
+
+.order__btn-del {
+    width: 24px;
+    height: 24px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.order__text {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0 0 12px 0;
+    padding: 0;
+}
+
+.order__text-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    margin-bottom: 28px;
+}
+
+.order__button-make {
+    width: 380px;
+    height: 58px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgb(235, 40, 25);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}

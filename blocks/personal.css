@@ -1,0 +1,77 @@
+.personal {
+    max-width: 1180px;
+    margin: 40px auto 100px auto;
+}
+.personal__form {
+    width: 100%;
+    box-shadow: 4px 4px 6px 6px rgba(18, 21, 105, 0.08);
+    border-radius: 20px;
+    padding: 28px 0;
+}
+.personal__input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.personal__input {
+    min-width: 324px;
+    color: rgb(148, 156, 162);
+    font-size: 18px;
+    font-weight: normal;
+    padding: 14px 20px;
+    border: 1.5px solid rgb(223, 229, 235);
+    border-radius: 12px;
+}
+.personal__input-wide {
+    min-width: 514px;
+}
+.personal__label {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(148, 156, 162);
+    margin: 0;
+    padding: 0;
+}
+.personal__form-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-left: 28px;
+}
+.personal__button-submit {
+    background-color: rgb(255, 146, 137);
+    border-radius: 12px;
+    width: 297px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    margin-top: 42px;
+    margin-left: 28px;
+    cursor: pointer;
+}
+.personal__form-title {
+    margin: 0 0 0 28px;
+    padding: 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+.personal__form-text {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 28px 28px;
+    padding: 0;
+}
+.personal__form-mark {
+    color: rgb(235, 40, 25);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+}

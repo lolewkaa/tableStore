@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Столы тут</title>
+
+    <link rel="stylesheet" href="pages/payment.css">
+</head>
+
+<body class="page">
+    <div>
+        <header class="header">
+            <div class="header__links-container">
+                <a class="header__link" href="#footer">Контакты</a>
+                <a class="header__link" href="#footer">Условия доставки</a>
+            </div>
+            <img class="header__logo" alt="Логотип 'Столы тут'" src="images/logo.png" />
+            <div class="header__feedback-container">
+                <p class="header__tel-text">+7 (983) 305-80-10</p>
+                <div class="header__icons-container">
+                    <a class="header__icon-link" href="#">
+                        <img alt="Иконка WhatsApp" src="images/iconWhats.svg" />
+                    </a>
+                    <a class="header__icon-link" href="#">
+                        <img alt="Иконка Telegram" src="images/iconTG.svg" />
+                    </a>
+                    <a class="header__icon-link" href="#">
+                        <img alt="Иконка VK" src="images/iconVK.svg" />
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section class="search">
+            <div class="search__links-container">
+                <a class="search__link" href="#">Столы</a>
+                <a class="search__link" href="#">Стулья</a>
+                <a class="search__link" href="#">Распродажа</a>
+            </div>
+            <div class="search__buttons-container">
+                <button class="search__button">
+                    <img src="images/iconLike.svg" alt="Иконка лайк" />
+                </button>
+                <button class="search__button">
+                    <img src="images/iconDel.svg" alt="Иконка удалить" />
+                </button>
+                <button class="search__button">
+                    <img src="images/iconSearch.svg" alt="Иконка поиск" />
+                </button>
+            </div>
+        </section>
+
+        <section class="delivery">
+            <h2 class="order__title">Оформление заказа</h2>
+            <div class="order__buttons-box">
+                <a href="cart.html">
+                    <button class="order__button">
+                        Корзина
+                    </button>
+                </a>
+                <a href="personal.html">
+                    <button class="order__button">
+                        Личные данные
+                    </button>
+                </a>
+                <a href="payment.html">
+                    <button class="order__button-active">
+                        Доставка и оплата
+                    </button>
+                </a>
+            </div>
+            <div class="delivery__container">
+                <p class="delivery__text">Способ получения</p>
+                <div class="delivery__btn-box">
+                    <button class="delivery__button-active">
+                        Самовывоз
+                    </button>
+                    <button class="delivery__button">
+                        Доставка от 500 ₽
+                    </button>
+                    <button class="delivery__button">
+                        СДЭК
+                    </button>
+                </div>
+
+                <div class="delivery__box">
+                    <div class="delivery__info-box">
+                        <p class="delivery__city">Новосибирск</p>
+                        <p class="delivery__address">ТЦ Большая медведица</p>
+                        <p class="delivery__tel">
+                            <img src="images/tel.svg">
+                            +7 (983) 305-80-10
+                        </p>
+                        <p class="delivery__info-text">Можно забрать заказ:</p>
+                        <p class="delivery__date">23 октября (с 10:00)</p>
+                        <button class="delivery__button-change">Изменить пункт выдачи</button>
+                    </div>
+                    <img class="delivery__map-img" src="images/deliveryMap.png">
+                </div>
+            </div>
+        </section>
+
+        <section class="payment">
+            <p class="delivery__text">Способ оплаты</p>
+            <div class="delivery__btn-box">
+                <button class="delivery__button-active">
+                    Онлайн оплата
+                </button>
+                <button class="delivery__button">
+                    При получении
+                </button>
+                <button class="delivery__button">
+                    Безналичный рассчёт
+                </button>
+            </div>
+            <div class="payment__box">
+                <img src="images/sbp.png">
+                <img src="images/sberPay.png">
+                <img src="images/card.png">
+            </div>
+        </section>
+
+        <section class="orderInfo">
+            <p class="delivery__text">Ваш заказ</p>
+            <div class="orderInfo__container">
+                <div class="orderInfo__cards-box">
+
+                    <div class="orderInfo__card">
+                        <img src="images/orderSmall.png">
+                        <div>
+                            <p class="orderInfo__name">Стул RAFAEL</p>
+                            <p class="orderInfo__color">
+                                <img src="images/colorSmall.svg">
+                                Зелёный/Белый
+                            </p>
+                            <p class="orderInfo__price">Цена:</p>
+                            <p class="orderInfo__rub">7 730 ₽</p>
+                        </div>
+                    </div>
+                    <div class="orderInfo__card">
+                        <img src="images/orderSmall.png">
+                        <div>
+                            <p class="orderInfo__name">Стул RAFAEL</p>
+                            <p class="orderInfo__color">
+                                <img src="images/colorSmall.svg">
+                                Зелёный/Белый
+                            </p>
+                            <p class="orderInfo__price">Цена:</p>
+                            <p class="orderInfo__rub">7 730 ₽</p>
+                        </div>
+                    </div>
+                    <div class="orderInfo__card">
+                        <img src="images/orderSmall.png">
+                        <div>
+                            <p class="orderInfo__name">Стул RAFAEL</p>
+                            <p class="orderInfo__color">
+                                <img src="images/colorSmall.svg">
+                                Зелёный/Белый
+                            </p>
+                            <p class="orderInfo__price">Цена:</p>
+                            <p class="orderInfo__rub">7 730 ₽</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="orderInfo__box">
+                    <div class="orderInfo__text-box">
+                        <p class="orderInfo__text-light">Способ оплаты:</p>
+                        <p class="orderInfo__text">СБП</p>
+                    </div>
+                    <div class="orderInfo__text-box">
+                        <p class="orderInfo__text-light">Способ доставки:</p>
+                        <p class="orderInfo__text">Самовывоз</p>
+                    </div>
+                    <div class="orderInfo__text-box">
+                        <p class="orderInfo__text-light">Адрес ПВЗ:</p>
+                        <p class="orderInfo__text">Новосибирск, Светлановская улица, 50, 2 этаж</p>
+                    </div>
+                    <div class="orderInfo__text-box">
+                        <p class="orderInfo__text-light">Промокод:</p>
+                        <p class="orderInfo__text">Скидка 5%</p>
+                    </div>
+                    <div class="orderInfo__text-box">
+                        <p class="orderInfo__text-light">Итого:</p>
+                        <div class="orderInfo__sum-box">
+                            <p class="orderInfo__sale">700 730 ₽</p>
+                            <p class="orderInfo__sum">700 730 ₽</p>
+                        </div>
+                    </div>
+                    <button class="orderInfo__button">Перейти к оплате</button>
+                    <p class="orderInfo__agreement">Подтверждая заказ, Вы соглашаетесь с условиями
+                        <mark class="orderInfo__mark">политики конфиденциальности и правилами продажи</mark>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer" id="footer">
+            <div class="footer__container">
+                <h2 class="footer__title">Контакты</h2>
+                <div class="footer__buttons-box">
+                    <button class="footer__button_active">Новосибирск</button>
+                    <button class="footer__button">Красноярск</button>
+                    <button class="footer__button">Кемерово</button>
+                    <button class="footer__button">Новокузнецк</button>
+                    <button class="footer__button">Барнаул</button>
+                    <button class="footer__button">Томск</button>
+                </div>
+                <div class="footer__location">
+                    <div class="footer__location-box">
+                        <h3 class="footer__city">Новосибирск</h3>
+                        <div class="footer__box-addresses">
+                            <p class="footer__address">1. Большая медведица, Светлановская, 50, 2 этаж</p>
+                            <p class="footer__tel">
+                                <img src="images/tel.svg" />
+                                +7 (983) 305-80-10
+                            </p>
+                            <p class="footer__address">2. Большая медведица, Светлановская, 50, Дисконт</p>
+                            <p class="footer__tel">
+                                <img src="images/tel.svg" />
+                                +7 (913) 737-33-41
+                            </p>
+                            <p class="footer__address">3. Красный мамонт, Светлановская, 50, к.1</p>
+                            <p class="footer__tel">
+                                <img src="images/tel.svg" />
+                                +7 (913) 933-92-03
+                            </p>
+                            <p class="footer__address">4. Мебель центр, Островского, 111</p>
+                            <p class="footer__tel">
+                                <img src="images/tel.svg" />
+                                +7 (913) 890-89-44
+                            </p>
+                            <p class="footer__address">5. Калейдоскоп комфорта и уюта, Маркса, 6/1</p>
+                            <p class="footer__tel">
+                                <img src="images/tel.svg" />
+                                +7 (913) 777-60-18
+                            </p>
+                            <p class="footer__address">5. Торговый город "Левобережный" ул. Сибиряков-Гвардейцев, 49/1,
+                                корп. 3, 2
+                                этаж
+                            </p>
+                            <p class="footer__tel">
+                                <img src="images/tel.svg" />
+                                +7 (913) 747-57-11
+                            </p>
+                        </div>
+
+                    </div>
+                    <img class="footer__map-img" src="images/map.png" alt="map" />
+                </div>
+
+                <div class="footer__feedback">
+                    <div class="footer__feedback-box">
+                        <button class="footer__button-call">
+                            <img src="images/iconTel.svg" />
+                            Позвонить нам
+                        </button>
+                        <button class="footer__button-social">
+                            <img src="images/whatsRed.svg" />
+                        </button>
+                        <button class="footer__button-social">
+                            <img src="images/tgRed.svg" />
+                        </button>
+                        <button class="footer__button-social">
+                            <img src="images/VKRed.svg" />
+                        </button>
+                    </div>
+                    <button class="footer__button-up">
+                        <img src="images/buttonUp.svg">
+                    </button>
+                </div>
+
+                <div class="footer__box">
+                    <div class="footer__links-container">
+                        <a href="#" class="footer__link">Столы</a>
+                        <a href="#" class="footer__link">Стулья</a>
+                        <a href="#" class="footer__link">Распродажа</a>
+                        <a href="#" class="footer__link">Хиты продаж</a>
+                        <a href="#" class="footer__link">Условия доставки</a>
+                    </div>
+                    <div class="footer__buttons-container">
+                        <button class="footer__btn">
+                            <img src="images/profileWhite.svg">
+                        </button>
+                        <button class="footer__btn">
+                            <img src="images/basketWhite.svg">
+                        </button>
+                        <button class="footer__btn">
+                            <img src="images/searchWhite.svg">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer__logo-box">
+                    <div class="footer__text-box">
+                        <div class="footer__links">
+                            <a href="#" class="footer__ref">Контакты</a>
+                            <a href="#" class="footer__ref">Условия доставки</a>
+                            <a href="#" class="footer__ref">Условия доставки</a>
+                        </div>
+                        <div class="footer__container-text">
+                            <p class="footer__text">ООО СТОЛЫ ТУТ (С) 2024</p>
+                            <p class="footer__text">Политика конфиденциальности</p>
+                        </div>
+                    </div>
+                    <img src="images/footerLogo.png" />
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- <div class="popup__container">
+            <div class="popup">
+                <button class="popup__button-close">
+                    <img src="images/closeImg.svg">
+                </button>
+                <p class="popup__title">Спасибо за заказ!</p>
+                <p class="popup__subtitle">
+                    Вы можете посмотреть статус заказа в личном кабинете
+                </p>
+                <button class="popup__button">Перейти в личный кабинет</button>
+            </div>
+            <div class="popup__overlay"></div>
+        </div> -->
+
+        <!-- <div class="modal__container">
+            <div class="modal">
+                <button class="modal__button-close">
+                    <img src="images/closeImg.svg">
+                </button>
+                <div class="modal__buttons-box">
+                    <button class="modal__button-active">Новосибирск</button>
+                    <button class="modal__button">Красноярск</button>
+                    <button class="modal__button">Кемерово</button>
+                    <button class="modal__button">Новокузнецк</button>
+                    <button class="modal__button">Барнаул</button>
+                    <button class="modal__button">Томск</button>
+                </div>
+                <p class="modal__text">Укажите ближайший адрес или метро</p>
+                <input class="modal__input" placeholder="Адрес">
+                <div class="modal__box">
+                    <img class="modal__img" src="images/modalMap.png">
+                    <div class="modal__addresses-box">
+                        <div class="modal__address-box">
+                            <p class="modal__address-name">1. Большая медведица</p>
+                            <p class="modal__address-text">Светлановская, 50, Дисконт</p>
+                        </div>
+                        <div class="modal__address-box">
+                            <p class="modal__address-name">2. Большая медведица</p>
+                            <p class="modal__address-text">Светлановская, 50, Дисконт</p>
+                        </div>
+                        <div class="modal__address-box">
+                            <p class="modal__address-name">3. Красный мамонт</p>
+                            <p class="modal__address-text">ул. Светлановская, 50, к.1</p>
+                        </div>
+                        <div class="modal__address-box">
+                            <p class="modal__address-name">4. Мебель центр</p>
+                            <p class="modal__address-text">ул. Островского, 111</p>
+                        </div>
+                        <div class="modal__address-box">
+                            <p class="modal__address-name">5. Калейдоскоп комфорта и уюта</p>
+                            <p class="modal__address-text">ул. Маркса, 6/1</p>
+                        </div>
+                        <div class="modal__address-box">
+                            <p class="modal__address-name">6. Торговый город "Левобережный" </p>
+                            <p class="modal__address-text">ул. Сибиряков-Гвардейцев, 49/1, корп. 3, 2 этаж</p>
+                        </div>
+                        <div class="modal__address-box">
+                            <p class="modal__address-name">6. Торговый город "Левобережный" </p>
+                            <p class="modal__address-text">ул. Сибиряков-Гвардейцев, 49/1, корп. 3, 2 этаж</p>
+                        </div>
+                        <div class="modal__address-box">
+                            <p class="modal__address-name">6. Торговый город "Левобережный" </p>
+                            <p class="modal__address-text">ул. Сибиряков-Гвардейцев, 49/1, корп. 3, 2 этаж</p>
+                        </div>
+                        <div class="modal__address-box">
+                            <p class="modal__address-name">6. Торговый город "Левобережный" </p>
+                            <p class="modal__address-text">ул. Сибиряков-Гвардейцев, 49/1, корп. 3, 2 этаж</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__overlay"></div>
+        </div> -->
+
+
+        <script src="payment.js"></script>
+</body>
+
+</html>

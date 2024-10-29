@@ -1,0 +1,149 @@
+.modal {
+    width: 1122px;
+    height: 644px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    z-index: 200;
+    position: relative;
+    padding: 28px;
+}
+
+.modal__container {
+    width: 100%;
+    min-height: 100%;
+    z-index: 200;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+  }
+
+.modal__overlay {
+    background-color: rgba(33, 33, 33, 0.4);
+    width: 100%;
+    height: 100%;
+    z-index: 150;
+    top: 0;
+    position: absolute;
+}
+.modal__button-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.modal__button-active {
+    background-color: rgb(33, 33, 33);
+    min-width: 103px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal__button {
+    background-color: rgb(242, 243, 245);
+    min-width: 103px;
+    color: rgb(33, 33, 33);
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal__buttons-box {
+    display: flex;
+    gap: 16px;
+}
+
+.modal__text {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    color: rgb(148, 156, 162);
+    margin-top: 32px;
+}
+
+.modal__input {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 1.5px solid rgb(223, 229, 235);
+    border-radius: 12px;
+    height: 51px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin-top: 6px;
+}
+
+.modal__box {
+    display: flex;
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.modal__img {
+    width: 752px;
+    height: 460px;
+}
+
+.modal__address-name {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.modal__address-text {
+    margin: 0;
+    padding: 0;
+    color: rgb(66, 66, 68);
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+.modal__address-box {
+    width: 100%;
+    height: 64px;
+    border-radius: 8px;
+}
+
+.modal__addresses-box {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    height: 460px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.modal__addresses-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal__addresses-box::-webkit-scrollbar-track {
+    background-color: rgb(245, 245, 245);
+}
+
+.modal__addresses-box::-webkit-scrollbar-thumb {
+    background-color: rgba(235, 40, 25, 0.2);
+}
