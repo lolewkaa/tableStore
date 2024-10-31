@@ -10,8 +10,11 @@
 </head>
 
 <body class="page">
-  <div>
+
     <header class="header">
+      <button class="header__burger-button">
+        <img src="images/burgerButton.svg" />
+      </button>
       <div class="header__links-container">
         <a class="header__link" href="#footer">Контакты</a>
         <a class="header__link" href="#footer">Условия доставки</a>
@@ -31,9 +34,12 @@
           </a>
         </div>
       </div>
+      <a href="cart.html" class="header__cart">
+        <img src="images/iconDel.svg" alt="Иконка корзина" />
+      </a>
     </header>
 
-    <section class="search">
+   <section class="search">
       <div class="search__links-container">
         <a class="search__link" href="#">Столы</a>
         <a class="search__link" href="#">Стулья</a>
@@ -55,11 +61,12 @@
     </section>
 
     <section class="info">
+      <img class="info__mobileImg" src="images/sliderImg320.png"/>
       <div id="info__slider">
         <div class="slides">
-          <img src="images/sliderImg.png" style="width:100%">
-          <img src="images/sliderImg.png" style="width:100%">
-          <img src="images/sliderImg.png" style="width:100%">
+          <img class="info__slide" src="images/sliderImg.png" >
+          <img src="images/sliderImg.png" >
+          <img src="images/sliderImg.png" >
         </div>
         <div class="info__buttons-box">
           <button class="info__prev"></button>
@@ -95,25 +102,25 @@
 
     <section class="offers">
       <div class="offers__offer">
-        <img src="images/assortmentIcon.svg" />
+        <img src="images/assortmentIcon.svg" class="offers__img"/>
         <p class="offers__title">Ассортимент</p>
         <p class="offers__subtitle">Такого разнообразия цветов, размеров, материалов, форм вам больше нигде не найти.
         </p>
       </div>
       <div class="offers__offer">
-        <img src="images/delivery.svg" />
+        <img src="images/delivery.svg" class="offers__img"/>
         <p class="offers__title">Быстрая доставка</p>
         <p class="offers__subtitle">У нас большой выбор мебели, а также поступления каждую неделю, благодаря этому мы
           подберём вам минимальные сроки доставки.</p>
       </div>
       <div class="offers__offer">
-        <img src="images/order.svg" />
+        <img src="images/order.svg" class="offers__img"/>
         <p class="offers__title">Удобно заказать</p>
         <p class="offers__subtitle">Вы можете совершить покупку онлайн и оффлайн, а также совершить оплату любым удобным
           для вас способом.</p>
       </div>
       <div class="offers__offer">
-        <img src="images/price.svg" />
+        <img src="images/price.svg" class="offers__img"/>
         <p class="offers__title">Доступные цены</p>
         <p class="offers__subtitle">Мы предлагаем мебель доступную при любом бюджете.</p>
       </div>
@@ -125,7 +132,10 @@
         <button class="bestsellers__button_active">Все товары</button>
         <button class="bestsellers__button">Столы</button>
         <button class="bestsellers__button">Стулья</button>
-        <button class="bestsellers__button">Распродажа</button>
+        <button class="bestsellers__button-mobile">
+          Все товары
+          <img src="images/arrowDown.svg">
+        </button>
       </div>
       <div class="bestsellers__container">
         <div class="bestsellers__product" >
@@ -233,7 +243,7 @@
           - не проблема, мы отправим ваш заказ в любой город!</p>
         <a class="company__link" href="#">
           Перейти в каталог
-          <img src="images/sendIcon.svg" />
+          <img class="company__link-icon" src="images/sendIcon.svg" />
         </a>
       </div>
     </section>
@@ -245,6 +255,10 @@
         <button class="bestsellers__button">Столы</button>
         <button class="bestsellers__button">Стулья</button>
         <button class="bestsellers__button">Распродажа</button>
+        <button class="bestsellers__button-mobile">
+          Все товары
+          <img src="images/arrowDown.svg">
+        </button>
       </div>
       <div class="bestsellers__container">
         <div class="bestsellers__product">
@@ -332,6 +346,10 @@
           <button class="footer__button">Новокузнецк</button>
           <button class="footer__button">Барнаул</button>
           <button class="footer__button">Томск</button>
+          <button class="footer__button_mobile">
+            Новосибирск
+            <img src="images/footerArrow.svg" />
+          </button>
         </div>
         <div class="footer__location">
           <div class="footer__location-box">
@@ -375,6 +393,11 @@
           <img class="footer__map-img" src="images/map.png" alt="map" />
         </div>
 
+        <button class="footer__button-call_mobile">
+          <img src="images/iconTel.svg" />
+          Позвонить нам
+        </button>
+        
         <div class="footer__feedback">
           <div class="footer__feedback-box">
             <button class="footer__button-call">
@@ -429,7 +452,7 @@
               <p class="footer__text">Политика конфиденциальности</p>
             </div>
           </div>
-          <img src="images/footerLogo.png" />
+          <img class="footer__logo" src="images/footerLogo.png" />
         </div>
 
 

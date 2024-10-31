@@ -1,5 +1,5 @@
 .search {
-    max-width: 1180px;
+    width: 81.95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,3 +37,24 @@
     justify-content: space-between;
     align-items: center;
 }
+@media screen and (max-width: 858px) {
+    .search {
+        width: 95%;
+    }
+  } 
+@media screen and (max-width: 1024px) {
+    .search__link {
+        font-size: 16px;
+    }
+    .search {
+        height: 56px;
+        width: 91.81%;
+    }
+    
+  }
+  @media screen and (max-width: 585px) {
+    .search {
+        display: none;
+    }
+    
+  } 
