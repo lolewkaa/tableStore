@@ -1,5 +1,5 @@
 .delivery {
-    max-width: 1180px;
+    width: calc(100% - 260px);
     margin: 40px auto 20px auto;
 }
 .delivery__container {
@@ -103,4 +103,95 @@
 }
 .delivery__map-img {
     border-radius: 20px;
+    width: 66.9%;
+}
+.delivery__select_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .delivery {
+        width: calc(100% - 84px);
+    }
+}
+@media screen and (max-width: 1169px) {
+    .delivery__box {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .delivery__map-img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .delivery__btn-box {
+        display: none;
+    }
+    .delivery__select_mobile {
+        display: block;
+        width: 248px;
+        height: 37px;
+        background-color: rgb(33, 33, 33);
+        border-radius: 8px;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 500;
+        margin: 8px 0 20px 20px;
+    }
+    .delivery__map-img {
+        height: 260px;
+        width: 288px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 423px) {
+    .delivery {
+        width: 288px;
+    }
+    .delivery__text {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .delivery__container {
+        padding: 20px 0;
+    }
+    .delivery__city {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .delivery__address {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .delivery__tel {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+    .delivery__tel-img {
+        width: 16px;
+        height: 16px;
+    }
+    .delivery__info-text {
+        font-size: 12px;
+    }
+    .delivery__date {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+    .delivery__button-change {
+        width: 248px;
+        height: 49px;
+        padding: 0;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .delivery__map-img {
+        width: 248px;
+    }
+    .delivery__box {
+        margin: 0 20px;
+    }
+
 }

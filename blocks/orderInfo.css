@@ -1,5 +1,5 @@
 .orderInfo {
-    max-width: 1180px;
+    width: calc(100% - 260px);
     margin: 20px auto 100px auto;
     box-shadow: 2px 2px 2px 2px rgba(18, 21, 105, 0.08);
     border-radius: 20px;
@@ -8,7 +8,7 @@
 
 .orderInfo__container {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
     margin-left: 28px;
     margin-top: 20px;
     margin: 20px 28px 0 28px;
@@ -49,6 +49,7 @@
 .orderInfo__card {
     display: flex;
     gap: 12px;
+
 }
 
 .orderInfo__cards-box {
@@ -98,6 +99,7 @@
     font-weight: 500;
     margin: 0;
     padding: 0;
+    text-align: right;
 }
 
 .orderInfo__sale {
@@ -123,7 +125,7 @@
 }
 
 .orderInfo__box {
-    width: 756px;
+    width: calc(100% - 20px - 347px);
 }
 
 .orderInfo__button {
@@ -158,4 +160,105 @@
     margin: 0;
     padding: 0;
     background-color: rgb(255, 255, 255);
+}
+.orderInfo__button_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .orderInfo {
+        width: calc(100% - 84px);
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .orderInfo__cards-box {
+        width: 300px;
+    }
+    .orderInfo__container {
+        justify-content: space-between;
+        gap: 0;
+        margin: 20px 20px 0 20px;
+    }
+    .orderInfo__box {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 742px) {
+    .orderInfo__container {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .orderInfo__cards-box {
+        overflow: hidden;
+    }
+    .orderInfo__button_mobile {
+        display: block;
+        width: 52px;
+        height: 52px;
+        border: none;
+        background-color: rgb(242, 243, 245);
+        font-size: 20px;
+        font-weight: 500;
+        padding: 0;
+        border-radius: 50%;
+        margin-left: 98px;
+    }
+    .orderInfo__text-box {
+        flex-direction: column;
+    }
+    .orderInfo__text {
+        text-align: left;
+        column-gap: 6px;
+    }
+}
+
+@media screen and (max-width: 582px) {
+    .orderInfo__sum {
+        font-size: 20px;
+    }
+    .orderInfo__sale {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 446px) {
+    .orderInfo__color {
+        font-size: 12px;
+    }
+    .orderInfo__price {
+        font-size: 12px;
+    }
+    .orderInfo__rub {
+        font-size: 16px;
+    }
+    .orderInfo__img {
+        width: 80px;
+        height: 80px;
+    }
+    .orderInfo__box {
+        width: 100%;
+    }
+    .orderInfo__button {
+        width: 248px;
+        height: 49px;
+        font-size: 16px;
+        padding: 0;
+    }
+    .orderInfo__agreement {
+        font-size: 12px;
+    }
+    .orderInfo__mark {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 423px) {
+    .orderInfo {
+        width: 288px;
+    }
+    .orderInfo__cards-box {
+        width: 100%;
+    }
 }
