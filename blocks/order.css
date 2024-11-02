@@ -1,5 +1,5 @@
 .order {
-    max-width: 1180px;
+    width: calc(100% - 260px);
     margin: 40px auto 80px auto;
 }
 
@@ -53,10 +53,16 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: calc(100% - 380px - 80px);
+}
+
+.order__box {
+    width: 380px;
+    min-width: 252px;
 }
 
 .order__card {
-    width: 720px;
+    width: 100%;
     padding: 20.5px 20px;
     display: flex;
     justify-content: flex-start;
@@ -179,7 +185,7 @@
 }
 
 .order__button-make {
-    width: 380px;
+    width: 100%;
     height: 58px;
     border-radius: 12px;
     border: none;
@@ -189,4 +195,139 @@
     font-size: 20px;
     text-align: center;
     cursor: pointer;
+    padding: 0;
 }
+.order__select_mobile {
+    display: none;
+    
+}
+
+@media screen and (max-width: 1156px) {
+    .order__box {
+        width: 252px;
+    }
+    .order__card {
+        width: 434px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .order {
+        width: calc(100% - 84px);
+    }
+  }
+
+  @media screen and (max-width: 839px) {
+    .order__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+    }
+    .order__cards-box {
+        width: 100%;
+    }
+    .order__card {
+        width: calc(100% - 40px);
+    }
+    .order__box {
+        width: 350px;
+    }
+  }
+
+  @media screen and (max-width: 695px) {
+    .order__buttons-box {
+        display: none;
+    }
+    .order__select_mobile {
+        display: block;
+        height: 37px;
+        width: 288px;
+        background-color: rgb(33, 33, 33);
+        border-radius: 8px;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 500;
+        margin: 16px 0 28px 0;
+    }
+  }
+
+  @media screen and (max-width: 564px) {
+    .order {
+        width: 288px;
+    }
+    .order__title {
+        font-size: 32px;
+    }
+    .order__card {
+        height: 133px;
+        padding: 12px;
+        align-items: flex-start;
+        position: relative;
+    }
+    .order__img {
+        width: 80px;
+        height: 80px;
+    }
+    .order__name {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    .order__price {
+        font-size: 10px;
+    }
+    .order__rub {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .order__color {
+        font-size: 10px;
+    }
+    .order__quantity {
+        width: 56px;
+        height: 16px;
+        position: absolute;
+        left: 12px;
+        bottom: 12px;
+    }
+    .order__btn-like {
+        padding: 0;
+        top: 128px;
+        right: 45px;
+    }
+    .order__btn-del {
+        padding: 0;
+        top: 125px;
+        right: 14px;
+    }
+    .order__color-box {
+        align-items: center;
+        position: absolute;
+        left: 12px;
+        bottom: 34px;
+    }
+    .order__quantity-text {
+        font-size: 12px;
+    }
+    .order__quantity-btn {
+        font-size: 14px;
+    }
+    .order__container {
+        flex-direction: column-reverse;
+    }
+    .order__box {
+        width: 288px;
+    }
+    .order__text {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    .order__rub {
+        font-size: 20px;
+    }
+    .order__button-make {
+        font-size: 16px;
+    }
+    .bestsellers__product {
+        width: 256px !important;
+    }
+  }

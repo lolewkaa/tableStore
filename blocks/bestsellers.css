@@ -70,7 +70,11 @@
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    
+}
+.bestsellers__color-btn {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
 }
 .bestsellers__product-name {
     color: rgb(33, 33, 33);
@@ -261,4 +265,16 @@
         height: 51px;
         font-size: 18px;
     }
+    .bestsellers__color-btn {
+        width: 34px;
+        height: 34px;
+    }
+    .bestsellers__color-image {
+        width: 34px;
+        height: 34px; 
+    }
+    .bestsellers__color-box {
+        margin-bottom: 32px;
+    }
+    
   }

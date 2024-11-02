@@ -1,5 +1,5 @@
 .search {
-    width: 81.95%;
+    width: calc(100% - 260px);
     display: flex;
     justify-content: space-between;
     align-items: center;

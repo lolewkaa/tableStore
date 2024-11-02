@@ -1,6 +1,6 @@
 .company {
     margin: 0 auto 160px auto;
-    width: 81.95%;
+    width: calc(100% - 260px);
     height: 505px;
     background-image: url('../images/companyImg.png');
     background-repeat: no-repeat;

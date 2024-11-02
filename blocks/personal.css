@@ -1,5 +1,5 @@
 .personal {
-    max-width: 1180px;
+    width: calc(100% - 260px);
     margin: 40px auto 100px auto;
 }
 .personal__form {
@@ -12,9 +12,18 @@
     display: flex;
     flex-direction: column;
     gap: 6px;
+    /* width: calc(100% - 364px - 364px - 32px - 30px); */
+    width: 364px;
+}
+.personal__input-box-wide {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    /* width: calc(100% - 554px - 16px - 28px); */
+    width: 554px;
 }
 .personal__input {
-    min-width: 324px;
+    width: calc(100% - 40px);
     color: rgb(148, 156, 162);
     font-size: 18px;
     font-weight: normal;
@@ -23,7 +32,13 @@
     border-radius: 12px;
 }
 .personal__input-wide {
-    min-width: 514px;
+    width: calc(100% - 40px);
+    color: rgb(148, 156, 162);
+    font-size: 18px;
+    font-weight: normal;
+    padding: 14px 20px;
+    border: 1.5px solid rgb(223, 229, 235);
+    border-radius: 12px;
 }
 .personal__label {
     font-size: 16px;
@@ -35,8 +50,10 @@
 .personal__form-box {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    
     margin-left: 28px;
+    margin-right: 28px;
+    gap: 16px;
 }
 .personal__button-submit {
     background-color: rgb(255, 146, 137);
@@ -74,4 +91,61 @@
     padding: 0;
     text-decoration: none;
     background-color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 1024px) {
+    .personal {
+        width: calc(100% - 84px);
+    }
+}
+
+@media screen and (max-width: 433px) {
+    .personal {
+        width: 288px;
+    }
+    .personal__form-title {
+        font-size: 20px;
+        margin-left: 12px;
+    }
+    .personal__form-text {
+        font-size: 16px;
+        margin: 8px 12px 16px 12px;
+        color: rgb(66, 66, 68);
+    }
+    .personal__form-mark {
+        font-size: 16px;
+    }
+    .personal__label {
+        font-size: 12px;
+    }
+    .personal__input {
+        padding: 12px 16px;
+        font-size: 16px;
+        width: calc(100% - 32px);
+    }
+    .personal__input-box {
+        width: 264px;
+        height: 45px;
+    }
+    .personal__input-wide {
+        padding: 12px 16px;
+        font-size: 16px;
+        width: calc(100% - 32px);
+    }
+    .personal__input-box-wide {
+        width: 264px;
+        height: 45px;
+    }
+    .personal__button-submit {
+        width: 264px;
+        height: 45px;
+        margin: 24px 12px 0 12px;
+        font-size: 16px;
+        padding: 0;
+    }
+    .personal__form-box {
+        margin: 0 12px;
+    }
+    .personal__form {
+        height: 667px;
+    }
 }

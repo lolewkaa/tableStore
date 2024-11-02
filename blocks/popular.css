@@ -2,6 +2,10 @@
     max-width: 1180px;
     margin: 0 auto;
     position: relative;
+    width: calc(100% - 260px);
+}
+.popular__mobile {
+    display: none;
 }
 .popular__container {
     width: 100%;
@@ -60,4 +64,24 @@
     top: 50%;
     right: -40px;
 }
+
+@media screen and (max-width: 577px) {
+    .popular__container {
+        display: none;
+    }
+    .popular__mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .popular {
+        width: 288px;
+    }
+    .bestsellers__product {
+        width: 256px;
+    }
+    .popular__title {
+        text-align: center;
+    }
+  } 
 

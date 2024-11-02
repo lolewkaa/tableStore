@@ -34,3 +34,60 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+//slider mobile
+document.addEventListener("DOMContentLoaded", function() {
+    var slides = document.querySelectorAll("#info__slider .slides img");
+    var dotsContainer = document.querySelector("#info__slider .dots");
+    var currentIndex = 0;
+  
+    function createDots() {
+        for (let i = 0; i < slides.length; i++) {
+            var dot = document.createElement("span");
+            dot.addEventListener("click", function() {
+                showSlide(i);
+            });
+            dotsContainer.appendChild(dot);
+        }
+    }
+  
+    function updateDots() {
+        var dots = document.querySelectorAll("#info__slider .dots span");
+        dots.forEach((dot, i) => {
+            dot.classList.toggle("active", i === currentIndex);
+        });
+    }
+  
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = i === index ? "block" : "none";
+        });
+        currentIndex = index;
+        updateDots();
+    }
+  
+   
+  
+    createDots();
+    showSlide(currentIndex); 
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const slidesContainerProduct = document.querySelector(".slides__product");
+    const slidesProduct = document.querySelectorAll(".bestsellers__product");
+    let currentSlide = 0;
+
+    document.querySelector(".popular__next").addEventListener("click", function() {
+        if (currentSlide < slidesProduct.length - 3) { // Ensure there are enough slides left to scroll
+            currentSlide++;
+            slidesContainerProduct.style.transform = `translateX(-${currentSlide * 100 / 3}%)`; // Adjust translation to 33.33% per slide
+        }
+    });
+
+    document.querySelector(".popular__prev").addEventListener("click", function() {
+        if (currentSlide > 0) {
+            currentSlide--;
+            slidesContainerProduct.style.transform = `translateX(-${currentSlide * 100 / 3}%)`; // Adjust translation to 33.33% per slide
+        }
+    });
+});

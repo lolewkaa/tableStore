@@ -10,225 +10,248 @@
 </head>
 
 <body class="page">
-    <div>
-        <header class="header">
-            <div class="header__links-container">
-                <a class="header__link" href="#footer">Контакты</a>
-                <a class="header__link" href="#footer">Условия доставки</a>
+    <header class="header">
+        <button class="header__burger-button">
+            <img src="images/burgerButton.svg" />
+        </button>
+        <div class="header__links-container">
+            <a class="header__link" href="#footer">Контакты</a>
+            <a class="header__link" href="#footer">Условия доставки</a>
+        </div>
+        <img class="header__logo" alt="Логотип 'Столы тут'" src="images/logo.png" />
+        <div class="header__feedback-container">
+            <p class="header__tel-text">+7 (983) 305-80-10</p>
+            <div class="header__icons-container">
+                <a class="header__icon-link" href="#">
+                    <img alt="Иконка WhatsApp" src="images/iconWhats.svg" />
+                </a>
+                <a class="header__icon-link" href="#">
+                    <img alt="Иконка Telegram" src="images/iconTG.svg" />
+                </a>
+                <a class="header__icon-link" href="#">
+                    <img alt="Иконка VK" src="images/iconVK.svg" />
+                </a>
             </div>
-            <img class="header__logo" alt="Логотип 'Столы тут'" src="images/logo.png" />
-            <div class="header__feedback-container">
-                <p class="header__tel-text">+7 (983) 305-80-10</p>
-                <div class="header__icons-container">
-                    <a class="header__icon-link" href="#">
-                        <img alt="Иконка WhatsApp" src="images/iconWhats.svg" />
-                    </a>
-                    <a class="header__icon-link" href="#">
-                        <img alt="Иконка Telegram" src="images/iconTG.svg" />
-                    </a>
-                    <a class="header__icon-link" href="#">
-                        <img alt="Иконка VK" src="images/iconVK.svg" />
-                    </a>
-                </div>
-            </div>
-        </header>
+        </div>
+        <a href="cart.html" class="header__cart">
+            <img src="images/iconDel.svg" alt="Иконка корзина" />
+        </a>
+    </header>
 
-        <section class="search">
-            <div class="search__links-container">
-                <a class="search__link" href="#">Столы</a>
-                <a class="search__link" href="#">Стулья</a>
-                <a class="search__link" href="#">Распродажа</a>
-            </div>
-            <div class="search__buttons-container">
-                <button class="search__button">
-                    <img src="images/iconLike.svg" alt="Иконка лайк" />
-                </button>
-                <button class="search__button">
-                    <img src="images/iconDel.svg" alt="Иконка удалить" />
-                </button>
-                <button class="search__button">
-                    <img src="images/iconSearch.svg" alt="Иконка поиск" />
-                </button>
-            </div>
-        </section>
-
-        <section class="personal">
-            <h2 class="order__title">Оформление заказа</h2>
-            <div class="order__buttons-box">
+    <section class="search">
+        <div class="search__links-container">
+            <a class="search__link" href="#">Столы</a>
+            <a class="search__link" href="#">Стулья</a>
+            <a class="search__link" href="#">Распродажа</a>
+        </div>
+        <div class="search__buttons-container">
+            <button class="search__button">
+                <img src="images/iconLike.svg" alt="Иконка лайк" />
+            </button>
+            <button class="search__button">
                 <a href="cart.html">
-                    <button class="order__button">
-                        Корзина
-                    </button>
+                    <img src="images/iconDel.svg" alt="Иконка корзина" />
                 </a>
-                <a href="personal.html">
-                    <button class="order__button-active">
-                        Личные данные
-                    </button>
-                </a>
-                <a href="payment.html">
-                    <button class="order__button">
-                        Доставка и оплата
-                    </button>
-                </a>
+            </button>
+            <button class="search__button">
+                <img src="images/iconSearch.svg" alt="Иконка поиск" />
+            </button>
+        </div>
+    </section>
+
+    <section class="personal">
+        <h2 class="order__title">Оформление заказа</h2>
+        <select class="order__select_mobile">
+            <option class="order__option_mobile">Личные данные</option>
+            <option class="order__option_mobile">Доставка и оплата</option>
+            <option class="order__option_mobile">Корзина</option>
+        </select>
+        <div class="order__buttons-box">
+            <a href="cart.html">
+                <button class="order__button-active">
+                    Корзина
+                </button>
+            </a>
+            <a href="personal.html">
+                <button class="order__button">
+                    Личные данные
+                </button>
+            </a>
+            <a href="payment.html">
+                <button class="order__button">
+                    Доставка и оплата
+                </button>
+            </a>
+        </div>
+
+        <form class="personal__form" id="personal__form">
+            <p class="personal__form-title">Основная информация</p>
+            <p class="personal__form-text">Заполните ваши данные, чтобы оформить заказ. Или выполните
+                <mark class="personal__form-mark">вход в личный кабинет</mark>
+            </p>
+            <div class="personal__form-box">
+                <div class="personal__input-box">
+                    <label class="personal__label" for="surname">Фамилия</label>
+                    <input class="personal__input" placeholder="Ваша фамилия" type="text" id="surname" name="surname"
+                        required>
+                </div>
+                <div class="personal__input-box">
+                    <label class="personal__label" for="name">Имя</label>
+                    <input class="personal__input" placeholder="Ваше имя" type="text" id="name" name="name" required>
+                </div>
+                <div class="personal__input-box">
+                    <label class="personal__label" for="patronymic">Отчество</label>
+                    <input class="personal__input" placeholder="Ваше отчество" type="text" id="patronymic"
+                        name="patronymic" required>
+                </div>
+                <div class="personal__input-box-wide">
+                    <label class="personal__label" for="tel">Номер телефона</label>
+                    <input class="personal__input-wide" placeholder="Введите ваш телефон" type="text" id="tel"
+                        name="tel" required>
+                </div>
+                <div class="personal__input-box-wide">
+                    <label class="personal__label" for="email">E-mail</label>
+                    <input class="personal__input-wide" placeholder="Введите ваш e-mail" type="text" id="email"
+                        name="email" required>
+                </div>
+                <div class="personal__input-box-wide">
+                    <label class="personal__label" for="promo">Промокод</label>
+                    <input class="personal__input-wide" placeholder="Введите промокод" type="text" id="promo"
+                        name="promo" required>
+                </div>
+            </div>
+            <button class="personal__button-submit" type="submit" id="submitButton">Продолжить оформление</button>
+
+        </form>
+
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer__container">
+            <h2 class="footer__title">Контакты</h2>
+            <div class="footer__buttons-box">
+                <button class="footer__button_active">Новосибирск</button>
+                <button class="footer__button">Красноярск</button>
+                <button class="footer__button">Кемерово</button>
+                <button class="footer__button">Новокузнецк</button>
+                <button class="footer__button">Барнаул</button>
+                <button class="footer__button">Томск</button>
+                <button class="footer__button_mobile">
+                    Новосибирск
+                    <img src="images/footerArrow.svg" />
+                </button>
+            </div>
+            <div class="footer__location">
+                <div class="footer__location-box">
+                    <h3 class="footer__city">Новосибирск</h3>
+                    <div class="footer__box-addresses">
+                        <p class="footer__address">1. Большая медведица, Светлановская, 50, 2 этаж</p>
+                        <p class="footer__tel">
+                            <img src="images/tel.svg" />
+                            +7 (983) 305-80-10
+                        </p>
+                        <p class="footer__address">2. Большая медведица, Светлановская, 50, Дисконт</p>
+                        <p class="footer__tel">
+                            <img src="images/tel.svg" />
+                            +7 (913) 737-33-41
+                        </p>
+                        <p class="footer__address">3. Красный мамонт, Светлановская, 50, к.1</p>
+                        <p class="footer__tel">
+                            <img src="images/tel.svg" />
+                            +7 (913) 933-92-03
+                        </p>
+                        <p class="footer__address">4. Мебель центр, Островского, 111</p>
+                        <p class="footer__tel">
+                            <img src="images/tel.svg" />
+                            +7 (913) 890-89-44
+                        </p>
+                        <p class="footer__address">5. Калейдоскоп комфорта и уюта, Маркса, 6/1</p>
+                        <p class="footer__tel">
+                            <img src="images/tel.svg" />
+                            +7 (913) 777-60-18
+                        </p>
+                        <p class="footer__address">5. Торговый город "Левобережный" ул. Сибиряков-Гвардейцев, 49/1,
+                            корп. 3, 2
+                            этаж
+                        </p>
+                        <p class="footer__tel">
+                            <img src="images/tel.svg" />
+                            +7 (913) 747-57-11
+                        </p>
+                    </div>
+
+                </div>
+                <img class="footer__map-img" src="images/map.png" alt="map" />
             </div>
 
-            <form class="personal__form" id="personal__form">
-                <p class="personal__form-title">Основная информация</p>
-                <p class="personal__form-text">Заполните ваши данные, чтобы оформить заказ. Или выполните
-                    <mark class="personal__form-mark">вход в личный кабинет</mark>
-                </p>
-                <div class="personal__form-box">
-                    <div class="personal__input-box">
-                        <label class="personal__label" for="surname">Фамилия</label>
-                        <input class="personal__input" placeholder="Ваша фамилия" type="text" id="surname"
-                            name="surname" required>
-                    </div>
-                    <div class="personal__input-box">
-                        <label class="personal__label" for="name">Имя</label>
-                        <input class="personal__input" placeholder="Ваше имя" type="text" id="name" name="name"
-                            required>
-                    </div>
-                    <div class="personal__input-box">
-                        <label class="personal__label" for="patronymic">Отчество</label>
-                        <input class="personal__input" placeholder="Ваше отчество" type="text" id="patronymic"
-                            name="patronymic" required>
-                    </div>
-                    <div class="personal__input-box">
-                        <label class="personal__label" for="tel">Номер телефона</label>
-                        <input class="personal__input  personal__input-wide" placeholder="Введите ваш телефон"
-                            type="text" id="tel" name="tel" required>
-                    </div>
-                    <div class="personal__input-box">
-                        <label class="personal__label" for="email">E-mail</label>
-                        <input class="personal__input personal__input-wide" placeholder="Введите ваш e-mail" type="text"
-                            id="email" name="email" required>
-                    </div>
-                    <div class="personal__input-box">
-                        <label class="personal__label" for="promo">Промокод</label>
-                        <input class="personal__input personal__input-wide" placeholder="Введите промокод" type="text"
-                            id="promo" name="promo" required>
-                    </div>
-                </div>
-                <button class="personal__button-submit" type="submit" id="submitButton">Продолжить оформление</button>
+            <button class="footer__button-call_mobile">
+                <img src="images/iconTel.svg" />
+                Позвонить нам
+            </button>
 
-            </form>
-
-        </section>
-
-        <footer class="footer" id="footer">
-            <div class="footer__container">
-                <h2 class="footer__title">Контакты</h2>
-                <div class="footer__buttons-box">
-                    <button class="footer__button_active">Новосибирск</button>
-                    <button class="footer__button">Красноярск</button>
-                    <button class="footer__button">Кемерово</button>
-                    <button class="footer__button">Новокузнецк</button>
-                    <button class="footer__button">Барнаул</button>
-                    <button class="footer__button">Томск</button>
-                </div>
-                <div class="footer__location">
-                    <div class="footer__location-box">
-                        <h3 class="footer__city">Новосибирск</h3>
-                        <div class="footer__box-addresses">
-                            <p class="footer__address">1. Большая медведица, Светлановская, 50, 2 этаж</p>
-                            <p class="footer__tel">
-                                <img src="images/tel.svg" />
-                                +7 (983) 305-80-10
-                            </p>
-                            <p class="footer__address">2. Большая медведица, Светлановская, 50, Дисконт</p>
-                            <p class="footer__tel">
-                                <img src="images/tel.svg" />
-                                +7 (913) 737-33-41
-                            </p>
-                            <p class="footer__address">3. Красный мамонт, Светлановская, 50, к.1</p>
-                            <p class="footer__tel">
-                                <img src="images/tel.svg" />
-                                +7 (913) 933-92-03
-                            </p>
-                            <p class="footer__address">4. Мебель центр, Островского, 111</p>
-                            <p class="footer__tel">
-                                <img src="images/tel.svg" />
-                                +7 (913) 890-89-44
-                            </p>
-                            <p class="footer__address">5. Калейдоскоп комфорта и уюта, Маркса, 6/1</p>
-                            <p class="footer__tel">
-                                <img src="images/tel.svg" />
-                                +7 (913) 777-60-18
-                            </p>
-                            <p class="footer__address">5. Торговый город "Левобережный" ул. Сибиряков-Гвардейцев, 49/1,
-                                корп. 3, 2
-                                этаж
-                            </p>
-                            <p class="footer__tel">
-                                <img src="images/tel.svg" />
-                                +7 (913) 747-57-11
-                            </p>
-                        </div>
-
-                    </div>
-                    <img class="footer__map-img" src="images/map.png" alt="map" />
-                </div>
-
-                <div class="footer__feedback">
-                    <div class="footer__feedback-box">
-                        <button class="footer__button-call">
-                            <img src="images/iconTel.svg" />
-                            Позвонить нам
-                        </button>
-                        <button class="footer__button-social">
-                            <img src="images/whatsRed.svg" />
-                        </button>
-                        <button class="footer__button-social">
-                            <img src="images/tgRed.svg" />
-                        </button>
-                        <button class="footer__button-social">
-                            <img src="images/VKRed.svg" />
-                        </button>
-                    </div>
-                    <button class="footer__button-up">
-                        <img src="images/buttonUp.svg">
+            <div class="footer__feedback">
+                <div class="footer__feedback-box">
+                    <button class="footer__button-call">
+                        <img src="images/iconTel.svg" />
+                        Позвонить нам
+                    </button>
+                    <button class="footer__button-social">
+                        <img src="images/whatsRed.svg" />
+                    </button>
+                    <button class="footer__button-social">
+                        <img src="images/tgRed.svg" />
+                    </button>
+                    <button class="footer__button-social">
+                        <img src="images/VKRed.svg" />
                     </button>
                 </div>
-
-                <div class="footer__box">
-                    <div class="footer__links-container">
-                        <a href="#" class="footer__link">Столы</a>
-                        <a href="#" class="footer__link">Стулья</a>
-                        <a href="#" class="footer__link">Распродажа</a>
-                        <a href="#" class="footer__link">Хиты продаж</a>
-                        <a href="#" class="footer__link">Условия доставки</a>
-                    </div>
-                    <div class="footer__buttons-container">
-                        <button class="footer__btn">
-                            <img src="images/profileWhite.svg">
-                        </button>
-                        <button class="footer__btn">
-                            <img src="images/basketWhite.svg">
-                        </button>
-                        <button class="footer__btn">
-                            <img src="images/searchWhite.svg">
-                        </button>
-                    </div>
-                </div>
-
-                <div class="footer__logo-box">
-                    <div class="footer__text-box">
-                        <div class="footer__links">
-                            <a href="#" class="footer__ref">Контакты</a>
-                            <a href="#" class="footer__ref">Условия доставки</a>
-                            <a href="#" class="footer__ref">Условия доставки</a>
-                        </div>
-                        <div class="footer__container-text">
-                            <p class="footer__text">ООО СТОЛЫ ТУТ (С) 2024</p>
-                            <p class="footer__text">Политика конфиденциальности</p>
-                        </div>
-                    </div>
-                    <img src="images/footerLogo.png" />
-                </div>
-
+                <button class="footer__button-up">
+                    <img src="images/buttonUp.svg">
+                </button>
             </div>
-        </footer>
-        <script src="personal.js"></script>
+
+            <div class="footer__box">
+                <div class="footer__links-container">
+                    <a href="#" class="footer__link">Столы</a>
+                    <a href="#" class="footer__link">Стулья</a>
+                    <a href="#" class="footer__link">Распродажа</a>
+                    <a href="#" class="footer__link">Хиты продаж</a>
+                    <a href="#" class="footer__link">Условия доставки</a>
+                </div>
+                <div class="footer__buttons-container">
+                    <button class="footer__btn">
+                        <img src="images/profileWhite.svg">
+                    </button>
+                    <button class="footer__btn">
+                        <img src="images/basketWhite.svg">
+                    </button>
+                    <button class="footer__btn">
+                        <img src="images/searchWhite.svg">
+                    </button>
+                </div>
+            </div>
+
+            <div class="footer__logo-box">
+                <div class="footer__text-box">
+                    <div class="footer__links">
+                        <a href="#" class="footer__ref">Контакты</a>
+                        <a href="#" class="footer__ref">Условия доставки</a>
+                        <a href="#" class="footer__ref">Условия доставки</a>
+                    </div>
+                    <div class="footer__container-text">
+                        <p class="footer__text">ООО СТОЛЫ ТУТ (С) 2024</p>
+                        <p class="footer__text">Политика конфиденциальности</p>
+                    </div>
+                </div>
+                <img class="footer__logo" src="images/footerLogo.png" />
+            </div>
+
+
+        </div>
+
+
+    </footer>
+    <script src="personal.js"></script>
 </body>
 
 </html>

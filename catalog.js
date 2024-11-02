@@ -51,3 +51,21 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+let popupBg = document.querySelector('.popupFilter__overlay');
+let popup = document.querySelector('.popupFilter__container');
+let openPopupButtons = document.querySelectorAll('.catalog__btn');
+let closePopupButton = document.querySelector('.popupFilter__button-close');
+
+openPopupButtons.forEach((button) => { 
+    button.addEventListener('click', (e) => { 
+        e.preventDefault(); 
+        popupBg.classList.add('active'); 
+        popup.classList.add('active'); 
+    })
+});
+
+closePopupButton.addEventListener('click',() => { 
+    popupBg.classList.remove('active'); 
+    popup.classList.remove('active'); 
+})

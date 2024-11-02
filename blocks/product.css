@@ -1,8 +1,14 @@
 .product {
-    max-width: 1180px;
+    width: calc(100% - 260px);
     display: flex;
     justify-content: space-between;
     margin: 60px auto 80px auto;
+}
+.slides__product {
+    gap: 10px;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
 }
 .product__button-basket {
     width: 56px;
@@ -40,7 +46,7 @@
     position: relative;
 }
 .product__info-box {
-    width: 660px;
+    width: calc(100% - 520px);
     min-height: 830px;
 }
 .product__link {
@@ -112,12 +118,16 @@
 }
 .slides {
     overflow: hidden;
-    
+    max-width: 388px;
+    position: relative;
 }
 #product__slider {
-    width: 388px;
+    max-width: 388px;
     overflow: hidden;
     margin: 0 auto;
+}
+#info__slider {
+    display: none;
 }
 
 .product__prev {
@@ -133,8 +143,8 @@
     transform: scaleX(-1);
     cursor: pointer;
     position: absolute;
-    bottom: 18px;
-    left: 0;
+    bottom: 15px;
+    left: -7px;
 }
 .product__next {
     background-image: url('../images/arrowButton.svg');
@@ -148,6 +158,166 @@
     background-position: center;
     cursor: pointer;
     position: absolute;
-    bottom: 18px;
+    bottom: 15px;
     right: 0;
+}
+#product__slider_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1195px) {
+    .product__buttons-box {
+        width: 300px;
+        gap: 10px;
+    }
+    .product__button-basket {
+        padding: 0;
+    }
+    .product__button-delivery {
+        padding: 0;
+    }
+    .product__container {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .product {
+        width: calc(100% - 84px);
+    }
+}
+
+@media screen and (max-width: 906px) {
+    .product {
+       flex-direction: column;
+       align-items: center;
+       gap: 40px;
+    }
+    .product__info-box {
+        width: 100%;
+    }
+    .product__container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 497px) {
+    .product__image {
+        display: none;
+    }
+    .product__images {
+        display: none;
+    }
+    
+    #product__slider {
+        display: none;
+    }
+
+    .info__buttons-box {
+        margin-top: 12px;
+    }
+    #info__slider {
+        position: relative;
+        width: 380px;
+
+    }
+    #info__slider .slides img {
+      display: none;
+      transition: opacity 0.5s;
+    }
+    
+    #info__slider .slides img.active {
+      display: block;
+    }
+    
+    #info__slider .dots {
+      text-align: center;
+    }
+    
+    #info__slider .dots span {
+      cursor: pointer;
+      height: 8px;
+      width: 8px;
+      margin: 0 8px;
+      color: rgba(255, 255, 255, 0.6);
+      border: 1px solid rgb(33, 33, 33);
+      border-radius: 50%;
+      display: inline-block;
+    }
+    
+    #info__slider .dots span.active {
+      background-color: rgb(33, 33, 33);
+    }
+
+    .slides {
+        width: 100%;
+    }
+    .info__slide {
+        width: 100%;
+    }
+
+    .info__prev {
+        display: none;
+    }
+    .info__next {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 476px) {
+    .info__slide {
+        width: 280px;
+    }
+    #info__slider {
+        width: 280px;
+        margin: 0 auto 12px auto;
+    }
+    .product__link {
+        font-size: 12px;
+    }
+    .product__name {
+        font-size: 18px;
+    }
+    .bestsellers__product-price {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    .product__container {
+        flex-direction: column;
+    }
+    .product__button-delivery {
+        width: 231px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .product__button-basket {
+        width: 45px;
+        height: 45px;
+    }
+    .product__basket-img {
+        width: 45px;
+        height: 45px; 
+    }
+    .bestsellers__text-box {
+        align-items: center;
+    }
+    .bestsellers__product-color {
+        font-size: 12px;
+    }
+    .product__title {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+    .product__subtitle {
+        font-size: 16px;
+    }
+    .product {
+        width: 280px;
+    }
+    .product__buttons-box {
+        width: 100%;
+    }
+
 }

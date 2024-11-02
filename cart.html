@@ -10,28 +10,33 @@
 </head>
 
 <body class="page">
-    <div>
-        <header class="header">
-            <div class="header__links-container">
-                <a class="header__link" href="#footer">Контакты</a>
-                <a class="header__link" href="#footer">Условия доставки</a>
-            </div>
-            <img class="header__logo" alt="Логотип 'Столы тут'" src="images/logo.png" />
-            <div class="header__feedback-container">
-                <p class="header__tel-text">+7 (983) 305-80-10</p>
-                <div class="header__icons-container">
-                    <a class="header__icon-link" href="#">
-                        <img alt="Иконка WhatsApp" src="images/iconWhats.svg" />
-                    </a>
-                    <a class="header__icon-link" href="#">
-                        <img alt="Иконка Telegram" src="images/iconTG.svg" />
-                    </a>
-                    <a class="header__icon-link" href="#">
-                        <img alt="Иконка VK" src="images/iconVK.svg" />
-                    </a>
-                </div>
-            </div>
-        </header>
+    <header class="header">
+        <button class="header__burger-button">
+          <img src="images/burgerButton.svg" />
+        </button>
+        <div class="header__links-container">
+          <a class="header__link" href="#footer">Контакты</a>
+          <a class="header__link" href="#footer">Условия доставки</a>
+        </div>
+        <img class="header__logo" alt="Логотип 'Столы тут'" src="images/logo.png" />
+        <div class="header__feedback-container">
+          <p class="header__tel-text">+7 (983) 305-80-10</p>
+          <div class="header__icons-container">
+            <a class="header__icon-link" href="#">
+              <img alt="Иконка WhatsApp" src="images/iconWhats.svg" />
+            </a>
+            <a class="header__icon-link" href="#">
+              <img alt="Иконка Telegram" src="images/iconTG.svg" />
+            </a>
+            <a class="header__icon-link" href="#">
+              <img alt="Иконка VK" src="images/iconVK.svg" />
+            </a>
+          </div>
+        </div>
+        <a href="cart.html" class="header__cart">
+          <img src="images/iconDel.svg" alt="Иконка корзина" />
+        </a>
+      </header>
 
         <section class="search">
             <div class="search__links-container">
@@ -54,6 +59,11 @@
 
         <section class="order">
             <h2 class="order__title">Оформление заказа</h2>
+            <select class="order__select_mobile">
+                <option class="order__option_mobile">Личные данные</option>
+                <option class="order__option_mobile">Доставка и оплата</option>
+                <option class="order__option_mobile">Корзина</option>
+            </select>
             <div class="order__buttons-box">
                 <a href="cart.html">
                     <button class="order__button-active">
@@ -76,7 +86,7 @@
                 <div class="order__cards-box">
 
                     <div class="order__card">
-                        <img src="images/orderImg.png" />
+                        <img src="images/orderImg.png" class="order__img"/>
                         <div class="order__card-info">
                             <p class="order__name">Стул RAFAEL</p>
                             <p class="order__price">Цена:</p>
@@ -100,7 +110,7 @@
                     </div>
 
                     <div class="order__card">
-                        <img src="images/orderImg.png" />
+                        <img src="images/orderImg.png" class="order__img"/>
                         <div class="order__card-info">
                             <p class="order__name">Стул RAFAEL</p>
                             <p class="order__price">Цена:</p>
@@ -124,7 +134,7 @@
                     </div>
 
                     <div class="order__card">
-                        <img src="images/orderImg.png" />
+                        <img src="images/orderImg.png" class="order__img"/>
                         <div class="order__card-info">
                             <p class="order__name">Стул RAFAEL</p>
                             <p class="order__price">Цена:</p>
@@ -165,10 +175,29 @@
 
         <section class="popular">
             <h2 class="popular__title">Популярные товары:</h2>
+            
             <div class="popular__container">
 
                 <div id="popular__slider">
-                    <div class="popular__slides">
+                    <div class="slides">
+                        <div class="bestsellers__product" >
+                            <a class="catalog__link" href="product.html">
+                                <button class="bestsellers__product-like">
+                                    <img src="images/productLike.svg" />
+                                </button>
+                                <img class="bestsellers__product-img" src="images/product.png" />
+                                <p class="bestsellers__product-name">Стул ROMEO-замша</p>
+                            </a>
+                            <p class="bestsellers__color">
+                                <img src="images/colorImg.svg" />
+                                Серый/Белый
+                            </p>
+                            <div class="bestsellers__box">
+                                <p class="bestsellers__product-rub">11 150 ₽</p>
+                                <button class="bestsellers__button-buy">Купить
+                                </button>
+                            </div>
+                        </div>
                         <div class="bestsellers__product" >
                             <a class="catalog__link" href="product.html">
                                 <button class="bestsellers__product-like">
@@ -249,6 +278,64 @@
                   </div>
 
             </div>
+
+
+            <div class="popular__mobile">
+                <div class="bestsellers__product" >
+                    <a class="catalog__link" href="product.html">
+                        <button class="bestsellers__product-like">
+                            <img src="images/productLike.svg" />
+                        </button>
+                        <img class="bestsellers__product-img" src="images/product.png" />
+                        <p class="bestsellers__product-name">Стул ROMEO-замша</p>
+                    </a>
+                    <p class="bestsellers__color">
+                        <img src="images/colorImg.svg" />
+                        Серый/Белый
+                    </p>
+                    <div class="bestsellers__box">
+                        <p class="bestsellers__product-rub">11 150 ₽</p>
+                        <button class="bestsellers__button-buy">Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="bestsellers__product" >
+                    <a class="catalog__link" href="product.html">
+                        <button class="bestsellers__product-like">
+                            <img src="images/productLike.svg" />
+                        </button>
+                        <img class="bestsellers__product-img" src="images/product.png" />
+                        <p class="bestsellers__product-name">Стул ROMEO-замша</p>
+                    </a>
+                    <p class="bestsellers__color">
+                        <img src="images/colorImg.svg" />
+                        Серый/Белый
+                    </p>
+                    <div class="bestsellers__box">
+                        <p class="bestsellers__product-rub">11 150 ₽</p>
+                        <button class="bestsellers__button-buy">Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="bestsellers__product" >
+                    <a class="catalog__link" href="product.html">
+                        <button class="bestsellers__product-like">
+                            <img src="images/productLike.svg" />
+                        </button>
+                        <img class="bestsellers__product-img" src="images/product.png" />
+                        <p class="bestsellers__product-name">Стул ROMEO-замша</p>
+                    </a>
+                    <p class="bestsellers__color">
+                        <img src="images/colorImg.svg" />
+                        Серый/Белый
+                    </p>
+                    <div class="bestsellers__box">
+                        <p class="bestsellers__product-rub">11 150 ₽</p>
+                        <button class="bestsellers__button-buy">Купить
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <footer class="footer" id="footer">
@@ -261,6 +348,10 @@
                 <button class="footer__button">Новокузнецк</button>
                 <button class="footer__button">Барнаул</button>
                 <button class="footer__button">Томск</button>
+                <button class="footer__button_mobile">
+                  Новосибирск
+                  <img src="images/footerArrow.svg" />
+                </button>
               </div>
               <div class="footer__location">
                 <div class="footer__location-box">
@@ -304,6 +395,11 @@
                 <img class="footer__map-img" src="images/map.png" alt="map" />
               </div>
       
+              <button class="footer__button-call_mobile">
+                <img src="images/iconTel.svg" />
+                Позвонить нам
+              </button>
+              
               <div class="footer__feedback">
                 <div class="footer__feedback-box">
                   <button class="footer__button-call">
@@ -358,10 +454,13 @@
                     <p class="footer__text">Политика конфиденциальности</p>
                   </div>
                 </div>
-                <img src="images/footerLogo.png" />
+                <img class="footer__logo" src="images/footerLogo.png" />
               </div>
       
+      
             </div>
+      
+      
           </footer>
         <script src="cart.js"></script>
 </body>
