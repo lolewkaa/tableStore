@@ -1,0 +1,11 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
+
+@import url(../blocks/page.css);
+@import url(../blocks/search.css);
+@import url(../blocks/header.css);
+@import url(../blocks/delivery.css);
+
+@import url(../blocks/order.css);
+@import url(../blocks/personal.css);
+@import url(../blocks/historyOrder.css);

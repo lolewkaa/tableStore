@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Столы тут</title>
+
+    <link rel="stylesheet" href="pages/history.css" />
+  </head>
+
+  <body class="page">
+    <header class="header">
+      <button class="header__burger-button">
+        <img src="images/burgerButton.svg" />
+      </button>
+      <div class="header__links-container">
+        <a class="header__link" href="#footer">Контакты</a>
+        <a class="header__link" href="#footer">Условия доставки</a>
+      </div>
+      <img
+        class="header__logo"
+        alt="Логотип 'Столы тут'"
+        src="images/logo.png"
+      />
+      <div class="header__feedback-container">
+        <p class="header__tel-text">+7 (983) 305-80-10</p>
+        <div class="header__icons-container">
+          <a class="header__icon-link" href="#">
+            <img alt="Иконка WhatsApp" src="images/iconWhats.svg" />
+          </a>
+          <a class="header__icon-link" href="#">
+            <img alt="Иконка Telegram" src="images/iconTG.svg" />
+          </a>
+          <a class="header__icon-link" href="#">
+            <img alt="Иконка VK" src="images/iconVK.svg" />
+          </a>
+        </div>
+      </div>
+      <a href="cart.html" class="header__cart">
+        <img src="images/iconDel.svg" alt="Иконка корзина" />
+      </a>
+    </header>
+
+    <section class="search">
+      <div class="search__links-container">
+        <a class="search__link" href="#">Столы</a>
+        <a class="search__link" href="#">Стулья</a>
+        <a class="search__link" href="#">Распродажа</a>
+      </div>
+      <div class="search__buttons-container">
+        <button class="search__button">
+          <img src="images/iconLike.svg" alt="Иконка лайк" />
+        </button>
+        <button class="search__button">
+          <a href="cart.html">
+            <img src="images/iconDel.svg" alt="Иконка корзина" />
+          </a>
+        </button>
+        <button class="search__button">
+          <img src="images/iconSearch.svg" alt="Иконка поиск" />
+        </button>
+      </div>
+    </section>
+
+    <section class="personal">
+      <h2 class="order__title">Личный кабинет</h2>
+      <select class="order__select_mobile">
+        <option class="order__option_mobile">Мои данные</option>
+        <option class="order__option_mobile">История заказов</option>
+        <option class="order__option_mobile">Избранное</option>
+      </select>
+      <div class="order__buttons-box">
+        <a href="account.html">
+          <button class="order__button">Мои данные</button>
+        </a>
+        <a href="history.html">
+          <button class="order__button-active">История заказов</button>
+        </a>
+        <a href="favorites.html">
+          <button class="order__button">Избранное</button>
+        </a>
+      </div>
+    </section>
+
+    <section class="order__list">
+      <div class="order">
+        <div class="his--order__box">
+          <div class="order__date--box">
+            <p class="order__title">Заказ №1 от 01.01.2024</p>
+            <button class="order__btn"></button>
+          </div>
+          <div class="order__status--box">
+            <img class="order__status--img" src="./images/clock.svg" />
+            <p class="order__status--processing">В обработке</p>
+          </div>
+          <p class="his--order__price">700 730 ₽</p>
+        </div>
+        <div class="his--order__box">
+          <div class="order__products">
+            <img class="order__product--img" src="./images/product.png" />
+            <img class="order__product--img" src="./images/product.png" />
+            <img class="order__product--img" src="./images/product.png" />
+            <p class="order__products--overflow__desc">+3</p>
+          </div>
+          <div class="order__data">
+            <mark class="order__marked--text">Способ доставки:</mark>
+            <p class="order__data--text">СДЭК</p>
+          </div>
+          <div class="order__data">
+            <mark class="order__marked--text">Адрес ПВЗ:</mark>
+            <p class="order__data--text">ул. Пушкина, д. Колотушкина</p>
+          </div>
+          <div class="order__data">
+            <mark class="order__marked--text">Трек-номер:</mark>
+            <p class="order__data--text">В обработке</p>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="order">
+        <div class="his--order__box">
+          <div class="order__date--box">
+            <p class="order__title">Заказ №1 от 01.01.2024</p>
+            <button class="order__btn"></button>
+          </div>
+          <div class="order__status--box">
+            <img class="order__status--img" src="./images/car.svg" />
+            <p class="order__status--sent">Отправлен</p>
+          </div>
+          <p class="his--order__price">700 730 ₽</p>
+        </div>
+        <div class="his--order__box">
+          <div class="order__products">
+            <img class="order__product--img" src="./images/product.png" />
+            <img class="order__product--img" src="./images/product.png" />
+            <img class="order__product--img" src="./images/product.png" />
+            <p class="order__products--overflow__desc">+3</p>
+          </div>
+          <div class="order__data">
+            <mark class="order__marked--text">Способ доставки:</mark>
+            <p class="order__data--text">СДЭК</p>
+          </div>
+          <div class="order__data">
+            <mark class="order__marked--text">Адрес ПВЗ:</mark>
+            <p class="order__data--text">ул. Пушкина, д. Колотушкина</p>
+          </div>
+          <div class="order__data">
+            <mark class="order__marked--text">Трек-номер:</mark>
+            <p class="order__data--text">В обработке</p>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="order">
+        <div class="his--order__box">
+          <div class="order__date--box">
+            <p class="order__title">Заказ №1 от 01.01.2024</p>
+            <button class="order__btn"></button>
+          </div>
+          <div class="order__status--box">
+            <img class="order__status--img" src="./images/box.svg" />
+            <p class="order__status--recieved">Получен</p>
+          </div>
+          <p class="his--order__price">700 730 ₽</p>
+        </div>
+        <div class="his--order__box">
+          <div class="order__products">
+            <img class="order__product--img" src="./images/product.png" />
+            <img class="order__product--img" src="./images/product.png" />
+            <img class="order__product--img" src="./images/product.png" />
+            <p class="order__products--overflow__desc">+3</p>
+          </div>
+          <div class="order__data">
+            <mark class="order__marked--text">Способ доставки:</mark>
+            <p class="order__data--text">СДЭК</p>
+          </div>
+          <div class="order__data">
+            <mark class="order__marked--text">Адрес ПВЗ:</mark>
+            <p class="order__data--text">ул. Пушкина, д. Колотушкина</p>
+          </div>
+          <div class="order__data">
+            <mark class="order__marked--text">Трек-номер:</mark>
+            <p class="order__data--text">В обработке</p>
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="order">
+        <div class="his--order__box">
+          <div class="order__date--box">
+            <p class="order__title">Заказ №1 от 01.01.2024</p>
+            <button class="order__btn"></button>
+          </div>
+          <div class="order__status--box">
+            <img class="order__status--img" src="./images/clock.svg" />
+            <p class="order__status--processing">В обработке</p>
+          </div>
+          <p class="his--order__price">700 730 ₽</p>
+        </div>
+        <div class="his--order__box">
+          <div class="order__products">
+            <img class="order__product--img" src="./images/product.png" />
+            <img class="order__product--img" src="./images/product.png" />
+            <img class="order__product--img" src="./images/product.png" />
+            <p class="order__products--overflow__desc">+3</p>
+          </div>
+          <div class="order__data">
+            <mark class="order__marked--text">Способ доставки:</mark>
+            <p class="order__data--text">СДЭК</p>
+          </div>
+          <div class="order__data">
+            <mark class="order__marked--text">Адрес ПВЗ:</mark>
+            <p class="order__data--text">ул. Пушкина, д. Колотушкина</p>
+          </div>
+          <div class="order__data">
+            <mark class="order__marked--text">Трек-номер:</mark>
+            <p class="order__data--text">В обработке</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="delivery__container">
+      <p class="delivery__text">Предпочитаемый способ доставки</p>
+      <div class="delivery__btn-box">
+        <button class="delivery__button-active">Самовывоз</button>
+        <button class="delivery__button">Доставка от 500 ₽</button>
+        <button class="delivery__button">СДЭК</button>
+      </div>
+
+      <div class="delivery__box">
+        <div class="delivery__info-box">
+          <p class="delivery__city">Новосибирск</p>
+          <p class="delivery__address">ТЦ Большая медведица</p>
+          <p class="delivery__tel">
+            <img src="images/tel.svg" />
+            +7 (983) 305-80-10
+          </p>
+          <p class="delivery__info-text">Можно забрать заказ:</p>
+          <p class="delivery__date">23 октября (с 10:00)</p>
+          <button class="delivery__button-change">Изменить пункт выдачи</button>
+        </div>
+        <img class="delivery__map-img" src="images/deliveryMap.png" />
+      </div>
+    </div>
+    <script src="personal.js"></script>
+  </body>
+</html>
