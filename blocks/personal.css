@@ -101,6 +101,7 @@
 @media screen and (max-width: 433px) {
     .personal {
         width: 288px;
+        margin-bottom: 18px;
     }
     .personal__form-title {
         font-size: 20px;
@@ -144,8 +145,7 @@
     }
     .personal__form-box {
         margin: 0 12px;
+        height: 440px;
     }
-    .personal__form {
-        height: 667px;
-    }
+    
 }

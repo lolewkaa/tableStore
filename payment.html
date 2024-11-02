@@ -10,8 +10,10 @@
 </head>
 
 <body class="page">
-    <div>
         <header class="header">
+            <button class="header__burger-button">
+                <img src="images/burgerButton.svg" />
+            </button>
             <div class="header__links-container">
                 <a class="header__link" href="#footer">Контакты</a>
                 <a class="header__link" href="#footer">Условия доставки</a>
@@ -31,8 +33,11 @@
                     </a>
                 </div>
             </div>
+            <a href="cart.html" class="header__cart">
+                <img src="images/iconDel.svg" alt="Иконка корзина" />
+            </a>
         </header>
-
+    
         <section class="search">
             <div class="search__links-container">
                 <a class="search__link" href="#">Столы</a>
@@ -44,7 +49,9 @@
                     <img src="images/iconLike.svg" alt="Иконка лайк" />
                 </button>
                 <button class="search__button">
-                    <img src="images/iconDel.svg" alt="Иконка удалить" />
+                    <a href="cart.html">
+                        <img src="images/iconDel.svg" alt="Иконка корзина" />
+                    </a>
                 </button>
                 <button class="search__button">
                     <img src="images/iconSearch.svg" alt="Иконка поиск" />
@@ -54,6 +61,11 @@
 
         <section class="delivery">
             <h2 class="order__title">Оформление заказа</h2>
+            <select class="order__select_mobile">
+                <option class="order__option_mobile">Личные данные</option>
+                <option class="order__option_mobile">Доставка и оплата</option>
+                <option class="order__option_mobile">Корзина</option>
+            </select>
             <div class="order__buttons-box">
                 <a href="cart.html">
                     <button class="order__button">
@@ -71,6 +83,7 @@
                     </button>
                 </a>
             </div>
+
             <div class="delivery__container">
                 <p class="delivery__text">Способ получения</p>
                 <div class="delivery__btn-box">
@@ -85,12 +98,18 @@
                     </button>
                 </div>
 
+                <select class="delivery__select_mobile">
+                    <option class="delivery__option_mobile">Самовывоз</option>
+                    <option class="delivery__option_mobile">Доставка от 500 ₽</option>
+                    <option class="delivery__option_mobile">СДЭК</option>
+                </select>
+
                 <div class="delivery__box">
                     <div class="delivery__info-box">
                         <p class="delivery__city">Новосибирск</p>
                         <p class="delivery__address">ТЦ Большая медведица</p>
                         <p class="delivery__tel">
-                            <img src="images/tel.svg">
+                            <img class="delivery__tel-img" src="images/tel.svg">
                             +7 (983) 305-80-10
                         </p>
                         <p class="delivery__info-text">Можно забрать заказ:</p>
@@ -115,6 +134,11 @@
                     Безналичный рассчёт
                 </button>
             </div>
+            <select class="payment__select_mobile">
+                <option class="payment__option_mobile">Самовывоз</option>
+                <option class="payment__option_mobile">Доставка от 500 ₽</option>
+                <option class="payment__option_mobile">СДЭК</option>
+            </select>
             <div class="payment__box">
                 <img src="images/sbp.png">
                 <img src="images/sberPay.png">
@@ -122,13 +146,13 @@
             </div>
         </section>
 
-        <section class="orderInfo">
+       <section class="orderInfo">
             <p class="delivery__text">Ваш заказ</p>
             <div class="orderInfo__container">
                 <div class="orderInfo__cards-box">
 
                     <div class="orderInfo__card">
-                        <img src="images/orderSmall.png">
+                        <img class="orderInfo__img" src="images/orderSmall.png">
                         <div>
                             <p class="orderInfo__name">Стул RAFAEL</p>
                             <p class="orderInfo__color">
@@ -140,7 +164,7 @@
                         </div>
                     </div>
                     <div class="orderInfo__card">
-                        <img src="images/orderSmall.png">
+                        <img class="orderInfo__img" src="images/orderSmall.png">
                         <div>
                             <p class="orderInfo__name">Стул RAFAEL</p>
                             <p class="orderInfo__color">
@@ -152,7 +176,7 @@
                         </div>
                     </div>
                     <div class="orderInfo__card">
-                        <img src="images/orderSmall.png">
+                        <img class="orderInfo__img" src="images/orderSmall.png">
                         <div>
                             <p class="orderInfo__name">Стул RAFAEL</p>
                             <p class="orderInfo__color">
@@ -163,8 +187,10 @@
                             <p class="orderInfo__rub">7 730 ₽</p>
                         </div>
                     </div>
-
+                    
                 </div>
+
+                <button class="orderInfo__button_mobile">+3</button>
 
                 <div class="orderInfo__box">
                     <div class="orderInfo__text-box">
@@ -209,6 +235,10 @@
                     <button class="footer__button">Новокузнецк</button>
                     <button class="footer__button">Барнаул</button>
                     <button class="footer__button">Томск</button>
+                    <button class="footer__button_mobile">
+                        Новосибирск
+                        <img src="images/footerArrow.svg" />
+                    </button>
                 </div>
                 <div class="footer__location">
                     <div class="footer__location-box">
@@ -248,11 +278,16 @@
                                 +7 (913) 747-57-11
                             </p>
                         </div>
-
+    
                     </div>
                     <img class="footer__map-img" src="images/map.png" alt="map" />
                 </div>
-
+    
+                <button class="footer__button-call_mobile">
+                    <img src="images/iconTel.svg" />
+                    Позвонить нам
+                </button>
+    
                 <div class="footer__feedback">
                     <div class="footer__feedback-box">
                         <button class="footer__button-call">
@@ -273,7 +308,7 @@
                         <img src="images/buttonUp.svg">
                     </button>
                 </div>
-
+    
                 <div class="footer__box">
                     <div class="footer__links-container">
                         <a href="#" class="footer__link">Столы</a>
@@ -294,7 +329,7 @@
                         </button>
                     </div>
                 </div>
-
+    
                 <div class="footer__logo-box">
                     <div class="footer__text-box">
                         <div class="footer__links">
@@ -307,16 +342,19 @@
                             <p class="footer__text">Политика конфиденциальности</p>
                         </div>
                     </div>
-                    <img src="images/footerLogo.png" />
+                    <img class="footer__logo" src="images/footerLogo.png" />
                 </div>
-
+    
+    
             </div>
+    
+    
         </footer>
 
         <!-- <div class="popup__container">
             <div class="popup">
                 <button class="popup__button-close">
-                    <img src="images/closeImg.svg">
+                    <img class="popup__close-img" src="images/closeImg.svg">
                 </button>
                 <p class="popup__title">Спасибо за заказ!</p>
                 <p class="popup__subtitle">
@@ -340,6 +378,14 @@
                     <button class="modal__button">Барнаул</button>
                     <button class="modal__button">Томск</button>
                 </div>
+                <select class="modal__select">
+                    <option class="modal__option">Новосибирск</option>
+                    <option class="modal__option">Красноярск</option>
+                    <option class="modal__option">Кемерово</option>
+                    <option class="modal__option">Новокузнецк</option>
+                    <option class="modal__option">Барнаул</option>
+                    <option class="modal__option">Томск</option>
+                </select>
                 <p class="modal__text">Укажите ближайший адрес или метро</p>
                 <input class="modal__input" placeholder="Адрес">
                 <div class="modal__box">
