@@ -16,7 +16,7 @@
             </button>
             <div class="header__links-container">
                 <a class="header__link" href="#footer">Контакты</a>
-                <a class="header__link" href="#footer">Условия доставки</a>
+                <a class="header__link" href="#delivery">Условия доставки</a>
             </div>
             <img class="header__logo" alt="Логотип 'Столы тут'" src="images/logo.png" />
             <div class="header__feedback-container">
@@ -40,49 +40,53 @@
     
         <section class="search">
             <div class="search__links-container">
-                <a class="search__link" href="#">Столы</a>
-                <a class="search__link" href="#">Стулья</a>
+                <a class="search__link" href="catalog.html">Столы</a>
+                <a class="search__link" href="catalog.html">Стулья</a>
                 <a class="search__link" href="#">Распродажа</a>
+                <a class="search__link" href="bestsellers" >Хиты продаж</a>
             </div>
             <div class="search__buttons-container">
-                <button class="search__button">
-                    <img src="images/iconLike.svg" alt="Иконка лайк" />
-                </button>
-                <button class="search__button">
-                    <a href="cart.html">
-                        <img src="images/iconDel.svg" alt="Иконка корзина" />
-                    </a>
-                </button>
-                <button class="search__button">
-                    <img src="images/iconSearch.svg" alt="Иконка поиск" />
-                </button>
-            </div>
-        </section>
-
-        <section class="delivery">
-            <h2 class="order__title">Оформление заказа</h2>
-            <select class="order__select_mobile">
-                <option class="order__option_mobile">Личные данные</option>
-                <option class="order__option_mobile">Доставка и оплата</option>
-                <option class="order__option_mobile">Корзина</option>
-            </select>
-            <div class="order__buttons-box">
+              <button class="search__button">
+                <img src="images/iconLike.svg" alt="Иконка лайк" />
+              </button>
+              <button class="search__button">
                 <a href="cart.html">
-                    <button class="order__button">
-                        Корзина
-                    </button>
+                  <img src="images/iconDel.svg" alt="Иконка корзина" />
                 </a>
-                <a href="personal.html">
-                    <button class="order__button">
-                        Личные данные
-                    </button>
-                </a>
-                <a href="payment.html">
-                    <button class="order__button-active">
-                        Доставка и оплата
-                    </button>
-                </a>
+              </button>
+              <button class="search__button">
+                <img src="images/iconSearch.svg" alt="Иконка поиск" />
+              </button>
             </div>
+          </section>
+        
+
+        <section class="delivery" id="delivery">
+            <h2 class="order__title">Оформление заказа</h2>
+            <div class="stage__container">
+                <div class="stage_box">
+                  <div class="stage__active">
+                    <div class="stage__round stage__round_done">
+                      <p class="stage__text active stage__text_done">1.Корзина</p>
+                    </div>
+                  </div>
+                  <div class="stage__active">
+                    <div class="stage__round stage__round_second stage__round_active stage__round_done">
+                      <p class="stage__text active stage__text_done">2.Личные данные</p>
+                    </div>
+                  </div>
+                  <div class="stage">
+                    <div class="stage__round stage__round_third stage__round_active">
+                      <p class="stage__text active stage__text_third">3.Доставка и оплата</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="stage__last">
+                  <div class="stage__round_last">
+                    <p class="stage__text stage__text_last">4.Заказ оформлен</p>
+                  </div>
+                </div>
+              </div>
 
             <div class="delivery__container">
                 <p class="delivery__text">Способ получения</p>
@@ -351,7 +355,7 @@
     
         </footer>
 
-        <!-- <div class="popup__container">
+        <div class="popup__container">
             <div class="popup">
                 <button class="popup__button-close">
                     <img class="popup__close-img" src="images/closeImg.svg">
@@ -363,9 +367,9 @@
                 <button class="popup__button">Перейти в личный кабинет</button>
             </div>
             <div class="popup__overlay"></div>
-        </div> -->
+        </div>
 
-        <!-- <div class="modal__container">
+        <div class="modal__container">
             <div class="modal">
                 <button class="modal__button-close">
                     <img src="images/closeImg.svg">
@@ -389,7 +393,9 @@
                 <p class="modal__text">Укажите ближайший адрес или метро</p>
                 <input class="modal__input" placeholder="Адрес">
                 <div class="modal__box">
-                    <img class="modal__img" src="images/modalMap.png">
+                    <div class="modal__img_box">
+                        <img class="modal__img" src="images/modalMap.png">
+                    </div>
                     <div class="modal__addresses-box">
                         <div class="modal__address-box">
                             <p class="modal__address-name">1. Большая медведица</p>
@@ -431,7 +437,7 @@
                 </div>
             </div>
             <div class="modal__overlay"></div>
-        </div> -->
+        </div>
 
 
         <script src="payment.js"></script>
