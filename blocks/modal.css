@@ -110,8 +110,13 @@
 }
 
 .modal__img {
+    width: 100%;
+    height: 100%;
+}
+
+.modal__img_box {
+    max-height: 460px;
     width: calc(100% - 336px - 16px);
-    
 }
 
 .modal__address-name {
@@ -160,6 +165,7 @@
 .modal__select {
     display: none;
 }
+
 @media screen and (max-width: 1312px) {
     .modal__buttons-box {
         display: none;
@@ -189,11 +195,17 @@
     .modal {
         height: 1000px;
     }
-    .modal__img {
-        width: 100%;
-    }
+    
     .modal__addresses-box {
         height: 40vh;
+    }
+    .modal__img {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .modal__img_box {
+        width: 100%;
+        border-radius: 20px;
     }
   }
 
