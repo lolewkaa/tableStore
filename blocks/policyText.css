@@ -1,0 +1,39 @@
+.policy {
+  width: calc(100% - 260px);
+  margin: 40px auto 100px auto;
+}
+
+.policy__title {
+  font-size: 52px;
+  font-weight: 500;
+  color: rgb(33, 33, 33);
+  margin: 40px 0 ;
+}
+
+.policy__title--2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(33, 33, 33);
+  margin: 32px 0 24px;
+}
+
+.policy__text {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(33, 33, 33);
+  margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .policy__title {
+    font-size: 32px;
+  }
+
+  .policy__title--2 {
+    font-size: 24px;
+  }
+
+  .policy__text {
+    font-size: 16px;
+  }
+}

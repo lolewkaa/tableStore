@@ -1,0 +1,35 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__title {
+  font-size: 32px;
+  font-weight: 500;
+  color: rgb(33, 33, 33);
+  margin: 24px 0;
+}
+
+
+.menu__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  margin: 0 0 12px;
+  min-width: 288px;
+  text-decoration: none;
+  color: rgb(33, 33, 33);
+  box-shadow: 1px 1px 5px 5px rgba(18, 21, 105, 0.08) ;
+  border-radius: 20px;
+}
+
+.menu__text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menu__button {
+  background-color: transparent;
+  border: 0;
+  transform: scale(1.5);
+}

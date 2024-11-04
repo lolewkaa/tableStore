@@ -1,0 +1,99 @@
+.fav__product {
+  padding: 12px;
+  box-shadow: 1px 1px 10px 10px rgba(18, 21, 105, 0.08) ;
+  border-radius: 20px;
+  margin: 0 0 20px;
+  display: flex;
+}
+
+.fav__product--img {
+  width: 170px;
+  height: 170px;
+}
+
+.fav__product--info {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.fav__product--info__text--cont {
+  display: flex;
+  width: 100%;
+}
+
+.fav__product--info__text--cont:first-of-type {
+  justify-content: space-between;
+  margin: 0 0 8px;
+}
+
+.fav__product--info__text--cont:last-of-type {
+  margin: 16px 0 0;
+}
+
+.fav__product--name {
+  font-family: Montserrat;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 24px;
+  color: rgb(33, 33, 33);
+  margin: 0;
+}
+
+.fav__product--color__img {
+}
+
+.fav__product--span {
+  margin: 0;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(148, 156, 162);
+}
+
+.fav__product--price {
+  margin: 0;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  color: rgb(33, 33, 33);
+}
+
+.fav__product--color {
+  margin: 0 0 0 8px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(66, 66, 68);
+}
+
+.fav__list--box {
+  width: 100%;
+}
+
+@media screen and (max-width: 940px) {
+
+.fav__product--img {
+  width: 100px;
+  height: 100px;
+}
+.fav__product--name {
+  font-size: 16px;
+}
+.fav__product--price {
+  font-size: 16px;
+}
+.fav__product--color {
+  font-size: 12px;
+}
+}
+
+@media screen and (max-width: 840px) {
+  .fav__product{
+    max-width: 320px;
+  }
+  .fav__list--box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

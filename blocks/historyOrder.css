@@ -207,6 +207,10 @@
   margin: 6px 0 0;
 }
 
+.order__data:nth-of-type(4) > .order__data--text {
+  white-space: nowrap;
+}
+
 .his--order__box:last-child {
   margin: 24px 0 0;
 }
@@ -340,6 +344,18 @@
   font-size: 18px;
   color: rgb(33, 33, 33);
 }
+
+.his--order__title--mobile {
+  display: none;
+}
+
+.delivery__container {
+  margin: 20px 0 0;
+}
+
+.personal__input-box-wide {
+  width: 380px;
+}
 @media screen and (max-width: 1240px) {
   .his--order__button {
     min-width: 131px;
@@ -355,7 +371,13 @@
 }
 
 @media screen and (max-width: 1170px) {
-
+  .personal__input-box-wide {
+    width: 230px;
+  }
+  .personal__form-text {
+    font-size: 14px;
+    max-width: 340px;
+  }
   .his--order__box {
     flex-direction: column;
     align-items: start;
@@ -399,9 +421,26 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 830px) {
+  .personal__select_mobile {
+    display: block;
+    height: 37px;
+    width: 288px;
+    background-color: rgb(33, 33, 33);
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 16px auto 28px ;
+  }
   .his--order__buttons-box{
     display: none;
+  }
+  .his--order__title {
+    display: none;
+  }
+  .his--order__title--mobile {
+    display: block;
   }
   .his--back__button {
     display: block;
