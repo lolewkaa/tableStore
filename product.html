@@ -16,7 +16,7 @@
     </button>
     <div class="header__links-container">
       <a class="header__link" href="#footer">Контакты</a>
-      <a class="header__link" href="#footer">Условия доставки</a>
+      <a class="header__link" href="payment.html">Условия доставки</a>
     </div>
     <img class="header__logo" alt="Логотип 'Столы тут'" src="images/logo.png" />
     <div class="header__feedback-container">
@@ -40,16 +40,19 @@
 
   <section class="search">
     <div class="search__links-container">
-      <a class="search__link" href="#">Столы</a>
-      <a class="search__link" href="#">Стулья</a>
+      <a class="search__link" href="catalog.html">Столы</a>
+      <a class="search__link" href="catalog.html">Стулья</a>
       <a class="search__link" href="#">Распродажа</a>
+      <a class="search__link" href="bestsellers">Хиты продаж</a>
     </div>
     <div class="search__buttons-container">
       <button class="search__button">
         <img src="images/iconLike.svg" alt="Иконка лайк" />
       </button>
       <button class="search__button">
-        <img src="images/iconDel.svg" alt="Иконка удалить" />
+        <a href="cart.html">
+          <img src="images/iconDel.svg" alt="Иконка корзина" />
+        </a>
       </button>
       <button class="search__button">
         <img src="images/iconSearch.svg" alt="Иконка поиск" />
@@ -85,9 +88,9 @@
       </a>
       <div id="info__slider">
         <div class="slides">
-          <img class="info__slide" src="images/productSquare.png" >
-          <img class="info__slide" src="images/productSquare.png" >
-          <img class="info__slide" src="images/productSquare.png" >
+          <img class="info__slide" src="images/productSquare.png">
+          <img class="info__slide" src="images/productSquare.png">
+          <img class="info__slide" src="images/productSquare.png">
         </div>
         <div class="info__buttons-box">
           <div class="dots"></div>
@@ -104,9 +107,15 @@
         </div>
         <div class="product__buttons-box">
           <button class="product__button-basket">
-            <img class="product__basket-img" src="images/iconBasket.svg" alt="Корзина" />
+            <a href="cart.html">
+              <img class="product__basket-img" src="images/iconBasket.svg" alt="Корзина" />
+            </a>
           </button>
-          <button class="product__button-delivery">Оформить заказ</button>
+          <a href="cart.html">
+            <button class="product__button-delivery">
+              Оформить заказ
+            </button>
+          </a>
         </div>
       </div>
       <div class="bestsellers__text-box">
@@ -143,344 +152,345 @@
   </section>
 
   <section class="features">
-            <div>
-                <img class="features__image" src="images/productBig.png">
-                <p class="product__title">Обивка премиум-класса</p>
-                <p class="product__subtitle">Мягкий, бархатистый и приятный на ощупь премиальный велюр выглядит
-                    элегантно и изысканно. Это долговечный и износостойкий гипоаллергенный материал, который не
-                    деформируется даже при высоких механических нагрузках, не выгорает от солнечных лучей и не
-                    требователен в уходе.
-                </p>
-            </div>
-            <div class="features__box">
-                <div class="features__container">
-                    <img src="images/productMiddle.png" class="features__img" />
-                    <p class="product__title">Обивка премиум-класса</p>
-                    <p class="product__subtitle">Мягкий, бархатистый и приятный на ощупь премиальный велюр выглядит
-                        элегантно и изысканно. Это долговечный и износостойкий гипоаллергенный материал, который не
-                        деформируется даже при высоких механических нагрузках, не выгорает от солнечных лучей и не
-                        требователен в уходе.
-                    </p>
-                </div>
-                <div class="features__container">
-                    <img src="images/productMiddle.png" class="features__img" />
-                    <p class="product__title">Высокая надежность материалов</p>
-                    <p class="product__subtitle">Мы используем только высококачественный металл — прочный надежный
-                        материал,
-                        устойчивый к коррозии. Мебель со стальным каркасом функциональна, может служить десятки лет,
-                        способна выдерживать большие нагрузки, проста в уходе, эстетична и отлично вписывается в
-                        современный
-                        интерьер.
-                    </p>
-                </div>
-            </div>
-        </section>
+    <div>
+      <img class="features__image" src="images/productBig.png">
+      <p class="product__title">Обивка премиум-класса</p>
+      <p class="product__subtitle">Мягкий, бархатистый и приятный на ощупь премиальный велюр выглядит
+        элегантно и изысканно. Это долговечный и износостойкий гипоаллергенный материал, который не
+        деформируется даже при высоких механических нагрузках, не выгорает от солнечных лучей и не
+        требователен в уходе.
+      </p>
+    </div>
+    <div class="features__box">
+      <div class="features__container">
+        <img src="images/productMiddle.png" class="features__img" />
+        <p class="product__title">Обивка премиум-класса</p>
+        <p class="product__subtitle">Мягкий, бархатистый и приятный на ощупь премиальный велюр выглядит
+          элегантно и изысканно. Это долговечный и износостойкий гипоаллергенный материал, который не
+          деформируется даже при высоких механических нагрузках, не выгорает от солнечных лучей и не
+          требователен в уходе.
+        </p>
+      </div>
+      <div class="features__container">
+        <img src="images/productMiddle.png" class="features__img" />
+        <p class="product__title">Высокая надежность материалов</p>
+        <p class="product__subtitle">Мы используем только высококачественный металл — прочный надежный
+          материал,
+          устойчивый к коррозии. Мебель со стальным каркасом функциональна, может служить десятки лет,
+          способна выдерживать большие нагрузки, проста в уходе, эстетична и отлично вписывается в
+          современный
+          интерьер.
+        </p>
+      </div>
+    </div>
+  </section>
 
   <section class="promo">
-            <img class="promo__img" src="images/promoImage.png" >
-            <h2 class="promo__title">Промокод -5%</h2>
-            <p class="promo__subtitle">Получите промокод на <mark class="promo__mark">скидку в 5%</mark>
-              на любую позицию. Заполните форму ниже.</p>
-            <p class="promo__text">*скидки и акции не суммируются.</p>
-            <div class="promo__form-box">
-              <form id="promoForm">
-                <input class="promo__input" placeholder="Ваше имя:" type="text" id="name" name="name" required>
-                <input class="promo__input" placeholder="Ваш телефон:" type="tel" id="phone" name="phone" required>
-                <input class="promo__input" placeholder="Ваш город:" type="text" id="city" name="city" required>
-                <button class="promo__button-submit" type="submit" id="submitButton">Получить промокод</button>
-              </form>
+    <img class="promo__img" src="images/promoImage.png">
+    <h2 class="promo__title">Промокод -5%</h2>
+    <p class="promo__subtitle">Получите промокод на <mark class="promo__mark">скидку в 5%</mark>
+      на любую позицию. Заполните форму ниже.</p>
+    <p class="promo__text">*скидки и акции не суммируются.</p>
+    <div class="promo__form-box">
+      <form id="promoForm">
+        <input class="promo__input" placeholder="Ваше имя:" type="text" id="name" name="name" required>
+        <input class="promo__input" placeholder="Ваш телефон:" type="tel" id="phone" name="phone" required>
+        <input class="promo__input" placeholder="Ваш город:" type="text" id="city" name="city" required>
+        <button class="promo__button-submit" type="submit" id="submitButton">Получить промокод</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="popular">
+    <h2 class="popular__title">Популярные товары:</h2>
+
+    <div class="popular__container">
+
+      <div id="popular__slider">
+        <div class="slides__product">
+          <div class="bestsellers__product">
+            <p class="bestsellers__info">популярно</p>
+            <a class="catalog__link" href="product.html">
+              <button class="bestsellers__product-like">
+                <img src="images/productLike.svg" />
+              </button>
+              <img class="bestsellers__product-img" src="images/product.png" />
+              <p class="bestsellers__product-name">Стул ROMEO-замша</p>
+            </a>
+            <p class="bestsellers__color">
+              <img src="images/colorImg.svg" />
+              Серый/Белый
+            </p>
+            <div class="bestsellers__box">
+              <p class="bestsellers__product-rub">11 150 ₽</p>
+              <button class="bestsellers__button-buy">Купить
+              </button>
             </div>
-          </section>
-
-          <section class="popular">
-            <h2 class="popular__title">Популярные товары:</h2>
-            
-            <div class="popular__container">
-
-                <div id="popular__slider">
-                    <div class="slides__product">
-                        <div class="bestsellers__product" >
-                            <a class="catalog__link" href="product.html">
-                                <button class="bestsellers__product-like">
-                                    <img src="images/productLike.svg" />
-                                </button>
-                                <img class="bestsellers__product-img" src="images/product.png" />
-                                <p class="bestsellers__product-name">Стул ROMEO-замша</p>
-                            </a>
-                            <p class="bestsellers__color">
-                                <img src="images/colorImg.svg" />
-                                Серый/Белый
-                            </p>
-                            <div class="bestsellers__box">
-                                <p class="bestsellers__product-rub">11 150 ₽</p>
-                                <button class="bestsellers__button-buy">Купить
-                                </button>
-                            </div>
-                        </div>
-                        <div class="bestsellers__product" >
-                            <a class="catalog__link" href="product.html">
-                                <button class="bestsellers__product-like">
-                                    <img src="images/productLike.svg" />
-                                </button>
-                                <img class="bestsellers__product-img" src="images/product.png" />
-                                <p class="bestsellers__product-name">Стул ROMEO-замша</p>
-                            </a>
-                            <p class="bestsellers__color">
-                                <img src="images/colorImg.svg" />
-                                Серый/Белый
-                            </p>
-                            <div class="bestsellers__box">
-                                <p class="bestsellers__product-rub">11 150 ₽</p>
-                                <button class="bestsellers__button-buy">Купить
-                                </button>
-                            </div>
-                        </div>
-                        <div class="bestsellers__product" >
-                            <a class="catalog__link" href="product.html">
-                                <button class="bestsellers__product-like">
-                                    <img src="images/productLike.svg" />
-                                </button>
-                                <img class="bestsellers__product-img" src="images/product.png" />
-                                <p class="bestsellers__product-name">Стул ROMEO-замша</p>
-                            </a>
-                            <p class="bestsellers__color">
-                                <img src="images/colorImg.svg" />
-                                Серый/Белый
-                            </p>
-                            <div class="bestsellers__box">
-                                <p class="bestsellers__product-rub">11 150 ₽</p>
-                                <button class="bestsellers__button-buy">Купить
-                                </button>
-                            </div>
-                        </div>
-                        <div class="bestsellers__product" >
-                            <a class="catalog__link" href="product.html">
-                                <button class="bestsellers__product-like">
-                                    <img src="images/productLike.svg" />
-                                </button>
-                                <img class="bestsellers__product-img" src="images/product.png" />
-                                <p class="bestsellers__product-name">Стул ROMEO-замша</p>
-                            </a>
-                            <p class="bestsellers__color">
-                                <img src="images/colorImg.svg" />
-                                Серый/Белый
-                            </p>
-                            <div class="bestsellers__box">
-                                <p class="bestsellers__product-rub">11 150 ₽</p>
-                                <button class="bestsellers__button-buy">Купить
-                                </button>
-                            </div>
-                        </div>
-                        <div class="bestsellers__product" >
-                            <a class="catalog__link" href="product.html">
-                                <button class="bestsellers__product-like">
-                                    <img src="images/productLike.svg" />
-                                </button>
-                                <img class="bestsellers__product-img" src="images/product.png" />
-                                <p class="bestsellers__product-name">Стул ROMEO-замша</p>
-                            </a>
-                            <p class="bestsellers__color">
-                                <img src="images/colorImg.svg" />
-                                Серый/Белый
-                            </p>
-                            <div class="bestsellers__box">
-                                <p class="bestsellers__product-rub">11 150 ₽</p>
-                                <button class="bestsellers__button-buy">Купить
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="popular__buttons-box">
-                      <button class="popular__prev"></button>
-                      <button class="popular__next"></button>
-                    </div>
-                  </div>
-
+          </div>
+          <div class="bestsellers__product">
+            <a class="catalog__link" href="product.html">
+              <button class="bestsellers__product-like">
+                <img src="images/productLike.svg" />
+              </button>
+              <img class="bestsellers__product-img" src="images/product.png" />
+              <p class="bestsellers__product-name">Стул ROMEO-замша</p>
+            </a>
+            <p class="bestsellers__color">
+              <img src="images/colorImg.svg" />
+              Серый/Белый
+            </p>
+            <div class="bestsellers__box">
+              <p class="bestsellers__product-rub">11 150 ₽</p>
+              <button class="bestsellers__button-buy">Купить
+              </button>
             </div>
-
-
-            <div class="popular__mobile">
-                <div class="bestsellers__product" >
-                    <a class="catalog__link" href="product.html">
-                        <button class="bestsellers__product-like">
-                            <img src="images/productLike.svg" />
-                        </button>
-                        <img class="bestsellers__product-img" src="images/product.png" />
-                        <p class="bestsellers__product-name">Стул ROMEO-замша</p>
-                    </a>
-                    <p class="bestsellers__color">
-                        <img src="images/colorImg.svg" />
-                        Серый/Белый
-                    </p>
-                    <div class="bestsellers__box">
-                        <p class="bestsellers__product-rub">11 150 ₽</p>
-                        <button class="bestsellers__button-buy">Купить
-                        </button>
-                    </div>
-                </div>
-                <div class="bestsellers__product" >
-                    <a class="catalog__link" href="product.html">
-                        <button class="bestsellers__product-like">
-                            <img src="images/productLike.svg" />
-                        </button>
-                        <img class="bestsellers__product-img" src="images/product.png" />
-                        <p class="bestsellers__product-name">Стул ROMEO-замша</p>
-                    </a>
-                    <p class="bestsellers__color">
-                        <img src="images/colorImg.svg" />
-                        Серый/Белый
-                    </p>
-                    <div class="bestsellers__box">
-                        <p class="bestsellers__product-rub">11 150 ₽</p>
-                        <button class="bestsellers__button-buy">Купить
-                        </button>
-                    </div>
-                </div>
-                <div class="bestsellers__product" >
-                    <a class="catalog__link" href="product.html">
-                        <button class="bestsellers__product-like">
-                            <img src="images/productLike.svg" />
-                        </button>
-                        <img class="bestsellers__product-img" src="images/product.png" />
-                        <p class="bestsellers__product-name">Стул ROMEO-замша</p>
-                    </a>
-                    <p class="bestsellers__color">
-                        <img src="images/colorImg.svg" />
-                        Серый/Белый
-                    </p>
-                    <div class="bestsellers__box">
-                        <p class="bestsellers__product-rub">11 150 ₽</p>
-                        <button class="bestsellers__button-buy">Купить
-                        </button>
-                    </div>
-                </div>
+          </div>
+          <div class="bestsellers__product">
+            <a class="catalog__link" href="product.html">
+              <button class="bestsellers__product-like">
+                <img src="images/productLike.svg" />
+              </button>
+              <img class="bestsellers__product-img" src="images/product.png" />
+              <p class="bestsellers__product-name">Стул ROMEO-замша</p>
+            </a>
+            <p class="bestsellers__color">
+              <img src="images/colorImg.svg" />
+              Серый/Белый
+            </p>
+            <div class="bestsellers__box">
+              <p class="bestsellers__product-rub">11 150 ₽</p>
+              <button class="bestsellers__button-buy">Купить
+              </button>
             </div>
-        </section>
+          </div>
+          <div class="bestsellers__product">
+            <a class="catalog__link" href="product.html">
+              <button class="bestsellers__product-like">
+                <img src="images/productLike.svg" />
+              </button>
+              <img class="bestsellers__product-img" src="images/product.png" />
+              <p class="bestsellers__product-name">Стул ROMEO-замша</p>
+            </a>
+            <p class="bestsellers__color">
+              <img src="images/colorImg.svg" />
+              Серый/Белый
+            </p>
+            <div class="bestsellers__box">
+              <p class="bestsellers__product-rub">11 150 ₽</p>
+              <button class="bestsellers__button-buy">Купить
+              </button>
+            </div>
+          </div>
+          <div class="bestsellers__product">
+            <a class="catalog__link" href="product.html">
+              <button class="bestsellers__product-like">
+                <img src="images/productLike.svg" />
+              </button>
+              <img class="bestsellers__product-img" src="images/product.png" />
+              <p class="bestsellers__product-name">Стул ROMEO-замша</p>
+            </a>
+            <p class="bestsellers__color">
+              <img src="images/colorImg.svg" />
+              Серый/Белый
+            </p>
+            <div class="bestsellers__box">
+              <p class="bestsellers__product-rub">11 150 ₽</p>
+              <button class="bestsellers__button-buy">Купить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="popular__buttons-box">
+          <button class="popular__prev"></button>
+          <button class="popular__next"></button>
+        </div>
+      </div>
 
-        <footer class="footer" id="footer">
-      <div class="footer__container">
-        <h2 class="footer__title">Контакты</h2>
-        <div class="footer__buttons-box">
-          <button class="footer__button_active">Новосибирск</button>
-          <button class="footer__button">Красноярск</button>
-          <button class="footer__button">Кемерово</button>
-          <button class="footer__button">Новокузнецк</button>
-          <button class="footer__button">Барнаул</button>
-          <button class="footer__button">Томск</button>
-          <button class="footer__button_mobile">
-            Новосибирск
-            <img src="images/footerArrow.svg" />
+    </div>
+
+
+    <div class="popular__mobile">
+      <div class="bestsellers__product">
+        <a class="catalog__link" href="product.html">
+          <button class="bestsellers__product-like">
+            <img src="images/productLike.svg" />
+          </button>
+          <img class="bestsellers__product-img" src="images/product.png" />
+          <p class="bestsellers__product-name">Стул ROMEO-замша</p>
+        </a>
+        <p class="bestsellers__color">
+          <img src="images/colorImg.svg" />
+          Серый/Белый
+        </p>
+        <div class="bestsellers__box">
+          <p class="bestsellers__product-rub">11 150 ₽</p>
+          <button class="bestsellers__button-buy">Купить
           </button>
         </div>
-        <div class="footer__location">
-          <div class="footer__location-box">
-            <h3 class="footer__city">Новосибирск</h3>
-            <div class="footer__box-addresses">
-              <p class="footer__address">1. Большая медведица, Светлановская, 50, 2 этаж</p>
-              <p class="footer__tel">
-                <img src="images/tel.svg" />
-                +7 (983) 305-80-10
-              </p>
-              <p class="footer__address">2. Большая медведица, Светлановская, 50, Дисконт</p>
-              <p class="footer__tel">
-                <img src="images/tel.svg" />
-                +7 (913) 737-33-41
-              </p>
-              <p class="footer__address">3. Красный мамонт, Светлановская, 50, к.1</p>
-              <p class="footer__tel">
-                <img src="images/tel.svg" />
-                +7 (913) 933-92-03
-              </p>
-              <p class="footer__address">4. Мебель центр, Островского, 111</p>
-              <p class="footer__tel">
-                <img src="images/tel.svg" />
-                +7 (913) 890-89-44
-              </p>
-              <p class="footer__address">5. Калейдоскоп комфорта и уюта, Маркса, 6/1</p>
-              <p class="footer__tel">
-                <img src="images/tel.svg" />
-                +7 (913) 777-60-18
-              </p>
-              <p class="footer__address">5. Торговый город "Левобережный" ул. Сибиряков-Гвардейцев, 49/1, корп. 3, 2
-                этаж
-              </p>
-              <p class="footer__tel">
-                <img src="images/tel.svg" />
-                +7 (913) 747-57-11
-              </p>
-            </div>
-
-          </div>
-          <img class="footer__map-img" src="images/map.png" alt="map" />
+      </div>
+      <div class="bestsellers__product">
+        <a class="catalog__link" href="product.html">
+          <button class="bestsellers__product-like">
+            <img src="images/productLike.svg" />
+          </button>
+          <img class="bestsellers__product-img" src="images/product.png" />
+          <p class="bestsellers__product-name">Стул ROMEO-замша</p>
+        </a>
+        <p class="bestsellers__color">
+          <img src="images/colorImg.svg" />
+          Серый/Белый
+        </p>
+        <div class="bestsellers__box">
+          <p class="bestsellers__product-rub">11 150 ₽</p>
+          <button class="bestsellers__button-buy">Купить
+          </button>
         </div>
+      </div>
+      <div class="bestsellers__product">
+        <a class="catalog__link" href="product.html">
+          <button class="bestsellers__product-like">
+            <img src="images/productLike.svg" />
+          </button>
+          <img class="bestsellers__product-img" src="images/product.png" />
+          <p class="bestsellers__product-name">Стул ROMEO-замша</p>
+        </a>
+        <p class="bestsellers__color">
+          <img src="images/colorImg.svg" />
+          Серый/Белый
+        </p>
+        <div class="bestsellers__box">
+          <p class="bestsellers__product-rub">11 150 ₽</p>
+          <button class="bestsellers__button-buy">Купить
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <button class="footer__button-call_mobile">
-          <img src="images/iconTel.svg" />
-          Позвонить нам
+  <footer class="footer" id="footer">
+    <div class="footer__container">
+      <h2 class="footer__title">Контакты</h2>
+      <div class="footer__buttons-box">
+        <button class="footer__button_active">Новосибирск</button>
+        <button class="footer__button">Красноярск</button>
+        <button class="footer__button">Кемерово</button>
+        <button class="footer__button">Новокузнецк</button>
+        <button class="footer__button">Барнаул</button>
+        <button class="footer__button">Томск</button>
+        <button class="footer__button_mobile">
+          Новосибирск
+          <img src="images/footerArrow.svg" />
         </button>
-        
-        <div class="footer__feedback">
-          <div class="footer__feedback-box">
-            <button class="footer__button-call">
-              <img src="images/iconTel.svg" />
-              Позвонить нам
-            </button>
-            <button class="footer__button-social">
-              <img src="images/whatsRed.svg" />
-            </button>
-            <button class="footer__button-social">
-              <img src="images/tgRed.svg" />
-            </button>
-            <button class="footer__button-social">
-              <img src="images/VKRed.svg" />
-            </button>
+      </div>
+      <div class="footer__location">
+        <div class="footer__location-box">
+          <h3 class="footer__city">Новосибирск</h3>
+          <div class="footer__box-addresses">
+            <p class="footer__address">1. Большая медведица, Светлановская, 50, 2 этаж</p>
+            <p class="footer__tel">
+              <img src="images/tel.svg" />
+              +7 (983) 305-80-10
+            </p>
+            <p class="footer__address">2. Большая медведица, Светлановская, 50, Дисконт</p>
+            <p class="footer__tel">
+              <img src="images/tel.svg" />
+              +7 (913) 737-33-41
+            </p>
+            <p class="footer__address">3. Красный мамонт, Светлановская, 50, к.1</p>
+            <p class="footer__tel">
+              <img src="images/tel.svg" />
+              +7 (913) 933-92-03
+            </p>
+            <p class="footer__address">4. Мебель центр, Островского, 111</p>
+            <p class="footer__tel">
+              <img src="images/tel.svg" />
+              +7 (913) 890-89-44
+            </p>
+            <p class="footer__address">5. Калейдоскоп комфорта и уюта, Маркса, 6/1</p>
+            <p class="footer__tel">
+              <img src="images/tel.svg" />
+              +7 (913) 777-60-18
+            </p>
+            <p class="footer__address">5. Торговый город "Левобережный" ул. Сибиряков-Гвардейцев, 49/1, корп. 3, 2
+              этаж
+            </p>
+            <p class="footer__tel">
+              <img src="images/tel.svg" />
+              +7 (913) 747-57-11
+            </p>
           </div>
-          <button class="footer__button-up">
-            <img src="images/buttonUp.svg">
+
+        </div>
+        <img class="footer__map-img" src="images/map.png" alt="map" />
+      </div>
+
+      <button class="footer__button-call_mobile">
+        <img src="images/iconTel.svg" />
+        Позвонить нам
+      </button>
+
+      <div class="footer__feedback">
+        <div class="footer__feedback-box">
+          <button class="footer__button-call">
+            <img src="images/iconTel.svg" />
+            Позвонить нам
+          </button>
+          <button class="footer__button-social">
+            <img src="images/whatsRed.svg" />
+          </button>
+          <button class="footer__button-social">
+            <img src="images/tgRed.svg" />
+          </button>
+          <button class="footer__button-social">
+            <img src="images/VKRed.svg" />
           </button>
         </div>
+        <button class="footer__button-up">
+          <img src="images/buttonUp.svg">
+        </button>
+      </div>
 
-        <div class="footer__box">
-          <div class="footer__links-container">
-            <a href="#" class="footer__link">Столы</a>
-            <a href="#" class="footer__link">Стулья</a>
-            <a href="#" class="footer__link">Распродажа</a>
-            <a href="#" class="footer__link">Хиты продаж</a>
-            <a href="#" class="footer__link">Условия доставки</a>
+      <div class="footer__box">
+        <div class="footer__links-container">
+          <a href="#" class="footer__link">Столы</a>
+          <a href="#" class="footer__link">Стулья</a>
+          <a href="#" class="footer__link">Распродажа</a>
+          <a href="#" class="footer__link">Хиты продаж</a>
+          <a href="#" class="footer__link">Условия доставки</a>
+        </div>
+        <div class="footer__buttons-container">
+          <button class="footer__btn">
+            <img src="images/profileWhite.svg">
+          </button>
+          <button class="footer__btn">
+            <img src="images/basketWhite.svg">
+          </button>
+          <button class="footer__btn">
+            <img src="images/searchWhite.svg">
+          </button>
+        </div>
+      </div>
+
+      <div class="footer__logo-box">
+        <div class="footer__text-box">
+          <div class="footer__links">
+            <a href="#" class="footer__ref">Контакты</a>
+            <a href="#" class="footer__ref">Условия доставки</a>
+            <a href="#" class="footer__ref">Условия доставки</a>
           </div>
-          <div class="footer__buttons-container">
-            <button class="footer__btn">
-              <img src="images/profileWhite.svg">
-            </button>
-            <button class="footer__btn">
-              <img src="images/basketWhite.svg">
-            </button>
-            <button class="footer__btn">
-              <img src="images/searchWhite.svg">
-            </button>
+          <div class="footer__container-text">
+            <p class="footer__text">ООО СТОЛЫ ТУТ (С) 2024</p>
+            <p class="footer__text">Политика конфиденциальности</p>
           </div>
         </div>
-
-        <div class="footer__logo-box">
-          <div class="footer__text-box">
-            <div class="footer__links">
-              <a href="#" class="footer__ref">Контакты</a>
-              <a href="#" class="footer__ref">Условия доставки</a>
-              <a href="#" class="footer__ref">Условия доставки</a>
-            </div>
-            <div class="footer__container-text">
-              <p class="footer__text">ООО СТОЛЫ ТУТ (С) 2024</p>
-              <p class="footer__text">Политика конфиденциальности</p>
-            </div>
-          </div>
-          <img class="footer__logo" src="images/footerLogo.png" />
-        </div>
-
-
+        <img class="footer__logo" src="images/footerLogo.png" />
       </div>
 
 
-    </footer>
+    </div>
+
+
+  </footer>
   <script src="product.js"></script>
 </body>
 

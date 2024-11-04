@@ -17,7 +17,7 @@
       </button>
       <div class="header__links-container">
         <a class="header__link" href="#footer">Контакты</a>
-        <a class="header__link" href="#footer">Условия доставки</a>
+        <a class="header__link" href="payment.html">Условия доставки</a>
       </div>
       <img class="header__logo" alt="Логотип 'Столы тут'" src="images/logo.png" />
       <div class="header__feedback-container">
@@ -41,9 +41,10 @@
 
    <section class="search">
       <div class="search__links-container">
-        <a class="search__link" href="#">Столы</a>
-        <a class="search__link" href="#">Стулья</a>
+        <a class="search__link" href="catalog.html">Столы</a>
+        <a class="search__link" href="catalog.html">Стулья</a>
         <a class="search__link" href="#">Распродажа</a>
+        <a class="search__link" href="bestsellers" >Хиты продаж</a>
       </div>
       <div class="search__buttons-container">
         <button class="search__button">
@@ -102,31 +103,31 @@
 
     <section class="offers">
       <div class="offers__offer">
-        <img src="images/assortmentIcon.svg" class="offers__img"/>
+        <img src="images/assortment.png" class="offers__img"/>
         <p class="offers__title">Ассортимент</p>
         <p class="offers__subtitle">Такого разнообразия цветов, размеров, материалов, форм вам больше нигде не найти.
         </p>
       </div>
       <div class="offers__offer">
-        <img src="images/delivery.svg" class="offers__img"/>
+        <img src="images/delivery.png" class="offers__img"/>
         <p class="offers__title">Быстрая доставка</p>
         <p class="offers__subtitle">У нас большой выбор мебели, а также поступления каждую неделю, благодаря этому мы
           подберём вам минимальные сроки доставки.</p>
       </div>
       <div class="offers__offer">
-        <img src="images/order.svg" class="offers__img"/>
+        <img src="images/order.png" class="offers__img"/>
         <p class="offers__title">Удобно заказать</p>
         <p class="offers__subtitle">Вы можете совершить покупку онлайн и оффлайн, а также совершить оплату любым удобным
           для вас способом.</p>
       </div>
       <div class="offers__offer">
-        <img src="images/price.svg" class="offers__img"/>
+        <img src="images/price.png" class="offers__img"/>
         <p class="offers__title">Доступные цены</p>
         <p class="offers__subtitle">Мы предлагаем мебель доступную при любом бюджете.</p>
       </div>
     </section>
 
-    <section class="bestsellers">
+    <section class="bestsellers" id="bestsellers">
       <h2 class="bestsellers__title">Хиты продаж</h2>
       <div class="bestsellers__buttons-box">
         <button class="bestsellers__button_active">Все товары</button>
@@ -139,6 +140,7 @@
       </div>
       <div class="bestsellers__container">
         <div class="bestsellers__product" >
+          <p class="bestsellers__info">популярно</p>
           <a class="catalog__link" href="product.html">
               <button class="bestsellers__product-like">
                   <img src="images/productLike.svg" />
@@ -241,7 +243,7 @@
         <p class="company__subtitle">Мы находимся в 6 городах: Новосибирск, Барнаул, Томск, Кемерово, Новокузнецк,
           Красноярск. Вы из другого города?
           - не проблема, мы отправим ваш заказ в любой город!</p>
-        <a class="company__link" href="#">
+        <a class="company__link" href="catalog.html">
           Перейти в каталог
           <img class="company__link-icon" src="images/sendIcon.svg" />
         </a>
@@ -254,7 +256,6 @@
         <button class="bestsellers__button_active">Все товары</button>
         <button class="bestsellers__button">Столы</button>
         <button class="bestsellers__button">Стулья</button>
-        <button class="bestsellers__button">Распродажа</button>
         <button class="bestsellers__button-mobile">
           Все товары
           <img src="images/arrowDown.svg">

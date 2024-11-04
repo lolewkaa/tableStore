@@ -16,7 +16,7 @@
         </button>
         <div class="header__links-container">
             <a class="header__link" href="#footer">Контакты</a>
-            <a class="header__link" href="#footer">Условия доставки</a>
+            <a class="header__link" href="payment.html">Условия доставки</a>
         </div>
         <img class="header__logo" alt="Логотип 'Столы тут'" src="images/logo.png" />
         <div class="header__feedback-container">
@@ -40,49 +40,53 @@
 
     <section class="search">
         <div class="search__links-container">
-            <a class="search__link" href="#">Столы</a>
-            <a class="search__link" href="#">Стулья</a>
+            <a class="search__link" href="catalog.html">Столы</a>
+            <a class="search__link" href="catalog.html">Стулья</a>
             <a class="search__link" href="#">Распродажа</a>
+            <a class="search__link" href="bestsellers" >Хиты продаж</a>
         </div>
         <div class="search__buttons-container">
-            <button class="search__button">
-                <img src="images/iconLike.svg" alt="Иконка лайк" />
-            </button>
-            <button class="search__button">
-                <a href="cart.html">
-                    <img src="images/iconDel.svg" alt="Иконка корзина" />
-                </a>
-            </button>
-            <button class="search__button">
-                <img src="images/iconSearch.svg" alt="Иконка поиск" />
-            </button>
+          <button class="search__button">
+            <img src="images/iconLike.svg" alt="Иконка лайк" />
+          </button>
+          <button class="search__button">
+            <a href="cart.html">
+              <img src="images/iconDel.svg" alt="Иконка корзина" />
+            </a>
+          </button>
+          <button class="search__button">
+            <img src="images/iconSearch.svg" alt="Иконка поиск" />
+          </button>
         </div>
-    </section>
+      </section>
+    
 
     <section class="personal">
         <h2 class="order__title">Оформление заказа</h2>
-        <select class="order__select_mobile">
-            <option class="order__option_mobile">Личные данные</option>
-            <option class="order__option_mobile">Доставка и оплата</option>
-            <option class="order__option_mobile">Корзина</option>
-        </select>
-        <div class="order__buttons-box">
-            <a href="cart.html">
-                <button class="order__button">
-                    Корзина
-                </button>
-            </a>
-            <a href="personal.html">
-                <button class="order__button-active">
-                    Личные данные
-                </button>
-            </a>
-            <a href="payment.html">
-                <button class="order__button">
-                    Доставка и оплата
-                </button>
-            </a>
-        </div>
+        <div class="stage__container">
+            <div class="stage_box">
+              <div class="stage__active">
+                <div class="stage__round stage__round_done">
+                  <p class="stage__text active stage__text_done">1.Корзина</p>
+                </div>
+              </div>
+              <div class="stage">
+                <div class="stage__round stage__round_second stage__round_active ">
+                  <p class="stage__text active">2.Личные данные</p>
+                </div>
+              </div>
+              <div class="stage">
+                <div class="stage__round stage__round_third">
+                  <p class="stage__text">3.Доставка и оплата</p>
+                </div>
+              </div>
+            </div>
+            <div class="stage__last">
+              <div class="stage__round_last">
+                <p class="stage__text">4.Заказ оформлен</p>
+              </div>
+            </div>
+          </div>
 
         <form class="personal__form" id="personal__form">
             <p class="personal__form-title">Основная информация</p>

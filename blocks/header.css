@@ -59,7 +59,7 @@
         font-size: 16px;
     }
     .header {
-        width: 91.81%;
+        width: calc(100% - 84px);
     }
     
   } 
@@ -74,10 +74,7 @@
     .header__links-container {
         gap: 5px;
     }
-    .header {
-        width: 95%;
-       
-    }
+    
   } 
 
 @media screen and (max-width: 585px) {
@@ -97,6 +94,13 @@
     }
     .header__burger-button {
         display: block;
+    }
+    
+  }
+
+  @media screen and (max-width: 376px) {
+    .header {
+        width: calc(100% - 32px);
     }
     
   } 
