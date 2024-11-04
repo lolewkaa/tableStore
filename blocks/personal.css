@@ -8,6 +8,11 @@
     border-radius: 20px;
     padding: 28px 0;
 }
+.personal__form--noShadow {
+  width: 100%;
+  border-radius: 20px;
+  padding: 28px 0;
+}
 .personal__input-box {
     display: flex;
     flex-direction: column;
@@ -50,7 +55,7 @@
 .personal__form-box {
     display: flex;
     flex-wrap: wrap;
-    
+
     margin-left: 28px;
     margin-right: 28px;
     gap: 16px;
@@ -147,5 +152,5 @@
         margin: 0 12px;
         height: 440px;
     }
-    
+
 }

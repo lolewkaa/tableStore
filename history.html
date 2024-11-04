@@ -62,28 +62,25 @@
       </div>
     </section>
 
-    <section class="personal">
-      <h2 class="order__title">Личный кабинет</h2>
-      <select class="order__select_mobile">
-        <option class="order__option_mobile">Мои данные</option>
-        <option class="order__option_mobile">История заказов</option>
-        <option class="order__option_mobile">Избранное</option>
-      </select>
-      <div class="order__buttons-box">
-        <a href="account.html">
-          <button class="order__button">Мои данные</button>
-        </a>
-        <a href="history.html">
-          <button class="order__button-active">История заказов</button>
-        </a>
-        <a href="favorites.html">
-          <button class="order__button">Избранное</button>
-        </a>
-      </div>
+    <section class="his--personal">
+      <button class="his--back__button"></button>
+      <h2 class="his--order__title">Личный кабинет</h2>
     </section>
 
     <section class="order__list">
-      <div class="order">
+      <div class="his--order__buttons-box">
+        <a class="his--order__button--container" href="account.html">
+          <button class="his--order__button">Мои данные</button>
+        </a>
+        <a class="his--order__button--container" href="history.html">
+          <button class="his--order__button-active">История заказов</button>
+        </a>
+        <a class="his--order__button--container" href="favorites.html">
+          <button class="his--order__button">Избранное</button>
+        </a>
+      </div>
+      <div class="order__list--box">
+      <div class="his--order">
         <div class="his--order__box">
           <div class="order__date--box">
             <p class="order__title">Заказ №1 от 01.01.2024</p>
@@ -117,7 +114,7 @@
         </div>
       </div>
       <!-- 2 -->
-      <div class="order">
+      <div class="his--order">
         <div class="his--order__box">
           <div class="order__date--box">
             <p class="order__title">Заказ №1 от 01.01.2024</p>
@@ -146,12 +143,12 @@
           </div>
           <div class="order__data">
             <mark class="order__marked--text">Трек-номер:</mark>
-            <p class="order__data--text">В обработке</p>
+            <p class="order__data--text">784484156654578</p>
           </div>
         </div>
       </div>
       <!-- 3 -->
-      <div class="order">
+      <div class="his--order">
         <div class="his--order__box">
           <div class="order__date--box">
             <p class="order__title">Заказ №1 от 01.01.2024</p>
@@ -180,16 +177,16 @@
           </div>
           <div class="order__data">
             <mark class="order__marked--text">Трек-номер:</mark>
-            <p class="order__data--text">В обработке</p>
+            <p class="order__data--text">784484156654578</p>
           </div>
         </div>
       </div>
       <!-- 4 -->
-      <div class="order">
+      <div class="his--order">
         <div class="his--order__box">
           <div class="order__date--box">
             <p class="order__title">Заказ №1 от 01.01.2024</p>
-            <button class="order__btn"></button>
+            <button class="order__btn--rotated"></button>
           </div>
           <div class="order__status--box">
             <img class="order__status--img" src="./images/clock.svg" />
@@ -217,32 +214,211 @@
             <p class="order__data--text">В обработке</p>
           </div>
         </div>
-      </div>
-    </section>
+        <form class="personal__form--noShadow" id="personal__form">
+          <div class="personal__form-box">
+            <div class="personal__input-box">
+              <label class="personal__label" for="surname">Фамилия</label>
+              <input
+                class="personal__input"
+                placeholder="Ваша фамилия"
+                type="text"
+                id="surname"
+                name="surname"
+                required
+              />
+            </div>
+            <div class="personal__input-box">
+              <label class="personal__label" for="name">Имя</label>
+              <input
+                class="personal__input"
+                placeholder="Ваше имя"
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="personal__input-box">
+              <label class="personal__label" for="patronymic">Отчество</label>
+              <input
+                class="personal__input"
+                placeholder="Ваше отчество"
+                type="text"
+                id="patronymic"
+                name="patronymic"
+                required
+              />
+            </div>
+            <div class="personal__input-box">
+              <label class="personal__label" for="tel">Номер телефона</label>
+              <input
+                class="personal__input"
+                placeholder="Введите ваш телефон"
+                type="text"
+                id="tel"
+                name="tel"
+                required
+              />
+            </div>
+            <div class="personal__input-box">
+              <label class="personal__label" for="email">E-mail</label>
+              <input
+                class="personal__input"
+                placeholder="Введите ваш e-mail"
+                type="text"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="personal__input-box">
+              <label class="personal__label" for="payment">Способ оплаты</label>
+              <input
+                class="personal__input"
+                placeholder="Способ оплаты"
+                type="text"
+                id="payment"
+                name="payment"
+                required
+              />
+            </div>
+          </div>
+        </form>
+        <div class="delivery__container--noShadow">
 
-    <div class="delivery__container">
-      <p class="delivery__text">Предпочитаемый способ доставки</p>
-      <div class="delivery__btn-box">
-        <button class="delivery__button-active">Самовывоз</button>
-        <button class="delivery__button">Доставка от 500 ₽</button>
-        <button class="delivery__button">СДЭК</button>
-      </div>
-
-      <div class="delivery__box">
-        <div class="delivery__info-box">
-          <p class="delivery__city">Новосибирск</p>
-          <p class="delivery__address">ТЦ Большая медведица</p>
-          <p class="delivery__tel">
-            <img src="images/tel.svg" />
-            +7 (983) 305-80-10
-          </p>
-          <p class="delivery__info-text">Можно забрать заказ:</p>
-          <p class="delivery__date">23 октября (с 10:00)</p>
-          <button class="delivery__button-change">Изменить пункт выдачи</button>
+          <div class="delivery__box">
+            <div class="delivery__info-box">
+              <p class="delivery__city">Новосибирск</p>
+              <p class="delivery__address">ТЦ Большая медведица</p>
+              <p class="delivery__tel">
+                <img src="images/tel.svg" />
+                +7 (983) 305-80-10
+              </p>
+              <p class="delivery__info-text">Можно забрать заказ:</p>
+              <p class="delivery__date">23 октября (с 10:00)</p>
+              <button class="delivery__button-change">Изменить пункт выдачи</button>
+            </div>
+            <img class="delivery__map-img" src="images/deliveryMap.png" />
+          </div>
         </div>
-        <img class="delivery__map-img" src="images/deliveryMap.png" />
       </div>
     </div>
+    </section>
     <script src="personal.js"></script>
   </body>
+  <template id="popup">
+    <div class="popup">
+      <p class="his--popup__text">Все товары</p>
+      <button class="popup__button-close">
+          <img class="popup__close-img" src="images/closeImg.svg">
+      </button>
+      <div class="his--popup__products--container">
+        <div class="his--popup__product">
+          <img class="his--popup__product--img" src="./images/product.png"/>
+          <div class="his--popup__product--info">
+            <div class="his--popup__product--info__text--cont">
+              <p class="his--popup__product--name">Стул RAFAELLLLLLLLLL</p>
+              <p class="his--popup__product--count">4 шт</p>
+            </div>
+            <div class="his--popup__product--info__text--cont">
+              <img class="his--popup__product--color__img" src="./images/colorImg.svg"/>
+              <p class="his--popup__product--color">Зелёный/Белый</p>
+            </div>
+            <div class="his--popup__product--info__text--cont__vert">
+              <span class="his--popup__product--span">Цена:</span>
+              <p class="his--popup__product--price">7 730 ₽</p>
+            </div>
+          </div>
+        </div>
+        <div class="his--popup__product">
+          <img class="his--popup__product--img" src="./images/product.png"/>
+          <div class="his--popup__product--info">
+            <div class="his--popup__product--info__text--cont">
+              <p class="his--popup__product--name">Стул RAFAELLLLLLLLLL</p>
+              <p class="his--popup__product--count">4 шт</p>
+            </div>
+            <div class="his--popup__product--info__text--cont">
+              <img class="his--popup__product--color__img" src="./images/colorImg.svg"/>
+              <p class="his--popup__product--color">Зелёный/Белый</p>
+            </div>
+            <div class="his--popup__product--info__text--cont__vert">
+              <span class="his--popup__product--span">Цена:</span>
+              <p class="his--popup__product--price">7 730 ₽</p>
+            </div>
+          </div>
+        </div>
+        <div class="his--popup__product">
+          <img class="his--popup__product--img" src="./images/product.png"/>
+          <div class="his--popup__product--info">
+            <div class="his--popup__product--info__text--cont">
+              <p class="his--popup__product--name">Стул RAFAELLLLLLLLLL</p>
+              <p class="his--popup__product--count">4 шт</p>
+            </div>
+            <div class="his--popup__product--info__text--cont">
+              <img class="his--popup__product--color__img" src="./images/colorImg.svg"/>
+              <p class="his--popup__product--color">Зелёный/Белый</p>
+            </div>
+            <div class="his--popup__product--info__text--cont__vert">
+              <span class="his--popup__product--span">Цена:</span>
+              <p class="his--popup__product--price">7 730 ₽</p>
+            </div>
+          </div>
+        </div>
+        <div class="his--popup__product">
+          <img class="his--popup__product--img" src="./images/product.png"/>
+          <div class="his--popup__product--info">
+            <div class="his--popup__product--info__text--cont">
+              <p class="his--popup__product--name">Стул</p>
+              <p class="his--popup__product--count">4 шт</p>
+            </div>
+            <div class="his--popup__product--info__text--cont">
+              <img class="his--popup__product--color__img" src="./images/colorImg.svg"/>
+              <p class="his--popup__product--color">Зелёный/Белый</p>
+            </div>
+            <div class="his--popup__product--info__text--cont__vert">
+              <span class="his--popup__product--span">Цена:</span>
+              <p class="his--popup__product--price">7 730 ₽</p>
+            </div>
+          </div>
+        </div>
+        <div class="his--popup__product">
+          <img class="his--popup__product--img" src="./images/product.png"/>
+          <div class="his--popup__product--info">
+            <div class="his--popup__product--info__text--cont">
+              <p class="his--popup__product--name">Стул RAFAELLLLLLLLLL...</p>
+              <p class="his--popup__product--count">4 шт</p>
+            </div>
+            <div class="his--popup__product--info__text--cont">
+              <img class="his--popup__product--color__img" src="./images/colorImg.svg"/>
+              <p class="his--popup__product--color">Зелёный/Белый</p>
+            </div>
+            <div class="his--popup__product--info__text--cont__vert">
+              <span class="his--popup__product--span">Цена:</span>
+              <p class="his--popup__product--price">7 730 ₽</p>
+            </div>
+          </div>
+        </div>
+        <div class="his--popup__product">
+          <img class="his--popup__product--img" src="./images/product.png"/>
+          <div class="his--popup__product--info">
+            <div class="his--popup__product--info__text--cont">
+              <p class="his--popup__product--name">Стул RAFAELLLLLLLLLL...</p>
+              <p class="his--popup__product--count">4 шт</p>
+            </div>
+            <div class="his--popup__product--info__text--cont">
+              <img class="his--popup__product--color__img" src="./images/colorImg.svg"/>
+              <p class="his--popup__product--color">Зелёный/Белый</p>
+            </div>
+            <div class="his--popup__product--info__text--cont__vert">
+              <span class="his--popup__product--span">Цена:</span>
+              <p class="his--popup__product--price">7 730 ₽</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </div>
+  <div class="popup__overlay"></div>
+  </template>
+  <script src="history.js" async></script>
 </html>
