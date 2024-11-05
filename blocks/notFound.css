@@ -34,6 +34,10 @@
   color: #FFF;
 }
 
+.menu__list {
+  gap: 14px;
+}
+
 @media screen and (max-width: 1070px) {
   .notFound{
     background-position: -30% 25%, 110% 110%;

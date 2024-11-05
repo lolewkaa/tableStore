@@ -24,6 +24,10 @@
   margin: 0;
 }
 
+.menu__list {
+  gap: 14px;
+}
+
 @media screen and (max-width: 900px) {
   .policy__title {
     font-size: 32px;

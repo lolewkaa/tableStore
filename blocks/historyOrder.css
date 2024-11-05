@@ -356,6 +356,11 @@
 .personal__input-box-wide {
   width: 380px;
 }
+
+.menu__list {
+  gap: 14px;
+}
+
 @media screen and (max-width: 1240px) {
   .his--order__button {
     min-width: 131px;
