@@ -56,5 +56,10 @@
     .search {
         display: none;
     }
+    .search__buttons-container {
+        margin: 0;
+        width: 50px;
+    }
     
-  } 
+  }
+  
