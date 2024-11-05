@@ -1,87 +1,50 @@
 .menu {
-<<<<<<< HEAD
-    display: none;
-    position: absolute;
-    top: 60px;
-    width: 248px;
-    background-color: white;
-    border-radius: 20px;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    min-height: 260px;
-    box-shadow: 4px 4px 6px 6px rgba(18, 21, 105, 0.08);
-    z-index: 200;
-    padding: 20px;
-    
+  display: none;
+  position: absolute;
+  top: 60px;
+  width: 248px;
+  background-color: white;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 260px;
+  box-shadow: 4px 4px 6px 6px rgba(18, 21, 105, 0.08);
+  z-index: 200;
+  padding: 20px;
+
 }
 .menu__list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-}
-.menu__item {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: normal;
-    
-}
-.menu__active {
-    display: flex !important;
-}
-.menu__button-close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    cursor: pointer;
-    padding: 0;
-}
-.menu__box {
-    display: flex;
-    width: calc(100% - 20px);
-    justify-content: space-between;
-    align-items: center;
-}
-=======
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
+  gap: 14px;
 }
-
-.menu__title {
-  font-size: 32px;
-  font-weight: 500;
-  color: rgb(33, 33, 33);
-  margin: 24px 0;
-}
-
-
-.menu__container {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 12px;
-  margin: 0 0 12px;
-  min-width: 288px;
+.menu__item {
   text-decoration: none;
-  color: rgb(33, 33, 33);
-  box-shadow: 1px 1px 5px 5px rgba(18, 21, 105, 0.08) ;
-  border-radius: 20px;
-}
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: normal;
 
-.menu__text {
-  font-size: 16px;
-  font-weight: 500;
 }
-
-.menu__button {
-  background-color: transparent;
-  border: 0;
-  transform: scale(1.5);
+.menu__active {
+  display: flex !important;
 }
->>>>>>> 3592b70cc7e7ba9f0bf801b811fbaf0a02a61b8d
+.menu__button-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 0;
+}
+.menu__box {
+  display: flex;
+  width: calc(100% - 20px);
+  justify-content: space-between;
+  align-items: center;
+}
