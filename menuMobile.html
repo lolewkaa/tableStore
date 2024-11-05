@@ -9,12 +9,48 @@
   </head>
 <body class="page">
   <header class="header">
+    <div class="menu">
+      <button class="menu__button-close">
+        <img class="menu__close-img" src="images/closeImg.svg" />
+      </button>
+      <ul class="menu__list">
+        <li><a href="#footer" class="menu__item">Контакты</a></li>
+        <li>
+          <a href="payment.html" class="menu__item">Условия доставки</a>
+        </li>
+        <li><a href="#" class="menu__item">Столы</a></li>
+        <li><a href="#" class="menu__item">Стулья</a></li>
+        <li><a href="#" class="menu__item">Распродажа</a></li>
+        <li><a href="#bestsellers" class="menu__item">Хиты продаж</a></li>
+      </ul>
+      <div class="menu__box">
+        <div class="header__icons-container">
+          <a class="header__icon-link" href="#">
+            <img alt="Иконка WhatsApp" src="images/iconWhats.svg" />
+          </a>
+          <a class="header__icon-link" href="#">
+            <img alt="Иконка Telegram" src="images/iconTG.svg" />
+          </a>
+          <a class="header__icon-link" href="#">
+            <img alt="Иконка VK" src="images/iconVK.svg" />
+          </a>
+        </div>
+        <div class="search__buttons-container">
+          <button class="search__button">
+            <img src="images/iconLike.svg" alt="Иконка лайк" />
+          </button>
+          <button class="search__button">
+            <img src="images/iconSearch.svg" alt="Иконка поиск" />
+          </button>
+        </div>
+      </div>
+    </div>
     <button class="header__burger-button">
       <img src="images/burgerButton.svg" />
     </button>
     <div class="header__links-container">
       <a class="header__link" href="#footer">Контакты</a>
-      <a class="header__link" href="#footer">Условия доставки</a>
+      <a class="header__link" href="payment.html">Условия доставки</a>
     </div>
     <img
       class="header__logo"
@@ -39,26 +75,27 @@
       <img src="images/iconDel.svg" alt="Иконка корзина" />
     </a>
   </header>
-  <section class="menu">
-      <h2 class="menu__title">Личный кабинет</h2>
-      <a class="menu__container" href="account.html">
-        <p class="menu__text">Мои данные</p>
-        <button class="menu__button">
+  <section class="mob--menu">
+      <h2 class="mob--menu__title">Личный кабинет</h2>
+      <a class="mob--menu__container" href="account.html">
+        <p class="mob--menu__text">Мои данные</p>
+        <button class="mob--menu__button">
           <img src="./images/arrowButton.svg">
         </button>
       </a>
-      <a class="menu__container" href="history.html">
-        <p class="menu__text">История заказов</p>
-        <button class="menu__button">
+      <a class="mob--menu__container" href="history.html">
+        <p class="mob--menu__text">История заказов</p>
+        <button class="mob--menu__button">
           <img src="./images/arrowButton.svg">
         </button>
       </a>
-      <a class="menu__container" href="favorites.html">
-        <p class="menu__text">Избранное</p>
-        <button class="menu__button">
+      <a class="mob--menu__container" href="favorites.html">
+        <p class="mob--menu__text">Избранное</p>
+        <button class="mob--menu__button">
           <img src="./images/arrowButton.svg">
         </button>
       </a>
   </section>
+  <script src="headerMenu.js"></script>
 </body>
 </html>

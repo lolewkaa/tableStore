@@ -41,6 +41,10 @@
   text-align: center;
 }
 
+.menu__list {
+  gap: 14px;
+}
+
 @media screen and (max-width: 433px) {
   .personal__form-box--auth {
     height: 150px;
