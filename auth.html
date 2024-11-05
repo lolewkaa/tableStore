@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Столы тут</title>
+
+    <link rel="stylesheet" href="pages/auth.css" />
+  </head>
+
+  <body class="page">
+    <header class="header">
+      <button class="header__burger-button">
+        <img src="images/burgerButton.svg" />
+      </button>
+      <div class="header__links-container">
+        <a class="header__link" href="#footer">Контакты</a>
+        <a class="header__link" href="#footer">Условия доставки</a>
+      </div>
+      <img
+        class="header__logo"
+        alt="Логотип 'Столы тут'"
+        src="images/logo.png"
+      />
+      <div class="header__feedback-container">
+        <p class="header__tel-text">+7 (983) 305-80-10</p>
+        <div class="header__icons-container">
+          <a class="header__icon-link" href="#">
+            <img alt="Иконка WhatsApp" src="images/iconWhats.svg" />
+          </a>
+          <a class="header__icon-link" href="#">
+            <img alt="Иконка Telegram" src="images/iconTG.svg" />
+          </a>
+          <a class="header__icon-link" href="#">
+            <img alt="Иконка VK" src="images/iconVK.svg" />
+          </a>
+        </div>
+      </div>
+      <a href="cart.html" class="header__cart">
+        <img src="images/iconDel.svg" alt="Иконка корзина" />
+      </a>
+    </header>
+
+    <section class="search">
+      <div class="search__links-container">
+        <a class="search__link" href="#">Столы</a>
+        <a class="search__link" href="#">Стулья</a>
+        <a class="search__link" href="#">Распродажа</a>
+      </div>
+      <div class="search__buttons-container">
+        <button class="search__button">
+          <img src="images/iconLike.svg" alt="Иконка лайк" />
+        </button>
+        <button class="search__button">
+          <a href="cart.html">
+            <img src="images/iconDel.svg" alt="Иконка корзина" />
+          </a>
+        </button>
+        <button class="search__button">
+          <img src="images/iconSearch.svg" alt="Иконка поиск" />
+        </button>
+      </div>
+    </section>
+
+    <section class="personal">
+      <form class="personal__form" id="personal__form">
+        <h3 class="personal__form-title">Авторизация</h3>
+        <div class="personal__form-box personal__form-box--auth">
+          <div class="personal__input-box">
+            <label class="personal__label" for="login">Логин</label>
+            <input
+              class="personal__input"
+              placeholder="Введите e-mail"
+              type="text"
+              id="login"
+              name="login"
+              required
+            />
+          </div>
+          <div class="personal__input-box">
+            <label class="personal__label" for="password">Пароль</label>
+            <input
+              class="personal__input"
+              placeholder="Введите пароль"
+              type="password"
+              id="password"
+              name="password"
+              required
+            />
+          </div>
+        </div>
+        <button class="personal__button-submit" type="submit" id="submitButton">
+          Войти
+        </button>
+        <div class="authForm__linkWrapper">
+          <a class="authForm__link" href="register.html">Забыли пароль?</a>
+          <a class="authForm__link" href="register.html">Создать аккаунт</a>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

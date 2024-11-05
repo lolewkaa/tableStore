@@ -1,0 +1,48 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(550px, 85vh, 750px);
+  background-image: url(../images/table_bg.png), url(../images/chair_bg.png);
+  background-repeat: no-repeat;
+  background-position: -10% center, 110% 160%;
+  background-size: clamp(160px, 50vw, 520px) clamp(160px, 50vw, 520px);
+}
+
+.notFound__title {
+  font-size: 120px;
+  font-weight: 500;
+  margin: 0;
+  color: rgb(33, 33, 33);
+}
+
+.notFound__text {
+  font-size: 24px;
+  font-weight: 500px;
+  color: rgb(33, 33, 33);
+}
+
+.notFound__link {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 14px 24px;
+  border-radius: 12px;
+  background-color: rgb(235, 40, 25);
+  color: #FFF;
+}
+
+@media screen and (max-width: 1070px) {
+  .notFound{
+    background-position: -30% 25%, 110% 110%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .notFound{
+    min-height: clamp(550px, 95vh, 93vh);
+    background-position: -30% 0%, 110% 120%;
+  }
+}
