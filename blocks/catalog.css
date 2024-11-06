@@ -397,6 +397,9 @@
         gap: 10px;
         margin-top: 10px;
     }
+    .catalog__container {
+        margin-top: 25px;
+    }
     .catalog__btn {
         margin-left: 5px;
     }
