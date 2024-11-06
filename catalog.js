@@ -30,6 +30,7 @@ buttonCheckbox.addEventListener('click', function() {
             arrowImageCheckbox.src = 'images/arrowDown.svg';
         }
     });
+    
 });
 
 document.addEventListener("DOMContentLoaded", function() {

@@ -264,6 +264,7 @@
         margin-left: 24px;
         padding: 0;
         cursor: pointer;
+        color: black;
     }
     .catalog__products-wrap {
         width: 100%;
@@ -271,8 +272,7 @@
     }
     .catalog__products {
         width: 90%;
-        justify-content: space-between;
-        
+        justify-content: space-between;  
         margin-top: 80px;
     }
   }
@@ -294,6 +294,9 @@
   @media screen and (max-width: 1024px) {
     .catalog {
         width: calc(100% - 84px);
+    }
+    .catalog__products {
+        margin-top: 60px;
     }
   }
 
@@ -365,11 +368,41 @@
     .catalog__select {
         margin-left: 0;
     }
+    .catalog__products {
+        margin-top: 40px;
+    }
+  }
+
+  @media screen and (max-width: 448px) {
+    .catalog__price-box {
+        margin: 0;
+    }
+    .catalog__inputs-box {
+        width: 100%;
+    }
+    .catalog__price-button {
+        font-size: 20px;
+    }
+    .catalog__checkbox-button {
+        font-size: 20px;
+    }
+    .catalog__price-input {
+        height: 40px;
+    }
+  }
+  @media screen and (max-width: 379px) {
+    .catalog__btn {
+        margin: 0;
+    }
+    .catalog__select {
+        padding: 0;
+    }
   }
 
   @media screen and (max-width: 365px) {
     .catalog {
         width: 288px;
+        margin: 24px auto 80px auto;
     }
     .catalog__select {
         width: 137px;
@@ -394,4 +427,21 @@
         width: 248px;
         gap: 8px;
     }
+    .catalog__products {
+        margin-top: 24px;
+    }
   }
+
+  
+@media screen and (max-width: 347px) {
+    .catalog__price-button {
+        font-size: 20px;
+    }
+    .catalog__checkbox-button {
+        font-size: 20px;
+        text-align: left;
+        max-width: 95%;
+        min-height: 37px;
+    }
+    
+}

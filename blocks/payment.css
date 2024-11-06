@@ -41,12 +41,16 @@
         width: 248px;
     }
 }
+@media screen and (max-width: 433px) {
+    .payment {
+        width: calc(100% - 32px);
+    }
+    
+}
+
 
 
 @media screen and (max-width: 423px) {
-    .payment {
-        width: 288px;
-    }
     .payment__box {
         margin: 20px auto 0 auto;
     }

@@ -88,13 +88,27 @@
     }
 }
 
-@media screen and (max-width: 546px) {
+@media screen and (max-width: 479px) {
+    .company__container {
+        margin: 20px 0 20px 20px;
+    }
+    .company__link {
+        margin-top: 10px;
+    }
+    .company__subtitle {
+        width: 310px;
+    }
+}
+
+
+@media screen and (max-width: 344px) {
     .company {
         width: 288px;
         height: 800px;
         background-image: url('../images/companyImgMobile.png');
         margin-bottom: 80px;
     }
+     
     .company__subtitle {
         max-width: 248px;
     }
@@ -109,3 +123,4 @@
         height: 16px;
     }
 }
+

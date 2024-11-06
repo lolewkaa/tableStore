@@ -60,21 +60,39 @@
         gap: 8px;
     }
   }
-
-  @media screen and (max-width: 940px) {
+  @media screen and (max-width: 1024px) {
     .offers {
-      flex-direction: column;
-      align-items: center;
+      width: calc(100% - 84px);
     }
   }
 
-  @media screen and (max-width: 585px) {
+  @media screen and (max-width: 940px) {
+    /* .offers {
+      flex-direction: column;
+      align-items: center;
+    } */
+     .offers__offer {
+      width: 45%;
+      min-height: 200px;
+     }
+  }
+
+  @media screen and (max-width: 665px) {
     .offers {
       flex-direction: column;
       align-items: center;
     }
     .offers__offer {
-        width: 288px;
+        width: 100%;
         min-height: 216px;
     }
   }
+
+  @media screen and (max-width: 433px) {
+    
+    .offers {
+      width: calc(100% - 32px);
+    }
+  }
+
+  

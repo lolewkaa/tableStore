@@ -252,9 +252,7 @@
   }
 
   @media screen and (max-width: 564px) {
-    .order {
-        width: 288px;
-    }
+   
     .order__title {
         font-size: 32px;
     }
@@ -331,3 +329,10 @@
         width: 256px !important;
     }
   }
+
+  @media screen and (max-width: 433px) {
+    .order {
+        width: calc(100% - 32px);
+    }
+    
+  } 

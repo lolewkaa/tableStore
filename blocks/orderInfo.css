@@ -254,10 +254,16 @@
     }
 }
 
-@media screen and (max-width: 423px) {
+@media screen and (max-width: 433px) {
     .orderInfo {
-        width: 288px;
+        width: calc(100% - 32px);
     }
+    .orderInfo__button_mobile {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 423px) {
     .orderInfo__cards-box {
         width: 100%;
     }

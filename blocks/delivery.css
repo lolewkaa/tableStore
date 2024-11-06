@@ -151,11 +151,16 @@
         object-fit: cover;
     }
 }
-
-@media screen and (max-width: 423px) {
+@media screen and (max-width: 433px) {
     .delivery {
-        width: 288px;
+        width: calc(100% - 32px);
     }
+    .delivery__button-change {
+        width: 100%;
+    }
+  } 
+@media screen and (max-width: 423px) {
+    
     .delivery__text {
         font-size: 20px;
         margin-left: 20px;
