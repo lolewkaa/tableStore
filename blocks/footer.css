@@ -111,6 +111,7 @@
     padding: 0;
     display: flex;
     gap: 14px;
+    color: black;
 }
 
 .footer__tel:last-of-type {
@@ -169,11 +170,12 @@
 }
 
 .footer__btn {
-    width: 21px;
-    height: 21px;
+    width: 22px;
+    height: 22px;
     border: none;
     background-color: rgb(33, 33, 33);
     cursor: pointer;
+    padding: 0;
 }
 
 .footer__link {
@@ -225,6 +227,7 @@
 
 .footer__button_mobile {
     display: none;
+    color: black;
 }
 
 .footer__button-call_mobile {
@@ -290,8 +293,8 @@
 
     .footer__button-up {
         padding: 0;
-        width: 53px;
-        height: 53px;
+        width: 56px;
+        height: 56px;
     }
 }
 

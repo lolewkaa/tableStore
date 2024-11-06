@@ -160,6 +160,7 @@
 }
 .bestsellers__button-mobile {
     display: none;
+    color: black;
 }
 .bestsellers__info {
     padding: 4.5px 10px;
