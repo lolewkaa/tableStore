@@ -7,7 +7,7 @@
     position: relative;
     padding: 28px;
     overflow: hidden;
-    margin: 10% auto 0 auto;
+    margin: 100px auto 0 auto;
 }
 
 .modal__container {
@@ -230,6 +230,13 @@
         height: 900px;
     }
   }
+
+  @media screen and (max-width: 451px) {
+    .modal {
+        height: 800px;
+    }
+  }
+
 
   @media screen and (max-width: 377px) {
     .modal {

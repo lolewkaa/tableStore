@@ -111,7 +111,7 @@
     padding: 0;
     display: flex;
     gap: 14px;
-    color: black;
+    color: white;
 }
 
 .footer__tel:last-of-type {
@@ -268,6 +268,7 @@
     .footer__tel {
         font-size: 18px;
         margin: 10px 0 20px 0;
+        color: white;
     }
 
     .footer__map-img {
@@ -389,6 +390,7 @@
     .footer__tel {
         font-size: 16px;
         margin: 6px 0 20px 0;
+        color: white;
     }
 
     .footer__location {
