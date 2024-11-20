@@ -26,6 +26,7 @@
     gap: 6px;
     /* width: calc(100% - 554px - 16px - 28px); */
     width: 554px;
+    position: relative;
 }
 .personal__input {
     width: calc(100% - 40px);
@@ -97,9 +98,44 @@
     text-decoration: none;
     background-color: rgb(255, 255, 255);
 }
+.button__activate {
+    font-size: 18px;
+    font-weight: normal;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 146, 137);
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+.button__check {
+    display: none;
+    font-size: 18px;
+    font-weight: normal;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 146, 137);
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+
 @media screen and (max-width: 1024px) {
     .personal {
         width: calc(100% - 84px);
+    }
+}
+
+@media screen and (max-width: 554px) {
+    .button__activate {
+        display: none;
+    }
+    .button__check {
+        display: block;
     }
 }
 
@@ -152,5 +188,7 @@
         margin: 0 12px;
         height: 440px;
     }
-
+    .button__check {
+        top: 65%;
+    }
 }

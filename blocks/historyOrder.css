@@ -356,9 +356,16 @@
 .personal__input-box-wide {
   width: 380px;
 }
+.delivery__btn-box {
+  flex-wrap: wrap;
+}
 
 .menu__list {
   gap: 14px;
+}
+.personal__select_mobile {
+  display: none;
+
 }
 
 @media screen and (max-width: 1240px) {
@@ -437,6 +444,9 @@
     font-size: 16px;
     font-weight: 500;
     margin: 16px auto 28px ;
+  }
+  .delivery__btn-box {
+    display: none;
   }
   .his--order__buttons-box{
     display: none;

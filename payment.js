@@ -3,6 +3,7 @@ let modalBg = document.querySelector('.modal__overlay');
 let modal = document.querySelector('.modal__container');
 let openModalButtons = document.querySelectorAll('.delivery__button-change');
 let closeModalButton = document.querySelector('.modal__button-close');
+let closeModalBg = document.querySelector('.modal__overlay');
 
 openModalButtons.forEach((button) => { 
     button.addEventListener('click', (e) => { 
@@ -17,12 +18,18 @@ closeModalButton.addEventListener('click',() => {
     modal.classList.remove('active'); 
 })
 
+closeModalBg.addEventListener('click',() => { 
+    modalBg.classList.remove('modal__overlay_active'); 
+    modal.classList.remove('active'); 
+})
+
 
 //попап 'спасибо за заказ'
 let popupBg = document.querySelector('.popup__overlay');
 let popup = document.querySelector('.popup__container');
 let openPopupButtons = document.querySelectorAll('.orderInfo__button');
 let closePopupButton = document.querySelector('.popup__button-close');
+let closePopupBg = document.querySelector('.popup__overlay');
 
 openPopupButtons.forEach((button) => { 
     button.addEventListener('click', (e) => { 
@@ -42,6 +49,18 @@ openPopupButtons.forEach((button) => {
 });
 
 closePopupButton.addEventListener('click',() => { 
+    popupBg.classList.remove('popup__overlay_active'); 
+    popup.classList.remove('active');
+
+    //меняем стили stage
+    document.querySelector('.stage__round_last').classList.remove('stage__round_done')
+    document.querySelector('.stage__round_third').classList.remove('stage__round_done')
+    document.querySelector('.stage__text_third').classList.remove('stage__text_done')
+    document.querySelector('.stage__text_last').classList.remove('stage__text_done')
+    document.querySelector('.stage').classList.remove('stage__active')
+})
+
+closePopupBg.addEventListener('click',() => { 
     popupBg.classList.remove('popup__overlay_active'); 
     popup.classList.remove('active');
 

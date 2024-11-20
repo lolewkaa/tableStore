@@ -1,5 +1,7 @@
 .menu {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s;
   position: absolute;
   top: 60px;
   width: 248px;
@@ -32,6 +34,8 @@
 }
 .menu__active {
   display: flex !important;
+  visibility: visible;
+  opacity: 1;
 }
 .menu__button-close {
   position: absolute;

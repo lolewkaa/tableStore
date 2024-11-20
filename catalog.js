@@ -57,6 +57,7 @@ let popupBg = document.querySelector('.popupFilter__overlay');
 let popup = document.querySelector('.popupFilter__container');
 let openPopupButtons = document.querySelectorAll('.catalog__btn');
 let closePopupButton = document.querySelector('.popupFilter__button-close');
+let closePopupBg = document.querySelector('.popupFilter__overlay');
 
 openPopupButtons.forEach((button) => { 
     button.addEventListener('click', (e) => { 
@@ -67,6 +68,11 @@ openPopupButtons.forEach((button) => {
 });
 
 closePopupButton.addEventListener('click',() => { 
+    popupBg.classList.remove('active'); 
+    popup.classList.remove('active'); 
+})
+
+closePopupBg.addEventListener('click',() => { 
     popupBg.classList.remove('active'); 
     popup.classList.remove('active'); 
 })

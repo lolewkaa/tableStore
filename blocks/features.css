@@ -19,6 +19,7 @@
 }
 .features__image {
     width: 100%;
+    margin-top: 84px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -35,7 +36,7 @@
 
 @media screen and (max-width: 476px) {
     .features {
-        width: 288px;
+        width: calc(100% - 32px);
         margin-bottom: 62px;
     }
     .features__img {
@@ -44,6 +45,7 @@
     }
     .features__image {
         height: 220px;
+        margin-top: 80px;
     }
     .features__box {
         margin-top: 20px;
