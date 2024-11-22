@@ -411,6 +411,18 @@
     }
   }
 
+  @media screen and (max-width: 414px) {
+    .catalog__products {
+        margin-top: 24px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        row-gap: 26px;
+        justify-content: flex-start;
+        width: 288px;
+    }
+  }
+
   @media screen and (max-width: 365px) {
     .catalog {
         width: 288px;

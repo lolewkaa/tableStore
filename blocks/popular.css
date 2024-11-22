@@ -94,12 +94,12 @@
     }
   }
 
-  @media screen and (max-width: 365px) {
+  @media screen and (max-width: 414px) {
 
     .popular__mobile {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 0;
+        gap: 8px;
         row-gap: 26px;
     }
    

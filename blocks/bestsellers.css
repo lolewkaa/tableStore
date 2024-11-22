@@ -302,7 +302,7 @@
     
   }
 
-  @media screen and (max-width: 365px) {
+  @media screen and (max-width: 414px) {
     .bestsellers__product {
         width: 136px !important;
         height: 270px !important;
@@ -364,7 +364,9 @@
     .bestsellers__container {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 0;
+        column-gap: 8px;
         row-gap: 26px;
+        justify-content: flex-start;
+        width: 288px;
     }
   }
