@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const slidesContainer = document.querySelector(".popular__slides");
+    const slidesContainer = document.querySelector(".slides");
     const slides = document.querySelectorAll(".bestsellers__product");
     let currentSlide = 0;
 

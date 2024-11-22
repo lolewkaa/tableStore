@@ -92,5 +92,16 @@
     .popular__title {
         text-align: center;
     }
+  }
+
+  @media screen and (max-width: 365px) {
+
+    .popular__mobile {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+        row-gap: 26px;
+    }
+   
   } 
 
