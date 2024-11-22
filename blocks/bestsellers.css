@@ -162,6 +162,7 @@
 .bestsellers__button-mobile {
     display: none;
     color: black;
+    border: none;
 }
 .bestsellers__info {
     padding: 4.5px 10px;
@@ -322,8 +323,8 @@
     }
     .bestsellers__product-like {
         padding: 0;
-        width: 12px;
-        height: 11px;
+        width: 16px;
+        height: 15px;
         top: 5px;
         right: 5px;
     }
@@ -334,6 +335,10 @@
     .bestsellers__product-name {
         font-size: 14px;
         margin: 8px 0 4px 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
     }
     .bestsellers__color {
         font-size: 10px;

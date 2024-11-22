@@ -466,4 +466,7 @@
     .footer__links {
         width: 288px;
     }
+    .footer__map-img {
+        margin: 0 auto;
+    }
 }
