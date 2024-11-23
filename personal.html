@@ -7,10 +7,11 @@
     <title>Столы тут</title>
 
     <link rel="stylesheet" href="pages/personal.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body class="page">
-    <header class="header">
+    <header id="header" class="header">
         <div class="menu">
           <button class="menu__button-close">
             <img class="menu__close-img" src="images/closeImg.svg">
@@ -18,7 +19,7 @@
           <ul class="menu__list">
             <li><a href="#footer" class="menu__item">Контакты</a>
             </li>
-            <li><a href="payment.html" class="menu__item">Условия доставки</a>
+            <li><a href="#" class="menu__item">Условия доставки</a>
             </li>
             <li><a href="#" class="menu__item">Столы</a>
             </li>
@@ -26,7 +27,9 @@
             </li>
             <li><a href="#" class="menu__item">Распродажа</a>
             </li>
-            <li><a href="#bestsellers" class="menu__item">Хиты продаж</a>
+            <li><a href="#" class="menu__item">Хиты продаж</a>
+            </li>
+            <li><a href="#" class="menu__item">Новинки</a>
             </li>
           </ul>
           <div class="menu__box">
@@ -43,7 +46,9 @@
             </div>
             <div class="search__buttons-container">
               <button class="search__button">
-                <img src="images/iconLike.svg" alt="Иконка лайк" />
+                <a href="account.html">
+                  <img src="images/lkIcon.svg" alt="Иконка личный кабинет" />
+                </a>
               </button>
               <button class="search__button">
                 <img src="images/iconSearch.svg" alt="Иконка поиск" />
@@ -56,9 +61,11 @@
         </button>
         <div class="header__links-container">
           <a class="header__link" href="#footer">Контакты</a>
-          <a class="header__link" href="payment.html">Условия доставки</a>
+          <a class="header__link" href="#">Условия доставки</a>
         </div>
-        <img class="header__logo" alt="Логотип 'Столы тут'" src="images/logo.png" />
+        <a href="index.html">
+          <img class="header__logo" alt="Логотип 'Столы тут'" src="images/logo.png" />
+        </a>
         <div class="header__feedback-container">
           <p class="header__tel-text">+7 (983) 305-80-10</p>
           <div class="header__icons-container">
@@ -83,11 +90,14 @@
             <a class="search__link" href="catalog.html">Столы</a>
             <a class="search__link" href="catalog.html">Стулья</a>
             <a class="search__link" href="#">Распродажа</a>
-            <a class="search__link" href="bestsellers" >Хиты продаж</a>
+            <a class="search__link" href="#" >Хиты продаж</a>
+            <a class="search__link" href="#">Новинки</a>
         </div>
         <div class="search__buttons-container">
           <button class="search__button">
-            <img src="images/iconLike.svg" alt="Иконка лайк" />
+            <a href="account.html">
+              <img src="images/lkIcon.svg" alt="Иконка личный кабинет" />
+            </a>
           </button>
           <button class="search__button">
             <a href="cart.html">
@@ -161,7 +171,7 @@
                 <div class="personal__input-box-wide">
                     <label class="personal__label" for="promo">Промокод</label>
                     <input class="personal__input-wide" placeholder="Введите промокод" type="text" id="promo"
-                        name="promo" required>
+                        name="promo">
                     <button class="button__activate">Активировать</button>
                     <button class="button__check">
                       <img src="images/checkIcon.svg">
@@ -178,7 +188,7 @@
         <div class="footer__container">
             <h2 class="footer__title">Контакты</h2>
             <div class="footer__buttons-box">
-                <button class="footer__button_active">Новосибирск</button>
+                <button class="footer__button footer__button_active">Новосибирск</button>
                 <button class="footer__button">Красноярск</button>
                 <button class="footer__button">Кемерово</button>
                 <button class="footer__button">Новокузнецк</button>
@@ -229,7 +239,7 @@
                     </div>
 
                 </div>
-                <img class="footer__map-img" src="images/map.png" alt="map" />
+                <div id="map" class="footer__map-img"></div>
             </div>
 
             <button class="footer__button-call_mobile">
@@ -254,7 +264,9 @@
                     </button>
                 </div>
                 <button class="footer__button-up">
+                  <a href="#header">
                     <img src="images/buttonUp.svg">
+                  </a>
                 </button>
             </div>
 

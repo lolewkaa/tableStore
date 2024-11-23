@@ -110,6 +110,9 @@
     right: 20px;
     top: 50%;
 }
+.button__activate_active {
+    color: rgb(235, 40, 25);
+}
 .button__check {
     display: none;
     font-size: 18px;

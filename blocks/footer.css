@@ -65,12 +65,12 @@
 }
 
 .footer__buttons-box {
-    width: calc(100% - 8px);
+    width: calc(100% - 46px);
     border-radius: 12px;
     display: flex;
     justify-content: space-between;
     background-color: rgb(66, 66, 68);
-    padding: 8px;
+    padding: 8px 38px 8px 8px;
 }
 
 .footer__city {
@@ -97,6 +97,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 580px;
 }
 
 .footer__location {
@@ -138,6 +139,14 @@
 }
 
 .footer__map-img {
+    width: 560px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+#map {
+    border-radius: 20px;
+    overflow: hidden;
     width: 560px;
     height: 600px;
 }
@@ -236,12 +245,20 @@
 .footer__button-call_mobile {
     display: none;
 }
-
+@media screen and (max-width: 1292px) {
+    .footer__buttons-box {
+        width: calc(100% - 8px);
+        padding: 8px;
+    }
+}
 @media screen and (max-width: 1264px) {
     .footer__button_active {
         font-size: 18px;
     }
-
+    .footer__buttons-box {
+        width: calc(100% - 46px);
+        padding: 8px 38px 8px 8px;
+    }
     .footer__button {
         font-size: 18px;
     }
@@ -307,7 +324,11 @@
         max-height: 1251px;
     }
 }
-
+@media screen and (max-width: 942px) {
+    #map {
+        max-width: 300px;
+    }
+}
 @media screen and (max-width: 862px) {
     .footer {
         padding: 75px 20px 299px 20px;
@@ -331,8 +352,19 @@
     }
 }
 
+@media screen and (max-width: 824px) {
+    .footer__buttons-box {
+        width: calc(100% - 8px);
+        padding: 8px;
+    }
+}
+
 @media screen and (max-width: 777px) {
     .footer__map-img {
+        width: 288px;
+        height: 309px;
+    }
+    #map {
         width: 288px;
         height: 309px;
     }
@@ -361,6 +393,14 @@
 
     .footer__button {
         display: none;
+    }
+    .footer__location {
+        margin-top: 28px;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .footer__map-img {
+        margin: 0 auto;
     }
 }
 
@@ -466,7 +506,5 @@
     .footer__links {
         width: 288px;
     }
-    .footer__map-img {
-        margin: 0 auto;
-    }
+    
 }
